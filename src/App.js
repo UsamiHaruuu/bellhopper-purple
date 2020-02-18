@@ -5,6 +5,7 @@ import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
  
 function App() {
+  TravelAdvisory('Germany')
   return (
     <HashRouter>
       <Switch>
