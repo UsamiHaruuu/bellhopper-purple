@@ -1,4 +1,5 @@
 import React from 'react';
+import 'rbx/index.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
@@ -8,7 +9,7 @@ function App() {
     <HashRouter>
       <Switch>
         <Route exact path="/dashboard">
-          <Dashboard />
+          <Dashboard country="Costa Rica" />
         </Route>
         <Route exact path="/search">
           <Search />
