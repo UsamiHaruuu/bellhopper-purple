@@ -1,27 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import TravelAdvisory from './Components/Dashboard/CountryHelpers/TravelAdvisory'
-
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import TravelAdvisory from './Components/Dashboard/CountryHelpers/TravelAdvisory';
+import Dashboard from './Components/Dashboard';
+import Search from './Components/Search';
  
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <HashRouter>
+      <Switch>
+        <Route exact path="/dashboard">
+          <Dashboard />
+        </Route>
+        <Route exact path="/search">
+          <Search />
+        </Route>
+        <Route path="/">
+          <Search />
+        </Route>
+      </Switch>
+    </HashRouter>
   );
 }
 
