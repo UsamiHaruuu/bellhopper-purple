@@ -1,25 +1,26 @@
 import React from 'react';
 import 'rbx/index.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
-import TravelAdvisory from './Components/Dashboard/CountryHelpers/TravelAdvisory';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
- 
+
 function App() {
   return (
-    <HashRouter>
-      <Switch>
-        <Route exact path="/dashboard">
-          <Dashboard country="Costa Rica" />
-        </Route>
-        <Route exact path="/search">
-          <Search />
-        </Route>
-        <Route path="/">
-          <Search />
-        </Route>
-      </Switch>
-    </HashRouter>
+    <div style={{ padding: 20 }}>
+      <HashRouter className="padded">
+        <Switch>
+          <Route exact path="/dashboard">
+            <Dashboard country="Costa Rica" />
+          </Route>
+          <Route exact path="/search">
+            <Search />
+          </Route>
+          <Route path="/">
+            <Search />
+          </Route>
+        </Switch>
+      </HashRouter>
+    </div>
   );
 }
 
