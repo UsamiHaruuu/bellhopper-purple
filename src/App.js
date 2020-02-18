@@ -10,7 +10,7 @@ function App() {
       <HashRouter className="padded">
         <Switch>
           <Route exact path="/dashboard">
-            <Dashboard />
+            <Dashboard country="Costa Rica" />
           </Route>
           <Route exact path="/search">
             <Search />
