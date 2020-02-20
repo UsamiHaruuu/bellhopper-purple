@@ -39,6 +39,7 @@ const Search = () => {
           href={`/#/dashboard?country=${text}`}
           color="link"
           size="large"
+          disabled={text === ''}
         >
         Search
         </Button>
