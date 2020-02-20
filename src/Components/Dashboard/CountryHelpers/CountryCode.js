@@ -1,9 +1,6 @@
-import { useEffect, useState } from "react";
-const { getCode, getName } = require('country-list');
+const { getCode } = require('country-list');
 
 
-const CountryCode = (country) => {
-    return getCode(country)
-};
+const CountryCode = (country) => getCode(country);
 
 export default CountryCode;
