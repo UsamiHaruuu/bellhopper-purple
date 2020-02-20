@@ -9,9 +9,7 @@ import { countryCodes } from '../Dashboard/CountryHelpers/CountryCodes';
 const Search = () => {
   const [text, setText] = useState('');
 
-  const redirect = (url) => {
-    if (text !== '') window.location.href = url;
-  };
+  const redirect = (url) => { window.location.href = url; };
 
   return (
     <Column.Group>
@@ -39,7 +37,6 @@ const Search = () => {
         />
         <Block />
         <Button
-          as="a"
           onClick={() => redirect(`/#/dashboard?country=${text}`)}
           color="link"
           size="large"
