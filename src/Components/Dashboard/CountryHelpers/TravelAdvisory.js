@@ -1,8 +1,8 @@
 import { useEffect } from 'react';
-import COUNTRY_CODES from './CountryCodes';
+import { getCountryCode } from './CountryCodes';
 
 const TravelAdvisory = (country) => {
-  const countryID = COUNTRY_CODES[country];
+  const countryID = getCountryCode(country);
   const helperURL = 'https://www.reisewarnung.net/api?country=';
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
   const apiURL = helperURL + countryID;

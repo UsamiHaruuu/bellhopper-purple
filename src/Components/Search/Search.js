@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import {
-  Image, Block, Title, Input, Column, Button,
+  Image, Block, Title, Column, Button,
 } from 'rbx';
+import TextField from '@material-ui/core/TextField';
+import Autocomplete from '@material-ui/lab/Autocomplete';
+import { countryCodes } from '../Dashboard/CountryHelpers/CountryCodes';
 
 const Search = () => {
-  const [text, setText] = useState('costa rica');
+  const [text, setText] = useState('');
 
   return (
     <Column.Group>
@@ -20,9 +23,15 @@ const Search = () => {
         <Block />
         <Title size={1} as="b">BellHopper</Title>
         <Title size={5}>where to?</Title>
-        <Input
-          onChange={(e) => setText(e.target.value)}
-          placeholder="City / Country / Postal Code"
+        <Autocomplete
+          id="country-search"
+          options={countryCodes}
+          getOptionLabel={(option) => option.name}
+          renderInput={(params) => (
+            // eslint-disable-next-line react/jsx-props-no-spreading
+            <TextField {...params} label="Country" variant="outlined" fullWidth />
+          )}
+          onChange={(event, value) => setText(value.name)}
         />
         <Block />
         <Button
