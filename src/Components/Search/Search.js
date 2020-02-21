@@ -9,7 +9,10 @@ import { countryCodes } from '../Dashboard/CountryHelpers/CountryCodes';
 const Search = () => {
   const [text, setText] = useState('');
 
-  const redirect = (url) => { window.location.href = url; };
+  const redirect = (url) => {
+    window.location.href = url;
+    window.location.reload();
+  };
 
   return (
     <Column.Group>
