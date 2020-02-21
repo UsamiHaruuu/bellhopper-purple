@@ -15,7 +15,7 @@ const TravelAdvisory = (country) => {
     } else {
       console.log('enter a country');
     }
-  });
+  }, []);
 };
 
 export default TravelAdvisory;

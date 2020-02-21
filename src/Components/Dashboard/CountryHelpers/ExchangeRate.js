@@ -17,7 +17,7 @@ const ExchangeRate = (country) => {
     } else {
       console.log('enter a country');
     }
-  });
+  }, []);
   return countryCurrency;
 };
 
