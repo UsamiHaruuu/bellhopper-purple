@@ -11,12 +11,18 @@ const Dashboard = ({ country }) => {
     getDataAsync();
   }, [country]);
 
+  const InfoBoxes = countryData === []
+    ? (
+      'Loading...'
+    )
+    : countryData.map((data) => (
+      <InfoBox key={data.title} title={data.title} contents={data.contents} />
+    ));
+
   return (
     <div>
       <Header country={country} />
-      {countryData.map((data) => (
-        <InfoBox key={data.title} title={data.title} contents={data.contents} />
-      ))}
+      {InfoBoxes}
       <Container style={{ textAlign: 'center' }}>
         <Button as="a" color="link" size="large" href="/#/search/">
           Return To Search

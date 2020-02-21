@@ -71,7 +71,7 @@ const getCountryData = async (country, setCountryData) => {
           {' '}
             1 USD =
           {' '}
-          {countryCurrency}
+          {countryCurrency[0].toFixed(2)}
           {' '}
           {countryCurrencyName}
         </p>
