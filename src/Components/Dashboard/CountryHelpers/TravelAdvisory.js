@@ -1,21 +1,16 @@
-import { useEffect } from 'react';
 import { getCountryCode } from './CountryCodes';
 
-const TravelAdvisory = (country) => {
+const TravelAdvisory = async (country) => {
   const countryID = getCountryCode(country);
   const helperURL = 'https://www.reisewarnung.net/api?country=';
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
   const apiURL = helperURL + countryID;
-
-  useEffect(() => {
-    if (countryID) {
-      fetch(proxyurl + apiURL)
-        .then((res) => res.json())
-        .then((response) => console.log(response.data.lang.en.advice));
-    } else {
-      console.log('enter a country');
-    }
-  }, []);
+  if (countryID) {
+    const res = await fetch(proxyurl + apiURL);
+    const response = await res.json();
+    return response.data.lang.en.advice;
+  }
+  return undefined;
 };
 
 export default TravelAdvisory;

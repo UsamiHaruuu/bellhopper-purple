@@ -3,12 +3,12 @@ import { Column } from 'rbx';
 import ExchangeRate from './ExchangeRate';
 // import TravelAdvisory from './TravelAdvisory';
 
-const getCountryData = (country) => {
-  const countryCurrency = ExchangeRate(country);
+const getCountryData = async (country, setCountryData) => {
+  const countryCurrency = await ExchangeRate(country);
   const cc = require('currency-codes');
   const countryCurrencyName = cc.country(country)[0].code;
 
-  return [
+  setCountryData([
     {
       title: 'Weather',
       contents: (
@@ -77,7 +77,7 @@ const getCountryData = (country) => {
         </p>
       ),
     },
-  ];
+  ]);
 };
 
 export default getCountryData;
