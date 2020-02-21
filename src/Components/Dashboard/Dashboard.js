@@ -1,5 +1,5 @@
 import React from 'react';
-import { Column } from 'rbx';
+import { Column, Button, Container } from 'rbx';
 import InfoBox from './InfoBox';
 import Header from './Header';
 
@@ -66,7 +66,7 @@ const Dashboard = ({ country }) => {
   ];
 
   return (
-    <>
+    <div>
       <Header country={country} />
       {testData.map((data) => (
         <InfoBox
@@ -75,7 +75,17 @@ const Dashboard = ({ country }) => {
           contents={data.contents}
         />
       ))}
-    </>
+      <Container style={{ textAlign: 'center' }}>
+        <Button
+          as="a"
+          color="link"
+          size="large"
+          href="/#/search/"
+        >
+          Return To Search
+        </Button>
+      </Container>
+    </div>
   );
 };
 
