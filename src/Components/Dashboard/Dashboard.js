@@ -2,8 +2,12 @@ import React from "react";
 import { Column, Button, Container } from "rbx";
 import InfoBox from "./InfoBox";
 import Header from "./Header";
+import ExchangeRate from "./CountryHelpers/ExchangeRate";
 
 const Dashboard = ({ country }) => {
+  const countryCurrency = ExchangeRate(country);
+  const cc = require("currency-codes");
+  const countryCurrencyName = cc.country(country)[0].code;
   const testData = [
     {
       title: "Weather",
@@ -62,7 +66,12 @@ const Dashboard = ({ country }) => {
     },
     {
       title: "Exchange Rate",
-      contents: <p> 1 USD = 570.39 CRC</p>
+      contents: (
+        <p>
+          {" "}
+          1 USD = {countryCurrency} {countryCurrencyName}
+        </p>
+      )
     }
   ];
 
