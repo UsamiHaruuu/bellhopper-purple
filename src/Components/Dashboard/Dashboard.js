@@ -1,12 +1,12 @@
-import React from 'react';
-import { Column, Button, Container } from 'rbx';
-import InfoBox from './InfoBox';
-import Header from './Header';
+import React from "react";
+import { Column, Button, Container } from "rbx";
+import InfoBox from "./InfoBox";
+import Header from "./Header";
 
 const Dashboard = ({ country }) => {
   const testData = [
     {
-      title: 'Weather',
+      title: "Weather",
       contents: (
         <>
           <Column.Group breakpoint="mobile">
@@ -20,10 +20,10 @@ const Dashboard = ({ country }) => {
             </Column>
           </Column.Group>
         </>
-      ),
+      )
     },
     {
-      title: 'Travel Warnings',
+      title: "Travel Warnings",
       contents: (
         <>
           <p>
@@ -32,56 +32,48 @@ const Dashboard = ({ country }) => {
           <br />
           <p>
             Outbreak alert: There is a dengue outbreak in Costa Rica. Dengue is
-            spread by mosquitoes. Travelers going to Costa Rica should take steps
-            to avoid mosquito bites. (Aug 27, 2019)
+            spread by mosquitoes. Travelers going to Costa Rica should take
+            steps to avoid mosquito bites. (Aug 27, 2019)
           </p>
         </>
-      ),
+      )
     },
     {
-      title: 'Visa Requirements',
+      title: "Visa Requirements",
       contents: (
         <p>
           Not required for stays less than 90 days, but return ticket required.
         </p>
-      ),
+      )
     },
     {
-      title: 'Vaccinations',
+      title: "Vaccinations",
       contents: (
         <p>
-          Proof of yellow fever vaccination must be presented upon arrival for all
-          passengers coming from certain countries in South America or Africa
+          Proof of yellow fever vaccination must be presented upon arrival for
+          all passengers coming from certain countries in South America or
+          Africa
         </p>
-      ),
+      )
     },
     {
-      title: 'Plug Type',
-      contents: (
-        <p>
-          A/B type plug, 120v (USA standard electrical system)
-        </p>
-      ),
+      title: "Plug Type",
+      contents: <p>A/B type plug, 120v (USA standard electrical system)</p>
     },
+    {
+      title: "Exchange Rate",
+      contents: <p> 1 USD = 570.39 CRC</p>
+    }
   ];
 
   return (
     <div>
       <Header country={country} />
-      {testData.map((data) => (
-        <InfoBox
-          key={data.title}
-          title={data.title}
-          contents={data.contents}
-        />
+      {testData.map(data => (
+        <InfoBox key={data.title} title={data.title} contents={data.contents} />
       ))}
-      <Container style={{ textAlign: 'center' }}>
-        <Button
-          as="a"
-          color="link"
-          size="large"
-          href="/#/search/"
-        >
+      <Container style={{ textAlign: "center" }}>
+        <Button as="a" color="link" size="large" href="/#/search/">
           Return To Search
         </Button>
       </Container>
