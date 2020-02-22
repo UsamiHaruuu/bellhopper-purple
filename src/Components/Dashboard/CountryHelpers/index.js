@@ -2,10 +2,10 @@ import React from 'react';
 import { Column } from 'rbx';
 import ExchangeRate from './ExchangeRate';
 // import TravelAdvisory from './TravelAdvisory';
+const cc = require('currency-codes');
 
 const getCountryData = async (country, setCountryData) => {
   const countryCurrency = await ExchangeRate(country);
-  const cc = require('currency-codes');
   const countryCurrencyName = cc.country(country)[0].code;
 
   setCountryData([
