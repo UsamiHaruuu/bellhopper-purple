@@ -1,7 +1,8 @@
 import React from 'react';
 import { Column } from 'rbx';
 import ExchangeRate from './ExchangeRate';
-// import TravelAdvisory from './TravelAdvisory';
+import TravelAdvisory from './TravelAdvisory';
+
 const cc = require('currency-codes');
 
 const getCountryData = async (country, setCountryData) => {
@@ -31,13 +32,13 @@ const getCountryData = async (country, setCountryData) => {
       contents: (
         <div>
           <p>
-              Exercise increased caution in Costa Rica due to crime. (Jan 7, 2020)
+            Exercise increased caution in Costa Rica due to crime. (Jan 7, 2020)
           </p>
           <br />
           <p>
-              Outbreak alert: There is a dengue outbreak in Costa Rica. Dengue is
-              spread by mosquitoes. Travelers going to Costa Rica should take
-              steps to avoid mosquito bites. (Aug 27, 2019)
+            Outbreak alert: There is a dengue outbreak in Costa Rica. Dengue is
+            spread by mosquitoes. Travelers going to Costa Rica should take
+            steps to avoid mosquito bites. (Aug 27, 2019)
           </p>
         </div>
       ),
@@ -46,7 +47,7 @@ const getCountryData = async (country, setCountryData) => {
       title: 'Visa Requirements',
       contents: (
         <p>
-            Not required for stays less than 90 days, but return ticket required.
+          Not required for stays less than 90 days, but return ticket required.
         </p>
       ),
     },
@@ -54,9 +55,9 @@ const getCountryData = async (country, setCountryData) => {
       title: 'Vaccinations',
       contents: (
         <p>
-            Proof of yellow fever vaccination must be presented upon arrival for
-            all passengers coming from certain countries in South America or
-            Africa
+          Proof of yellow fever vaccination must be presented upon arrival for
+          all passengers coming from certain countries in South America or
+          Africa
         </p>
       ),
     },
@@ -69,7 +70,7 @@ const getCountryData = async (country, setCountryData) => {
       contents: (
         <p>
           {' '}
-            1 USD =
+          1 USD =
           {' '}
           {countryCurrency[0].toFixed(2)}
           {' '}
