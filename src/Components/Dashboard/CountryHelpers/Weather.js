@@ -40,7 +40,7 @@ const Weather = async (country) => {
           <Column.Group breakpoint="mobile">
             <Column size={8}>
               <p>Daytime Hi: {weatherObj.high} &deg;F</p>
-              <p>Daytime Lo: {weatherObj.low} &deg;F</p>
+              <p>Daytime Low: {weatherObj.low} &deg;F</p>
             </Column>
             <Column size={4}>
               <p className="degrees-text"> {weatherObj.currently} &deg;F</p>
