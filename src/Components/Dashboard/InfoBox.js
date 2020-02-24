@@ -12,7 +12,7 @@ const InfoBox = ({ title, contents }) => {
         {title}
         <Button onClick={() => setCollapsed(!collapsed)}>
           <Icon>
-            <FontAwesomeIcon icon={!collapsed ? faCaretDown : faCaretUp} />
+            <FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} />
           </Icon>
         </Button>
       </Message.Header>
