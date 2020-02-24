@@ -12,7 +12,7 @@ const cc = require('currency-codes');
 const getCountryData = async (country, setCountryData) => {
   const [countryCurrency, countryPlugData, vaccinationAdvice] = await Promise.all([
     ExchangeRate(country), PlugType(country), Vaccines(country)]);
-  const countryCurrencyName = cc.country(country)[0].code;
+  const countryCurrencyName = cc.country(country);
   //   const travelAdvice = await TravelAdvisory(country);
   const weatherAdvice = await Weather(country);
   setCountryData([
@@ -57,12 +57,12 @@ const getCountryData = async (country, setCountryData) => {
             ? (
               <div>
                 <p>
-            Avaliable types:
+                  Avaliable types:
                   {' '}
                   {countryPlugData.type.join(' , ')}
                 </p>
                 <p>
-            Avaliable volts:
+                  Avaliable volts:
                   {' '}
                   {countryPlugData.volt.join(' , ')}
                 </p>
@@ -73,16 +73,22 @@ const getCountryData = async (country, setCountryData) => {
     },
     {
       title: 'Exchange Rate',
-      contents: (
+      contents: countryCurrencyName.length !== 0 ? (
         <p>
           {' '}
           1 USD =
           {' '}
           {countryCurrency[0].toFixed(2)}
           {' '}
-          {countryCurrencyName}
+          {countryCurrencyName[0].code}
         </p>
-      ),
+
+      )
+        : (
+          <p>
+            curency name not found
+          </p>
+        ),
     },
   ]);
 };
