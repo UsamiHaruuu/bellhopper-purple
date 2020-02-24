@@ -5,6 +5,7 @@ import ExchangeRate from './ExchangeRate';
 // import TravelAdvisory from './TravelAdvisory';
 import PlugType from './PlugType';
 import Vaccines from './Vaccines';
+import Weather from './Weather';
 
 const cc = require('currency-codes');
 
@@ -13,25 +14,10 @@ const getCountryData = async (country, setCountryData) => {
     ExchangeRate(country), PlugType(country), Vaccines(country)]);
   const countryCurrencyName = cc.country(country)[0].code;
   //   const travelAdvice = await TravelAdvisory(country);
+  const weatherAdvice = await Weather(country);
 
   setCountryData([
-    {
-      title: 'Weather',
-      contents: (
-        <div>
-          <Column.Group breakpoint="mobile">
-            <Column size={8}>
-              <p>Daytime Hi: 74</p>
-              <p>Daytime Lo: 57</p>
-            </Column>
-            <Column size={4}>
-              <p className="degrees-text">68 &deg;F</p>
-              <p>light rain</p>
-            </Column>
-          </Column.Group>
-        </div>
-      ),
-    },
+    weatherAdvice,
     {
       title: 'Travel Warnings',
       contents: (
