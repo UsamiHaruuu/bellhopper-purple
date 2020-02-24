@@ -15,7 +15,7 @@ const getCountryData = async (country, setCountryData) => {
   const countryCurrencyName = cc.country(country)[0].code;
   //   const travelAdvice = await TravelAdvisory(country);
   const weatherAdvice = await Weather(country);
-
+  console.log(countryPlugData)
   setCountryData([
     weatherAdvice,
     {
@@ -54,16 +54,21 @@ const getCountryData = async (country, setCountryData) => {
       title: 'Plug Type',
       contents: (
         <div>
-          <p>
+          {countryPlugData !== null
+            ? (
+              <div>
+                <p>
             Avaliable types:
-            {' '}
-            {countryPlugData.type.join(' , ')}
-          </p>
-          <p>
+                  {' '}
+                  {countryPlugData.type.join(' , ')}
+                </p>
+                <p>
             Avaliable volts:
-            {' '}
-            {countryPlugData.volt.join(' , ')}
-          </p>
+                  {' '}
+                  {countryPlugData.volt.join(' , ')}
+                </p>
+              </div>
+            ) : <p>No information found</p>}
         </div>
       ),
     },
