@@ -11,7 +11,7 @@ const getCountryData = async (country, setCountryData) => {
   const countryCurrency = await ExchangeRate(country);
   const countryCurrencyName = cc.country(country)[0].code;
   const countryPlugData = await PlugType(country);
-//   const travelAdvice = await TravelAdvisory(country);
+  //   const travelAdvice = await TravelAdvisory(country);
   setCountryData([
     {
       title: 'Weather',

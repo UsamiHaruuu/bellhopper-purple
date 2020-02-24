@@ -1,8 +1,8 @@
-import React, { useState, useEffect } from "react";
-import { Button, Container } from "rbx";
-import InfoBox from "./InfoBox";
-import Header from "./Header";
-import getCountryData from "./CountryHelpers";
+import React, { useState, useEffect } from 'react';
+import { Button, Container } from 'rbx';
+import InfoBox from './InfoBox';
+import Header from './Header';
+import getCountryData from './CountryHelpers';
 
 const Dashboard = ({ country }) => {
   console.log(country);
@@ -12,22 +12,21 @@ const Dashboard = ({ country }) => {
     getDataAsync();
   }, [country]);
 
-  const InfoBoxes =
-    countryData === []
-      ? "Loading..."
-      : countryData.map(data => (
-          <InfoBox
-            key={data.title}
-            title={data.title}
-            contents={data.contents}
-          />
-        ));
+  const InfoBoxes = countryData === []
+    ? 'Loading...'
+    : countryData.map((data) => (
+      <InfoBox
+        key={data.title}
+        title={data.title}
+        contents={data.contents}
+      />
+    ));
 
   return (
     <div>
       <Header country={country} />
       {InfoBoxes}
-      <Container style={{ textAlign: "center" }}>
+      <Container style={{ textAlign: 'center' }}>
         <Button as="a" color="link" size="large" href="/#/search/">
           Return To Search
         </Button>
