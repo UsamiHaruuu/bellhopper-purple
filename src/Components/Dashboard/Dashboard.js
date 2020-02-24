@@ -5,7 +5,6 @@ import Header from './Header';
 import getCountryData from './CountryHelpers';
 
 const Dashboard = ({ country }) => {
-  console.log(country);
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
     const getDataAsync = async () => getCountryData(country, setCountryData);

@@ -1,9 +1,10 @@
 import React from 'react';
 import { Column } from 'rbx';
-import moment from 'moment';
+// import moment from 'moment';
 import ExchangeRate from './ExchangeRate';
-import TravelAdvisory from './TravelAdvisory';
+// import TravelAdvisory from './TravelAdvisory';
 import PlugType from './PlugType';
+import Vaccines from './Vaccines';
 
 const cc = require('currency-codes');
 
@@ -12,6 +13,8 @@ const getCountryData = async (country, setCountryData) => {
   const countryCurrencyName = cc.country(country)[0].code;
   const countryPlugData = await PlugType(country);
   //   const travelAdvice = await TravelAdvisory(country);
+  const vaccinationAdvice = await Vaccines(country);
+
   setCountryData([
     {
       title: 'Weather',
@@ -57,17 +60,15 @@ const getCountryData = async (country, setCountryData) => {
     {
       title: 'Vaccinations',
       contents: (
-        <p>
-          Proof of yellow fever vaccination must be presented upon arrival for
-          all passengers coming from certain countries in South America or
-          Africa
-        </p>
+        <div>
+          {vaccinationAdvice}
+        </div>
       ),
     },
     {
       title: 'Plug Type',
       contents: (
-        <p>
+        <div>
           <p>
             Avaliable types:
             {' '}
@@ -78,7 +79,7 @@ const getCountryData = async (country, setCountryData) => {
             {' '}
             {countryPlugData.volt.join(' , ')}
           </p>
-        </p>
+        </div>
       ),
     },
     {
