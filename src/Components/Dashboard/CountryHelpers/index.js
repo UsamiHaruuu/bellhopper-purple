@@ -11,7 +11,7 @@ const getCountryData = async (country, setCountryData) => {
   const countryCurrency = await ExchangeRate(country);
   const countryCurrencyName = cc.country(country)[0].code;
   const countryPlugData = await PlugType(country);
-  const travelAdvice = await TravelAdvisory(country);
+//   const travelAdvice = await TravelAdvisory(country);
   setCountryData([
     {
       title: 'Weather',
@@ -34,12 +34,6 @@ const getCountryData = async (country, setCountryData) => {
       title: 'Travel Warnings',
       contents: (
         <div>
-          <p>
-            {travelAdvice}
-            {' '}
-            {moment().format('YYYY-MM-DD')}
-            {' '}
-          </p>
           <p>
             Exercise increased caution in Costa Rica due to crime. (Jan 7, 2020)
           </p>
