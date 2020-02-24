@@ -9,11 +9,10 @@ import Vaccines from './Vaccines';
 const cc = require('currency-codes');
 
 const getCountryData = async (country, setCountryData) => {
-  const countryCurrency = await ExchangeRate(country);
+  const [countryCurrency, countryPlugData, vaccinationAdvice] = await Promise.all([
+    ExchangeRate(country), PlugType(country), Vaccines(country)]);
   const countryCurrencyName = cc.country(country)[0].code;
-  const countryPlugData = await PlugType(country);
   //   const travelAdvice = await TravelAdvisory(country);
-  const vaccinationAdvice = await Vaccines(country);
 
   setCountryData([
     {
