@@ -15,7 +15,6 @@ const getCountryData = async (country, setCountryData) => {
   const countryCurrencyName = cc.country(country)[0].code;
   //   const travelAdvice = await TravelAdvisory(country);
   const weatherAdvice = await Weather(country);
-  console.log(countryPlugData)
   setCountryData([
     weatherAdvice,
     {
