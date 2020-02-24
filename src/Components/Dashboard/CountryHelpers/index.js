@@ -1,18 +1,19 @@
-import React from 'react';
-import { Column } from 'rbx';
-import ExchangeRate from './ExchangeRate';
-import TravelAdvisory from './TravelAdvisory';
-import moment from 'moment'
-
-const cc = require('currency-codes');
+import React from "react";
+import { Column } from "rbx";
+import ExchangeRate from "./ExchangeRate";
+import TravelAdvisory from "./TravelAdvisory";
+import moment from "moment";
+import PlugType from "./PlugType";
+const cc = require("currency-codes");
 
 const getCountryData = async (country, setCountryData) => {
   const countryCurrency = await ExchangeRate(country);
   const countryCurrencyName = cc.country(country)[0].code;
+  const countryPlugData = await PlugType(country);
   const travelAdvice = await TravelAdvisory(country);
   setCountryData([
     {
-      title: 'Weather',
+      title: "Weather",
       contents: (
         <div>
           <Column.Group breakpoint="mobile">
@@ -26,14 +27,14 @@ const getCountryData = async (country, setCountryData) => {
             </Column>
           </Column.Group>
         </div>
-      ),
+      )
     },
     {
-      title: 'Travel Warnings',
+      title: "Travel Warnings",
       contents: (
         <div>
           <p>
-            {travelAdvice} ({moment().format("YYYY-MM-DD")})
+            {travelAdvice} ({moment().format("YYYY-MM-DD")} }
           </p>
           <p>
             Exercise increased caution in Costa Rica due to crime. (Jan 7, 2020)
@@ -45,43 +46,44 @@ const getCountryData = async (country, setCountryData) => {
             steps to avoid mosquito bites. (Aug 27, 2019)
           </p>
         </div>
-      ),
+      )
     },
     {
-      title: 'Visa Requirements',
+      title: "Visa Requirements",
       contents: (
         <p>
           Not required for stays less than 90 days, but return ticket required.
         </p>
-      ),
+      )
     },
     {
-      title: 'Vaccinations',
+      title: "Vaccinations",
       contents: (
         <p>
           Proof of yellow fever vaccination must be presented upon arrival for
           all passengers coming from certain countries in South America or
           Africa
         </p>
-      ),
+      )
     },
     {
-      title: 'Plug Type',
-      contents: <p>A/B type plug, 120v (USA standard electrical system)</p>,
-    },
-    {
-      title: 'Exchange Rate',
+      title: "Plug Type",
       contents: (
         <p>
-          {' '}
-          1 USD =
-          {' '}
-          {countryCurrency[0].toFixed(2)}
-          {' '}
-          {countryCurrencyName}
+          <p>Avaliable types: {countryPlugData.type.join(" , ")}</p>
+          <p>Avaliable volts: {countryPlugData.volt.join(" , ")}</p>
         </p>
-      ),
+      )
     },
+    {
+      title: "Exchange Rate",
+      contents: (
+        <p>
+          {" "}
+          1 USD = {countryCurrency[0].toFixed(2)} {countryCurrencyName}
+        </p>
+      )
+    }
   ]);
 };
 

@@ -1,0 +1,4034 @@
+[
+  {
+    "": 0,
+    "country_code": "AF",
+    "frequency": "50 Hz",
+    "name": "Afghanistan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 1,
+    "country_code": "AF",
+    "frequency": "50 Hz",
+    "name": "Afghanistan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 2,
+    "country_code": "AL",
+    "frequency": "50 Hz",
+    "name": "Albania",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 3,
+    "country_code": "AL",
+    "frequency": "50 Hz",
+    "name": "Albania",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 4,
+    "country_code": "DZ",
+    "frequency": "50 Hz",
+    "name": "Algeria",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 5,
+    "country_code": "DZ",
+    "frequency": "50 Hz",
+    "name": "Algeria",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 6,
+    "country_code": "AS",
+    "frequency": "60 Hz",
+    "name": "American Samoa",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 7,
+    "country_code": "AS",
+    "frequency": "60 Hz",
+    "name": "American Samoa",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 8,
+    "country_code": "AS",
+    "frequency": "60 Hz",
+    "name": "American Samoa",
+    "plug_type": "Type F",
+    "voltage": "120 V"
+  },
+  {
+    "": 9,
+    "country_code": "AS",
+    "frequency": "60 Hz",
+    "name": "American Samoa",
+    "plug_type": "Type I",
+    "voltage": "120 V"
+  },
+  {
+    "": 10,
+    "country_code": "AD",
+    "frequency": "50 Hz",
+    "name": "Andorra",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 11,
+    "country_code": "AD",
+    "frequency": "50 Hz",
+    "name": "Andorra",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 12,
+    "country_code": "AO",
+    "frequency": "50 Hz",
+    "name": "Angola",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 13,
+    "country_code": "AI",
+    "frequency": "60 Hz",
+    "name": "Anguilla",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 14,
+    "country_code": "AG",
+    "frequency": "60 Hz",
+    "name": "Antigua and Barbuda",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 15,
+    "country_code": "AG",
+    "frequency": "60 Hz",
+    "name": "Antigua and Barbuda",
+    "plug_type": "Type B",
+    "voltage": "230 V"
+  },
+  {
+    "": 16,
+    "country_code": "AR",
+    "frequency": "50 Hz",
+    "name": "Argentina",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 17,
+    "country_code": "AR",
+    "frequency": "50 Hz",
+    "name": "Argentina",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 18,
+    "country_code": "AM",
+    "frequency": "50 Hz",
+    "name": "Armenia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 19,
+    "country_code": "AM",
+    "frequency": "50 Hz",
+    "name": "Armenia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 20,
+    "country_code": "AW",
+    "frequency": "60 Hz",
+    "name": "Aruba",
+    "plug_type": "Type A",
+    "voltage": "127 V"
+  },
+  {
+    "": 21,
+    "country_code": "AW",
+    "frequency": "60 Hz",
+    "name": "Aruba",
+    "plug_type": "Type B",
+    "voltage": "127 V"
+  },
+  {
+    "": 22,
+    "country_code": "AW",
+    "frequency": "60 Hz",
+    "name": "Aruba",
+    "plug_type": "Type F",
+    "voltage": "127 V"
+  },
+  {
+    "": 23,
+    "country_code": "AU",
+    "frequency": "50 Hz",
+    "name": "Australia",
+    "plug_type": "Type I",
+    "voltage": "230 V"
+  },
+  {
+    "": 24,
+    "country_code": "AT",
+    "frequency": "50 Hz",
+    "name": "Austria",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 25,
+    "country_code": "AT",
+    "frequency": "50 Hz",
+    "name": "Austria",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 26,
+    "country_code": "AZ",
+    "frequency": "50 Hz",
+    "name": "Azerbaijan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 27,
+    "country_code": "AZ",
+    "frequency": "50 Hz",
+    "name": "Azerbaijan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 28,
+    "country_code": "BS",
+    "frequency": "60 Hz",
+    "name": "Bahamas",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 29,
+    "country_code": "BS",
+    "frequency": "60 Hz",
+    "name": "Bahamas",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 30,
+    "country_code": "BH",
+    "frequency": "50 Hz",
+    "name": "Bahrain",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 31,
+    "country_code": "BD",
+    "frequency": "50 Hz",
+    "name": "Bangladesh",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 32,
+    "country_code": "BD",
+    "frequency": "50 Hz",
+    "name": "Bangladesh",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 33,
+    "country_code": "BD",
+    "frequency": "50 Hz",
+    "name": "Bangladesh",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 34,
+    "country_code": "BD",
+    "frequency": "50 Hz",
+    "name": "Bangladesh",
+    "plug_type": "Type K",
+    "voltage": "220 V"
+  },
+  {
+    "": 35,
+    "country_code": "BB",
+    "frequency": "50 Hz",
+    "name": "Barbados",
+    "plug_type": "Type A",
+    "voltage": "115 V"
+  },
+  {
+    "": 36,
+    "country_code": "BB",
+    "frequency": "50 Hz",
+    "name": "Barbados",
+    "plug_type": "Type B",
+    "voltage": "115 V"
+  },
+  {
+    "": 37,
+    "country_code": "BY",
+    "frequency": "50 Hz",
+    "name": "Belarus",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 38,
+    "country_code": "BY",
+    "frequency": "50 Hz",
+    "name": "Belarus",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 39,
+    "country_code": "BE",
+    "frequency": "50 Hz",
+    "name": "Belgium",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 40,
+    "country_code": "BE",
+    "frequency": "50 Hz",
+    "name": "Belgium",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 41,
+    "country_code": "BZ",
+    "frequency": "60 Hz",
+    "name": "Belize",
+    "plug_type": "Type A",
+    "voltage": "110 V, 220 V"
+  },
+  {
+    "": 42,
+    "country_code": "BZ",
+    "frequency": "60 Hz",
+    "name": "Belize",
+    "plug_type": "Type B",
+    "voltage": "110 V, 220 V"
+  },
+  {
+    "": 43,
+    "country_code": "BZ",
+    "frequency": "60 Hz",
+    "name": "Belize",
+    "plug_type": "Type G",
+    "voltage": "110 V, 220 V"
+  },
+  {
+    "": 44,
+    "country_code": "BJ",
+    "frequency": "50 Hz",
+    "name": "Benin",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 45,
+    "country_code": "BJ",
+    "frequency": "50 Hz",
+    "name": "Benin",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 46,
+    "country_code": "BM",
+    "frequency": "60 Hz",
+    "name": "Bermuda",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 47,
+    "country_code": "BM",
+    "frequency": "60 Hz",
+    "name": "Bermuda",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 48,
+    "country_code": "BT",
+    "frequency": "50 Hz",
+    "name": "Bhutan",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 49,
+    "country_code": "BT",
+    "frequency": "50 Hz",
+    "name": "Bhutan",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 50,
+    "country_code": "BT",
+    "frequency": "50 Hz",
+    "name": "Bhutan",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 51,
+    "country_code": "BT",
+    "frequency": "50 Hz",
+    "name": "Bhutan",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 52,
+    "country_code": "BT",
+    "frequency": "50 Hz",
+    "name": "Bhutan",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 53,
+    "country_code": "BO",
+    "frequency": "50 Hz",
+    "name": "Bolivia",
+    "plug_type": "Type A",
+    "voltage": "115 V, 230 V"
+  },
+  {
+    "": 54,
+    "country_code": "BO",
+    "frequency": "50 Hz",
+    "name": "Bolivia",
+    "plug_type": "Type C",
+    "voltage": "115 V, 230 V"
+  },
+  {
+    "": 55,
+    "country_code": "BA",
+    "frequency": "50 Hz",
+    "name": "Bosnia and Herzegovina",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 56,
+    "country_code": "BA",
+    "frequency": "50 Hz",
+    "name": "Bosnia and Herzegovina",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 57,
+    "country_code": "BW",
+    "frequency": "50 Hz",
+    "name": "Botswana",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 58,
+    "country_code": "BW",
+    "frequency": "50 Hz",
+    "name": "Botswana",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 59,
+    "country_code": "BW",
+    "frequency": "50 Hz",
+    "name": "Botswana",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 60,
+    "country_code": "BR",
+    "frequency": "60 Hz",
+    "name": "Brazil",
+    "plug_type": "Type C",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 61,
+    "country_code": "BR",
+    "frequency": "60 Hz",
+    "name": "Brazil",
+    "plug_type": "Type N",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 62,
+    "country_code": "VG",
+    "frequency": "60 Hz",
+    "name": "British Virgin Islands",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 63,
+    "country_code": "VG",
+    "frequency": "60 Hz",
+    "name": "British Virgin Islands",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 64,
+    "country_code": "BN",
+    "frequency": "50 Hz",
+    "name": "Brunei Darussalam",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 65,
+    "country_code": "BG",
+    "frequency": "50 Hz",
+    "name": "Bulgaria",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 66,
+    "country_code": "BG",
+    "frequency": "50 Hz",
+    "name": "Bulgaria",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 67,
+    "country_code": "BF",
+    "frequency": "50 Hz",
+    "name": "Burkina Faso",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 68,
+    "country_code": "BF",
+    "frequency": "50 Hz",
+    "name": "Burkina Faso",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 69,
+    "country_code": "BI",
+    "frequency": "50 Hz",
+    "name": "Burundi",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 70,
+    "country_code": "BI",
+    "frequency": "50 Hz",
+    "name": "Burundi",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 71,
+    "country_code": "KH",
+    "frequency": "50 Hz",
+    "name": "Cambodia",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 72,
+    "country_code": "KH",
+    "frequency": "50 Hz",
+    "name": "Cambodia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 73,
+    "country_code": "KH",
+    "frequency": "50 Hz",
+    "name": "Cambodia",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 74,
+    "country_code": "CM",
+    "frequency": "50 Hz",
+    "name": "Cameroon",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 75,
+    "country_code": "CM",
+    "frequency": "50 Hz",
+    "name": "Cameroon",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 76,
+    "country_code": "CA",
+    "frequency": "60 Hz",
+    "name": "Canada",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 77,
+    "country_code": "CA",
+    "frequency": "60 Hz",
+    "name": "Canada",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 78,
+    "country_code": "CV",
+    "frequency": "50 Hz",
+    "name": "Cape Verde",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 79,
+    "country_code": "CV",
+    "frequency": "50 Hz",
+    "name": "Cape Verde",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 80,
+    "country_code": "KY",
+    "frequency": "60 Hz",
+    "name": "Cayman Islands",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 81,
+    "country_code": "KY",
+    "frequency": "60 Hz",
+    "name": "Cayman Islands",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 82,
+    "country_code": "CF",
+    "frequency": "50 Hz",
+    "name": "Central African Republic",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 83,
+    "country_code": "CF",
+    "frequency": "50 Hz",
+    "name": "Central African Republic",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 84,
+    "country_code": "TD",
+    "frequency": "50 Hz",
+    "name": "Chad",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 85,
+    "country_code": "TD",
+    "frequency": "50 Hz",
+    "name": "Chad",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 86,
+    "country_code": "TD",
+    "frequency": "50 Hz",
+    "name": "Chad",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 87,
+    "country_code": "TD",
+    "frequency": "50 Hz",
+    "name": "Chad",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 88,
+    "country_code": "CL",
+    "frequency": "50 Hz",
+    "name": "Chile",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 89,
+    "country_code": "CL",
+    "frequency": "50 Hz",
+    "name": "Chile",
+    "plug_type": "Type L",
+    "voltage": "220 V"
+  },
+  {
+    "": 90,
+    "country_code": "CN",
+    "frequency": "50 Hz",
+    "name": "China",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 91,
+    "country_code": "CN",
+    "frequency": "50 Hz",
+    "name": "China",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 92,
+    "country_code": "CN",
+    "frequency": "50 Hz",
+    "name": "China",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 93,
+    "country_code": "CO",
+    "frequency": "60 Hz",
+    "name": "Colombia",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 94,
+    "country_code": "CO",
+    "frequency": "60 Hz",
+    "name": "Colombia",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 95,
+    "country_code": "KM",
+    "frequency": "50 Hz",
+    "name": "Comoros",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 96,
+    "country_code": "KM",
+    "frequency": "50 Hz",
+    "name": "Comoros",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 97,
+    "country_code": "CG",
+    "frequency": "50 Hz",
+    "name": "Congo",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 98,
+    "country_code": "CG",
+    "frequency": "50 Hz",
+    "name": "Congo",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 99,
+    "country_code": "CD",
+    "frequency": "50 Hz",
+    "name": "Congo (Democratic Rep. of)",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 100,
+    "country_code": "CD",
+    "frequency": "50 Hz",
+    "name": "Congo (Democratic Rep. of)",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 101,
+    "country_code": "CD",
+    "frequency": "50 Hz",
+    "name": "Congo (Democratic Rep. of)",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 102,
+    "country_code": "CK",
+    "frequency": "50 Hz",
+    "name": "Cook Islands",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 103,
+    "country_code": "CR",
+    "frequency": "60 Hz",
+    "name": "Costa Rica",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 104,
+    "country_code": "CR",
+    "frequency": "60 Hz",
+    "name": "Costa Rica",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 105,
+    "country_code": "CI",
+    "frequency": "50 Hz",
+    "name": "Cote d'Ivoire",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 106,
+    "country_code": "CI",
+    "frequency": "50 Hz",
+    "name": "Cote d'Ivoire",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 107,
+    "country_code": "HR",
+    "frequency": "50 Hz",
+    "name": "Croatia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 108,
+    "country_code": "HR",
+    "frequency": "50 Hz",
+    "name": "Croatia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 109,
+    "country_code": "CU",
+    "frequency": "60 Hz",
+    "name": "Cuba",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 110,
+    "country_code": "CU",
+    "frequency": "60 Hz",
+    "name": "Cuba",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 111,
+    "country_code": "CY",
+    "frequency": "50 Hz",
+    "name": "Cyprus",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 112,
+    "country_code": "CZ",
+    "frequency": "50 Hz",
+    "name": "Czech Republic",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 113,
+    "country_code": "CZ",
+    "frequency": "50 Hz",
+    "name": "Czech Republic",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 114,
+    "country_code": "DK",
+    "frequency": "50 Hz",
+    "name": "Denmark",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 115,
+    "country_code": "DK",
+    "frequency": "50 Hz",
+    "name": "Denmark",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 116,
+    "country_code": "DK",
+    "frequency": "50 Hz",
+    "name": "Denmark",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 117,
+    "country_code": "DK",
+    "frequency": "50 Hz",
+    "name": "Denmark",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 118,
+    "country_code": "DJ",
+    "frequency": "50 Hz",
+    "name": "Djibouti",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 119,
+    "country_code": "DJ",
+    "frequency": "50 Hz",
+    "name": "Djibouti",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 120,
+    "country_code": "DM",
+    "frequency": "50 Hz",
+    "name": "Dominica",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 121,
+    "country_code": "DM",
+    "frequency": "50 Hz",
+    "name": "Dominica",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 122,
+    "country_code": "DO",
+    "frequency": "60 Hz",
+    "name": "Dominican Republic",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 123,
+    "country_code": "DO",
+    "frequency": "60 Hz",
+    "name": "Dominican Republic",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 124,
+    "country_code": "EC",
+    "frequency": "60 Hz",
+    "name": "Ecuador",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 125,
+    "country_code": "EC",
+    "frequency": "60 Hz",
+    "name": "Ecuador",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 126,
+    "country_code": "EG",
+    "frequency": "50 Hz",
+    "name": "Egypt",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 127,
+    "country_code": "EG",
+    "frequency": "50 Hz",
+    "name": "Egypt",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 128,
+    "country_code": "SV",
+    "frequency": "60 Hz",
+    "name": "El Salvador",
+    "plug_type": "Type A",
+    "voltage": "115 V"
+  },
+  {
+    "": 129,
+    "country_code": "SV",
+    "frequency": "60 Hz",
+    "name": "El Salvador",
+    "plug_type": "Type B",
+    "voltage": "115 V"
+  },
+  {
+    "": 130,
+    "country_code": "GQ",
+    "frequency": "50 Hz",
+    "name": "Equatorial Guinea",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 131,
+    "country_code": "GQ",
+    "frequency": "50 Hz",
+    "name": "Equatorial Guinea",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 132,
+    "country_code": "ER",
+    "frequency": "50 Hz",
+    "name": "Eritrea",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 133,
+    "country_code": "ER",
+    "frequency": "50 Hz",
+    "name": "Eritrea",
+    "plug_type": "Type L",
+    "voltage": "230 V"
+  },
+  {
+    "": 134,
+    "country_code": "EE",
+    "frequency": "50 Hz",
+    "name": "Estonia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 135,
+    "country_code": "EE",
+    "frequency": "50 Hz",
+    "name": "Estonia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 136,
+    "country_code": "ET",
+    "frequency": "50 Hz",
+    "name": "Ethiopia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 137,
+    "country_code": "ET",
+    "frequency": "50 Hz",
+    "name": "Ethiopia",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 138,
+    "country_code": "ET",
+    "frequency": "50 Hz",
+    "name": "Ethiopia",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 139,
+    "country_code": "ET",
+    "frequency": "50 Hz",
+    "name": "Ethiopia",
+    "plug_type": "Type L",
+    "voltage": "220 V"
+  },
+  {
+    "": 140,
+    "country_code": "FK",
+    "frequency": "50 Hz",
+    "name": "Falkland Islands (Malvinas)",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 141,
+    "country_code": "FO",
+    "frequency": "50 Hz",
+    "name": "Faroe Islands",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 142,
+    "country_code": "FO",
+    "frequency": "50 Hz",
+    "name": "Faroe Islands",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 143,
+    "country_code": "FO",
+    "frequency": "50 Hz",
+    "name": "Faroe Islands",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 144,
+    "country_code": "FO",
+    "frequency": "50 Hz",
+    "name": "Faroe Islands",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 145,
+    "country_code": "FJ",
+    "frequency": "50 Hz",
+    "name": "Fiji",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 146,
+    "country_code": "FI",
+    "frequency": "50 Hz",
+    "name": "Finland",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 147,
+    "country_code": "FI",
+    "frequency": "50 Hz",
+    "name": "Finland",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 148,
+    "country_code": "FR",
+    "frequency": "50 Hz",
+    "name": "France",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 149,
+    "country_code": "FR",
+    "frequency": "50 Hz",
+    "name": "France",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 150,
+    "country_code": "GF",
+    "frequency": "50 Hz",
+    "name": "French Guiana",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 151,
+    "country_code": "GF",
+    "frequency": "50 Hz",
+    "name": "French Guiana",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 152,
+    "country_code": "GF",
+    "frequency": "50 Hz",
+    "name": "French Guiana",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 153,
+    "country_code": "GA",
+    "frequency": "50 Hz",
+    "name": "Gabon",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 154,
+    "country_code": "GM",
+    "frequency": "50 Hz",
+    "name": "Gambia",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 155,
+    "country_code": "GE",
+    "frequency": "50 Hz",
+    "name": "Georgia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 156,
+    "country_code": "GE",
+    "frequency": "50 Hz",
+    "name": "Georgia",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 157,
+    "country_code": "DE",
+    "frequency": "50 Hz",
+    "name": "Germany",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 158,
+    "country_code": "DE",
+    "frequency": "50 Hz",
+    "name": "Germany",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 159,
+    "country_code": "GH",
+    "frequency": "50 Hz",
+    "name": "Ghana",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 160,
+    "country_code": "GH",
+    "frequency": "50 Hz",
+    "name": "Ghana",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 161,
+    "country_code": "GI",
+    "frequency": "50 Hz",
+    "name": "Gibraltar",
+    "plug_type": "Type C",
+    "voltage": "240 V"
+  },
+  {
+    "": 162,
+    "country_code": "GI",
+    "frequency": "50 Hz",
+    "name": "Gibraltar",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 163,
+    "country_code": "GR",
+    "frequency": "50 Hz",
+    "name": "Greece",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 164,
+    "country_code": "GR",
+    "frequency": "50 Hz",
+    "name": "Greece",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 165,
+    "country_code": "GL",
+    "frequency": "50 Hz",
+    "name": "Greenland",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 166,
+    "country_code": "GL",
+    "frequency": "50 Hz",
+    "name": "Greenland",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 167,
+    "country_code": "GL",
+    "frequency": "50 Hz",
+    "name": "Greenland",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 168,
+    "country_code": "GL",
+    "frequency": "50 Hz",
+    "name": "Greenland",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 169,
+    "country_code": "GD",
+    "frequency": "50 Hz",
+    "name": "Grenada",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 170,
+    "country_code": "GP",
+    "frequency": "50 Hz",
+    "name": "Guadeloupe",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 171,
+    "country_code": "GP",
+    "frequency": "50 Hz",
+    "name": "Guadeloupe",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 172,
+    "country_code": "GP",
+    "frequency": "50 Hz",
+    "name": "Guadeloupe",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 173,
+    "country_code": "GU",
+    "frequency": "60 Hz",
+    "name": "Guam",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 174,
+    "country_code": "GU",
+    "frequency": "60 Hz",
+    "name": "Guam",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 175,
+    "country_code": "GT",
+    "frequency": "60 Hz",
+    "name": "Guatemala",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 176,
+    "country_code": "GT",
+    "frequency": "60 Hz",
+    "name": "Guatemala",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 177,
+    "country_code": "GN",
+    "frequency": "50 Hz",
+    "name": "Guinea",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 178,
+    "country_code": "GN",
+    "frequency": "50 Hz",
+    "name": "Guinea",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 179,
+    "country_code": "GN",
+    "frequency": "50 Hz",
+    "name": "Guinea",
+    "plug_type": "Type K",
+    "voltage": "220 V"
+  },
+  {
+    "": 180,
+    "country_code": "GW",
+    "frequency": "50 Hz",
+    "name": "Guinea Bissau",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 181,
+    "country_code": "GY",
+    "frequency": "60 Hz",
+    "name": "Guyana",
+    "plug_type": "Type A",
+    "voltage": "240 V"
+  },
+  {
+    "": 182,
+    "country_code": "GY",
+    "frequency": "60 Hz",
+    "name": "Guyana",
+    "plug_type": "Type B",
+    "voltage": "240 V"
+  },
+  {
+    "": 183,
+    "country_code": "GY",
+    "frequency": "60 Hz",
+    "name": "Guyana",
+    "plug_type": "Type D",
+    "voltage": "240 V"
+  },
+  {
+    "": 184,
+    "country_code": "GY",
+    "frequency": "60 Hz",
+    "name": "Guyana",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 185,
+    "country_code": "HT",
+    "frequency": "60 Hz",
+    "name": "Haiti",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 186,
+    "country_code": "HT",
+    "frequency": "60 Hz",
+    "name": "Haiti",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 187,
+    "country_code": "HN",
+    "frequency": "60 Hz",
+    "name": "Honduras",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 188,
+    "country_code": "HN",
+    "frequency": "60 Hz",
+    "name": "Honduras",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 189,
+    "country_code": "HK",
+    "frequency": "50 Hz",
+    "name": "Hong Kong",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 190,
+    "country_code": "HK",
+    "frequency": "50 Hz",
+    "name": "Hong Kong",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 191,
+    "country_code": "HU",
+    "frequency": "50 Hz",
+    "name": "Hungary",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 192,
+    "country_code": "HU",
+    "frequency": "50 Hz",
+    "name": "Hungary",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 193,
+    "country_code": "IS",
+    "frequency": "50 Hz",
+    "name": "Iceland",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 194,
+    "country_code": "IS",
+    "frequency": "50 Hz",
+    "name": "Iceland",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 195,
+    "country_code": "IN",
+    "frequency": "50 Hz",
+    "name": "India",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 196,
+    "country_code": "IN",
+    "frequency": "50 Hz",
+    "name": "India",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 197,
+    "country_code": "IN",
+    "frequency": "50 Hz",
+    "name": "India",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 198,
+    "country_code": "ID",
+    "frequency": "50 Hz",
+    "name": "Indonesia",
+    "plug_type": "Type C",
+    "voltage": "220 V 110 V"
+  },
+  {
+    "": 199,
+    "country_code": "ID",
+    "frequency": "50 Hz",
+    "name": "Indonesia",
+    "plug_type": "Type F",
+    "voltage": "220 V 110 V"
+  },
+  {
+    "": 200,
+    "country_code": "IR",
+    "frequency": "50 Hz",
+    "name": "Iran",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 201,
+    "country_code": "IR",
+    "frequency": "50 Hz",
+    "name": "Iran",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 202,
+    "country_code": "IQ",
+    "frequency": "50 Hz",
+    "name": "Iraq",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 203,
+    "country_code": "IQ",
+    "frequency": "50 Hz",
+    "name": "Iraq",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 204,
+    "country_code": "IQ",
+    "frequency": "50 Hz",
+    "name": "Iraq",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 205,
+    "country_code": "IE",
+    "frequency": "50 Hz",
+    "name": "Ireland",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 206,
+    "country_code": "IM",
+    "frequency": "50 Hz",
+    "name": "Isle of Man",
+    "plug_type": "Type C",
+    "voltage": "240 V"
+  },
+  {
+    "": 207,
+    "country_code": "IM",
+    "frequency": "50 Hz",
+    "name": "Isle of Man",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 208,
+    "country_code": "IL",
+    "frequency": "50 Hz",
+    "name": "Israel",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 209,
+    "country_code": "IL",
+    "frequency": "50 Hz",
+    "name": "Israel",
+    "plug_type": "Type H",
+    "voltage": "230 V"
+  },
+  {
+    "": 210,
+    "country_code": "IL",
+    "frequency": "50 Hz",
+    "name": "Israel",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 211,
+    "country_code": "IT",
+    "frequency": "50 Hz",
+    "name": "Italy",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 212,
+    "country_code": "IT",
+    "frequency": "50 Hz",
+    "name": "Italy",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 213,
+    "country_code": "IT",
+    "frequency": "50 Hz",
+    "name": "Italy",
+    "plug_type": "Type L",
+    "voltage": "230 V"
+  },
+  {
+    "": 214,
+    "country_code": "JM",
+    "frequency": "50 Hz",
+    "name": "Jamaica",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 215,
+    "country_code": "JM",
+    "frequency": "50 Hz",
+    "name": "Jamaica",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 216,
+    "country_code": "JP",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Japan",
+    "plug_type": "Type A",
+    "voltage": "100 V"
+  },
+  {
+    "": 217,
+    "country_code": "JP",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Japan",
+    "plug_type": "Type B",
+    "voltage": "100 V"
+  },
+  {
+    "": 218,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type B",
+    "voltage": "230 V"
+  },
+  {
+    "": 219,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 220,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 221,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 222,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 223,
+    "country_code": "JO",
+    "frequency": "50 Hz",
+    "name": "Jordan",
+    "plug_type": "Type J",
+    "voltage": "230 V"
+  },
+  {
+    "": 224,
+    "country_code": "KZ",
+    "frequency": "50 Hz",
+    "name": "Kazakhstan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 225,
+    "country_code": "KZ",
+    "frequency": "50 Hz",
+    "name": "Kazakhstan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 226,
+    "country_code": "KE",
+    "frequency": "50 Hz",
+    "name": "Kenya",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 227,
+    "country_code": "KI",
+    "frequency": "50 Hz",
+    "name": "Kiribati",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 228,
+    "country_code": "KP",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Korea, Democratic People's Republic of",
+    "plug_type": "Type A",
+    "voltage": "220 V, 110 V"
+  },
+  {
+    "": 229,
+    "country_code": "KP",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Korea, Democratic People's Republic of",
+    "plug_type": "Type C",
+    "voltage": "220 V, 110 V"
+  },
+  {
+    "": 230,
+    "country_code": "KP",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Korea, Democratic People's Republic of",
+    "plug_type": "Type F",
+    "voltage": "220 V, 110 V"
+  },
+  {
+    "": 231,
+    "country_code": "KR",
+    "frequency": "60 Hz",
+    "name": "Korea, Republic of",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 232,
+    "country_code": "KR",
+    "frequency": "60 Hz",
+    "name": "Korea, Republic of",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 233,
+    "country_code": "KW",
+    "frequency": "50 Hz",
+    "name": "Kuwait",
+    "plug_type": "Type C",
+    "voltage": "240 V"
+  },
+  {
+    "": 234,
+    "country_code": "KW",
+    "frequency": "50 Hz",
+    "name": "Kuwait",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 235,
+    "country_code": "KG",
+    "frequency": "50 Hz",
+    "name": "Kyrgyzstan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 236,
+    "country_code": "KG",
+    "frequency": "50 Hz",
+    "name": "Kyrgyzstan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 237,
+    "country_code": "LA",
+    "frequency": "50 Hz",
+    "name": "Lao People's Democratic Republic",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 238,
+    "country_code": "LA",
+    "frequency": "50 Hz",
+    "name": "Lao People's Democratic Republic",
+    "plug_type": "Type B",
+    "voltage": "230 V"
+  },
+  {
+    "": 239,
+    "country_code": "LA",
+    "frequency": "50 Hz",
+    "name": "Lao People's Democratic Republic",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 240,
+    "country_code": "LA",
+    "frequency": "50 Hz",
+    "name": "Lao People's Democratic Republic",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 241,
+    "country_code": "LA",
+    "frequency": "50 Hz",
+    "name": "Lao People's Democratic Republic",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 242,
+    "country_code": "LV",
+    "frequency": "50 Hz",
+    "name": "Latvia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 243,
+    "country_code": "LV",
+    "frequency": "50 Hz",
+    "name": "Latvia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 244,
+    "country_code": "LB",
+    "frequency": "50 Hz",
+    "name": "Lebanon",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 245,
+    "country_code": "LB",
+    "frequency": "50 Hz",
+    "name": "Lebanon",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 246,
+    "country_code": "LB",
+    "frequency": "50 Hz",
+    "name": "Lebanon",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 247,
+    "country_code": "LB",
+    "frequency": "50 Hz",
+    "name": "Lebanon",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 248,
+    "country_code": "LB",
+    "frequency": "50 Hz",
+    "name": "Lebanon",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 249,
+    "country_code": "LS",
+    "frequency": "50 Hz",
+    "name": "Lesotho",
+    "plug_type": "Type M",
+    "voltage": "220 V"
+  },
+  {
+    "": 250,
+    "country_code": "LR",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Liberia",
+    "plug_type": "Type A",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 251,
+    "country_code": "LR",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Liberia",
+    "plug_type": "Type B",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 252,
+    "country_code": "LR",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Liberia",
+    "plug_type": "Type C",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 253,
+    "country_code": "LR",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Liberia",
+    "plug_type": "Type E",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 254,
+    "country_code": "LR",
+    "frequency": "50 Hz, 60 Hz",
+    "name": "Liberia",
+    "plug_type": "Type F",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 255,
+    "country_code": "LY",
+    "frequency": "50 Hz",
+    "name": "Libya",
+    "plug_type": "Type C",
+    "voltage": "127 V, 230 V"
+  },
+  {
+    "": 256,
+    "country_code": "LY",
+    "frequency": "50 Hz",
+    "name": "Libya",
+    "plug_type": "Type D",
+    "voltage": "127 V, 230 V"
+  },
+  {
+    "": 257,
+    "country_code": "LY",
+    "frequency": "50 Hz",
+    "name": "Libya",
+    "plug_type": "Type F",
+    "voltage": "127 V, 230 V"
+  },
+  {
+    "": 258,
+    "country_code": "LY",
+    "frequency": "50 Hz",
+    "name": "Libya",
+    "plug_type": "Type L",
+    "voltage": "127 V, 230 V"
+  },
+  {
+    "": 259,
+    "country_code": "LI",
+    "frequency": "50 Hz",
+    "name": "Liechtenstein",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 260,
+    "country_code": "LI",
+    "frequency": "50 Hz",
+    "name": "Liechtenstein",
+    "plug_type": "Type J",
+    "voltage": "230 V"
+  },
+  {
+    "": 261,
+    "country_code": "LT",
+    "frequency": "50 Hz",
+    "name": "Lithuania",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 262,
+    "country_code": "LT",
+    "frequency": "50 Hz",
+    "name": "Lithuania",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 263,
+    "country_code": "LU",
+    "frequency": "50 Hz",
+    "name": "Luxembourg",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 264,
+    "country_code": "LU",
+    "frequency": "50 Hz",
+    "name": "Luxembourg",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 265,
+    "country_code": "MO",
+    "frequency": "50 Hz",
+    "name": "Macau",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 266,
+    "country_code": "MO",
+    "frequency": "50 Hz",
+    "name": "Macau",
+    "plug_type": "Type M",
+    "voltage": "220 V"
+  },
+  {
+    "": 267,
+    "country_code": "MO",
+    "frequency": "50 Hz",
+    "name": "Macau",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 268,
+    "country_code": "MO",
+    "frequency": "50 Hz",
+    "name": "Macau",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 269,
+    "country_code": "MK",
+    "frequency": "50 Hz",
+    "name": "Macedonia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 270,
+    "country_code": "MK",
+    "frequency": "50 Hz",
+    "name": "Macedonia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 271,
+    "country_code": "MG",
+    "frequency": "50 Hz",
+    "name": "Madagascar",
+    "plug_type": "Type C",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 272,
+    "country_code": "MG",
+    "frequency": "50 Hz",
+    "name": "Madagascar",
+    "plug_type": "Type D",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 273,
+    "country_code": "MG",
+    "frequency": "50 Hz",
+    "name": "Madagascar",
+    "plug_type": "Type E",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 274,
+    "country_code": "MG",
+    "frequency": "50 Hz",
+    "name": "Madagascar",
+    "plug_type": "Type J",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 275,
+    "country_code": "MG",
+    "frequency": "50 Hz",
+    "name": "Madagascar",
+    "plug_type": "Type K",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 276,
+    "country_code": "MW",
+    "frequency": "50 Hz",
+    "name": "Malawi",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 277,
+    "country_code": "MY",
+    "frequency": "50 Hz",
+    "name": "Malaysia",
+    "plug_type": "Type A",
+    "voltage": "240 V"
+  },
+  {
+    "": 278,
+    "country_code": "MY",
+    "frequency": "50 Hz",
+    "name": "Malaysia",
+    "plug_type": "Type C",
+    "voltage": "240 V"
+  },
+  {
+    "": 279,
+    "country_code": "MY",
+    "frequency": "50 Hz",
+    "name": "Malaysia",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 280,
+    "country_code": "MY",
+    "frequency": "50 Hz",
+    "name": "Malaysia",
+    "plug_type": "Type M",
+    "voltage": "240 V"
+  },
+  {
+    "": 281,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 282,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 283,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 284,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 285,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type J",
+    "voltage": "230 V"
+  },
+  {
+    "": 286,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 287,
+    "country_code": "MV",
+    "frequency": "50 Hz",
+    "name": "Maldives",
+    "plug_type": "Type L",
+    "voltage": "230 V"
+  },
+  {
+    "": 288,
+    "country_code": "ML",
+    "frequency": "50 Hz",
+    "name": "Mali",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 289,
+    "country_code": "ML",
+    "frequency": "50 Hz",
+    "name": "Mali",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 290,
+    "country_code": "MT",
+    "frequency": "50 Hz",
+    "name": "Malta",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 291,
+    "country_code": "MQ",
+    "frequency": "50 Hz",
+    "name": "Martinique",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 292,
+    "country_code": "MQ",
+    "frequency": "50 Hz",
+    "name": "Martinique",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 293,
+    "country_code": "MQ",
+    "frequency": "50 Hz",
+    "name": "Martinique",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 294,
+    "country_code": "MR",
+    "frequency": "50 Hz",
+    "name": "Mauritania",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 295,
+    "country_code": "MU",
+    "frequency": "50 Hz",
+    "name": "Mauritius",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 296,
+    "country_code": "MU",
+    "frequency": "50 Hz",
+    "name": "Mauritius",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 297,
+    "country_code": "MX",
+    "frequency": "60 Hz",
+    "name": "Mexico",
+    "plug_type": "Type A",
+    "voltage": "127 V"
+  },
+  {
+    "": 298,
+    "country_code": "MX",
+    "frequency": "60 Hz",
+    "name": "Mexico",
+    "plug_type": "Type B",
+    "voltage": "127 V"
+  },
+  {
+    "": 299,
+    "country_code": "FM",
+    "frequency": "60 Hz",
+    "name": "Micronesia, Federated States of",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 300,
+    "country_code": "FM",
+    "frequency": "60 Hz",
+    "name": "Micronesia, Federated States of",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 301,
+    "country_code": "MC",
+    "frequency": "50 Hz",
+    "name": "Monaco",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 302,
+    "country_code": "MC",
+    "frequency": "50 Hz",
+    "name": "Monaco",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 303,
+    "country_code": "MC",
+    "frequency": "50 Hz",
+    "name": "Monaco",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 304,
+    "country_code": "MC",
+    "frequency": "50 Hz",
+    "name": "Monaco",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 305,
+    "country_code": "MN",
+    "frequency": "50 Hz",
+    "name": "Mongolia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 306,
+    "country_code": "MN",
+    "frequency": "50 Hz",
+    "name": "Mongolia",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 307,
+    "country_code": "ME",
+    "frequency": "50 Hz",
+    "name": "Montenegro",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 308,
+    "country_code": "ME",
+    "frequency": "50 Hz",
+    "name": "Montenegro",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 309,
+    "country_code": "MS",
+    "frequency": "60 Hz",
+    "name": "Montserrat",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 310,
+    "country_code": "MS",
+    "frequency": "60 Hz",
+    "name": "Montserrat",
+    "plug_type": "Type B",
+    "voltage": "230 V"
+  },
+  {
+    "": 311,
+    "country_code": "MA",
+    "frequency": "50 Hz",
+    "name": "Morocco",
+    "plug_type": "Type C",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 312,
+    "country_code": "MA",
+    "frequency": "50 Hz",
+    "name": "Morocco",
+    "plug_type": "Type E",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 313,
+    "country_code": "MZ",
+    "frequency": "50 Hz",
+    "name": "Mozambique",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 314,
+    "country_code": "MZ",
+    "frequency": "50 Hz",
+    "name": "Mozambique",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 315,
+    "country_code": "MZ",
+    "frequency": "50 Hz",
+    "name": "Mozambique",
+    "plug_type": "Type M",
+    "voltage": "220 V"
+  },
+  {
+    "": 316,
+    "country_code": "MM",
+    "frequency": "50 Hz",
+    "name": "Myanmar",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 317,
+    "country_code": "MM",
+    "frequency": "50 Hz",
+    "name": "Myanmar",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 318,
+    "country_code": "MM",
+    "frequency": "50 Hz",
+    "name": "Myanmar",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 319,
+    "country_code": "MM",
+    "frequency": "50 Hz",
+    "name": "Myanmar",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 320,
+    "country_code": "NA",
+    "frequency": "50 Hz",
+    "name": "Namibia",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 321,
+    "country_code": "NA",
+    "frequency": "50 Hz",
+    "name": "Namibia",
+    "plug_type": "Type M",
+    "voltage": "220 V"
+  },
+  {
+    "": 322,
+    "country_code": "NR",
+    "frequency": "50 Hz",
+    "name": "Nauru",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 323,
+    "country_code": "NP",
+    "frequency": "50 Hz",
+    "name": "Nepal",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 324,
+    "country_code": "NP",
+    "frequency": "50 Hz",
+    "name": "Nepal",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 325,
+    "country_code": "NP",
+    "frequency": "50 Hz",
+    "name": "Nepal",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 326,
+    "country_code": "NL",
+    "frequency": "50 Hz",
+    "name": "Netherlands",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 327,
+    "country_code": "NL",
+    "frequency": "50 Hz",
+    "name": "Netherlands",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 328,
+    "country_code": "CW",
+    "frequency": "50 Hz",
+    "name": "Netherlands Antilles",
+    "plug_type": "Type A",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 329,
+    "country_code": "CW",
+    "frequency": "50 Hz",
+    "name": "Netherlands Antilles",
+    "plug_type": "Type B",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 330,
+    "country_code": "CW",
+    "frequency": "50 Hz",
+    "name": "Netherlands Antilles",
+    "plug_type": "Type C",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 331,
+    "country_code": "CW",
+    "frequency": "50 Hz",
+    "name": "Netherlands Antilles",
+    "plug_type": "Type F",
+    "voltage": "127 V, 220 V"
+  },
+  {
+    "": 332,
+    "country_code": "NC",
+    "frequency": "50 Hz",
+    "name": "New Caledonia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 333,
+    "country_code": "NC",
+    "frequency": "50 Hz",
+    "name": "New Caledonia",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 334,
+    "country_code": "NZ",
+    "frequency": "50 Hz",
+    "name": "New Zealand",
+    "plug_type": "Type I",
+    "voltage": "230 V"
+  },
+  {
+    "": 335,
+    "country_code": "NI",
+    "frequency": "60 Hz",
+    "name": "Nicaragua",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 336,
+    "country_code": "NI",
+    "frequency": "60 Hz",
+    "name": "Nicaragua",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 337,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 338,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 339,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 340,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 341,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 342,
+    "country_code": "NE",
+    "frequency": "50 Hz",
+    "name": "Niger",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 343,
+    "country_code": "NG",
+    "frequency": "50 Hz",
+    "name": "Nigeria",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 344,
+    "country_code": "NG",
+    "frequency": "50 Hz",
+    "name": "Nigeria",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 345,
+    "country_code": "NO",
+    "frequency": "50 Hz",
+    "name": "Norway",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 346,
+    "country_code": "NO",
+    "frequency": "50 Hz",
+    "name": "Norway",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 347,
+    "country_code": "OM",
+    "frequency": "50 Hz",
+    "name": "Oman",
+    "plug_type": "Type C",
+    "voltage": "240 V"
+  },
+  {
+    "": 348,
+    "country_code": "OM",
+    "frequency": "50 Hz",
+    "name": "Oman",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 349,
+    "country_code": "PK",
+    "frequency": "50 Hz",
+    "name": "Pakistan",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 350,
+    "country_code": "PK",
+    "frequency": "50 Hz",
+    "name": "Pakistan",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 351,
+    "country_code": "PK",
+    "frequency": "50 Hz",
+    "name": "Pakistan",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 352,
+    "country_code": "PK",
+    "frequency": "50 Hz",
+    "name": "Pakistan",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 353,
+    "country_code": "PW",
+    "frequency": "60 Hz",
+    "name": "Palau",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 354,
+    "country_code": "PW",
+    "frequency": "60 Hz",
+    "name": "Palau",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 355,
+    "country_code": "PA",
+    "frequency": "60 Hz",
+    "name": "Panama",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 356,
+    "country_code": "PA",
+    "frequency": "60 Hz",
+    "name": "Panama",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 357,
+    "country_code": "PG",
+    "frequency": "50 Hz",
+    "name": "Papua New Guinea",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 358,
+    "country_code": "PY",
+    "frequency": "50 Hz",
+    "name": "Paraguay",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 359,
+    "country_code": "PE",
+    "frequency": "60 Hz",
+    "name": "Peru",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 360,
+    "country_code": "PE",
+    "frequency": "60 Hz",
+    "name": "Peru",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 361,
+    "country_code": "PE",
+    "frequency": "60 Hz",
+    "name": "Peru",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 362,
+    "country_code": "PH",
+    "frequency": "60 Hz",
+    "name": "Philippines, Rep. of the",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 363,
+    "country_code": "PH",
+    "frequency": "60 Hz",
+    "name": "Philippines, Rep. of the",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 364,
+    "country_code": "PH",
+    "frequency": "60 Hz",
+    "name": "Philippines, Rep. of the",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 365,
+    "country_code": "PL",
+    "frequency": "50 Hz",
+    "name": "Poland",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 366,
+    "country_code": "PL",
+    "frequency": "50 Hz",
+    "name": "Poland",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 367,
+    "country_code": "PT",
+    "frequency": "50 Hz",
+    "name": "Portugal",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 368,
+    "country_code": "PT",
+    "frequency": "50 Hz",
+    "name": "Portugal",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 369,
+    "country_code": "PR",
+    "frequency": "60 Hz",
+    "name": "Puerto Rico",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 370,
+    "country_code": "PR",
+    "frequency": "60 Hz",
+    "name": "Puerto Rico",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 371,
+    "country_code": "QA",
+    "frequency": "50 Hz",
+    "name": "Qatar",
+    "plug_type": "Type D",
+    "voltage": "240 V"
+  },
+  {
+    "": 372,
+    "country_code": "QA",
+    "frequency": "50 Hz",
+    "name": "Qatar",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 373,
+    "country_code": "MD",
+    "frequency": "50 Hz",
+    "name": "Moldova",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 374,
+    "country_code": "MD",
+    "frequency": "50 Hz",
+    "name": "Moldova",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 375,
+    "country_code": "RE",
+    "frequency": "50 Hz",
+    "name": "Reunion",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 376,
+    "country_code": "RO",
+    "frequency": "50 Hz",
+    "name": "Romania",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 377,
+    "country_code": "RO",
+    "frequency": "50 Hz",
+    "name": "Romania",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 378,
+    "country_code": "RU",
+    "frequency": "50 Hz",
+    "name": "Russia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 379,
+    "country_code": "RU",
+    "frequency": "50 Hz",
+    "name": "Russia",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 380,
+    "country_code": "RW",
+    "frequency": "50 Hz",
+    "name": "Rwanda",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 381,
+    "country_code": "RW",
+    "frequency": "50 Hz",
+    "name": "Rwanda",
+    "plug_type": "Type J",
+    "voltage": "230 V"
+  },
+  {
+    "": 382,
+    "country_code": "KN",
+    "frequency": "60 Hz",
+    "name": "Saint Kitts and Nevis",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 383,
+    "country_code": "KN",
+    "frequency": "60 Hz",
+    "name": "Saint Kitts and Nevis",
+    "plug_type": "Type B",
+    "voltage": "230 V"
+  },
+  {
+    "": 384,
+    "country_code": "KN",
+    "frequency": "60 Hz",
+    "name": "Saint Kitts and Nevis",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 385,
+    "country_code": "KN",
+    "frequency": "60 Hz",
+    "name": "Saint Kitts and Nevis",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 386,
+    "country_code": "LC",
+    "frequency": "50 Hz",
+    "name": "Saint Lucia",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 387,
+    "country_code": "MF",
+    "frequency": "60 Hz",
+    "name": "Saint Martin",
+    "plug_type": "Type C",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 388,
+    "country_code": "MF",
+    "frequency": "60 Hz",
+    "name": "Saint Martin",
+    "plug_type": "Type F",
+    "voltage": "120 V, 220 V"
+  },
+  {
+    "": 389,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 390,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 391,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 392,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 393,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type I",
+    "voltage": "230 V"
+  },
+  {
+    "": 394,
+    "country_code": "VC",
+    "frequency": "50 Hz",
+    "name": "Saint Vincent and the Grenadines",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 395,
+    "country_code": "WS",
+    "frequency": "50 Hz",
+    "name": "Samoa",
+    "plug_type": "Type I",
+    "voltage": "230 V"
+  },
+  {
+    "": 396,
+    "country_code": "SM",
+    "frequency": "50 Hz",
+    "name": "San Marino",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 397,
+    "country_code": "SM",
+    "frequency": "50 Hz",
+    "name": "San Marino",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 398,
+    "country_code": "SM",
+    "frequency": "50 Hz",
+    "name": "San Marino",
+    "plug_type": "Type L",
+    "voltage": "230 V"
+  },
+  {
+    "": 399,
+    "country_code": "ST",
+    "frequency": "50 Hz",
+    "name": "Sao Tome and Principe",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 400,
+    "country_code": "ST",
+    "frequency": "50 Hz",
+    "name": "Sao Tome and Principe",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 401,
+    "country_code": "SA",
+    "frequency": "60 Hz",
+    "name": "Saudi Arabia",
+    "plug_type": "Type G",
+    "voltage": "220 V, 230 V"
+  },
+  {
+    "": 402,
+    "country_code": "SN",
+    "frequency": "50 Hz",
+    "name": "Senegal",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 403,
+    "country_code": "SN",
+    "frequency": "50 Hz",
+    "name": "Senegal",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 404,
+    "country_code": "SN",
+    "frequency": "50 Hz",
+    "name": "Senegal",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 405,
+    "country_code": "SN",
+    "frequency": "50 Hz",
+    "name": "Senegal",
+    "plug_type": "Type K",
+    "voltage": "230 V"
+  },
+  {
+    "": 406,
+    "country_code": "RS",
+    "frequency": "50 Hz",
+    "name": "Serbia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 407,
+    "country_code": "RS",
+    "frequency": "50 Hz",
+    "name": "Serbia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 408,
+    "country_code": "SC",
+    "frequency": "50 Hz",
+    "name": "Seychelles",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 409,
+    "country_code": "SL",
+    "frequency": "50 Hz",
+    "name": "Sierra Leone",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 410,
+    "country_code": "SL",
+    "frequency": "50 Hz",
+    "name": "Sierra Leone",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 411,
+    "country_code": "SG",
+    "frequency": "50 Hz",
+    "name": "Singapore",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 412,
+    "country_code": "SG",
+    "frequency": "50 Hz",
+    "name": "Singapore",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 413,
+    "country_code": "SG",
+    "frequency": "50 Hz",
+    "name": "Singapore",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 414,
+    "country_code": "SK",
+    "frequency": "50 Hz",
+    "name": "Slovakia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 415,
+    "country_code": "SK",
+    "frequency": "50 Hz",
+    "name": "Slovakia",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 416,
+    "country_code": "SI",
+    "frequency": "50 Hz",
+    "name": "Slovenia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 417,
+    "country_code": "SI",
+    "frequency": "50 Hz",
+    "name": "Slovenia",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 418,
+    "country_code": "SB",
+    "frequency": "50 Hz",
+    "name": "Solomon Islands",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 419,
+    "country_code": "SB",
+    "frequency": "50 Hz",
+    "name": "Solomon Islands",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 420,
+    "country_code": "SO",
+    "frequency": "50 Hz",
+    "name": "Somalia",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 421,
+    "country_code": "ZA",
+    "frequency": "50 Hz",
+    "name": "South Africa",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 422,
+    "country_code": "ZA",
+    "frequency": "50 Hz",
+    "name": "South Africa",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 423,
+    "country_code": "ZA",
+    "frequency": "50 Hz",
+    "name": "South Africa",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 424,
+    "country_code": "ZA",
+    "frequency": "50 Hz",
+    "name": "South Africa",
+    "plug_type": "Type N",
+    "voltage": "230 V"
+  },
+  {
+    "": 425,
+    "country_code": "ES",
+    "frequency": "50 Hz",
+    "name": "Spain",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 426,
+    "country_code": "ES",
+    "frequency": "50 Hz",
+    "name": "Spain",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 427,
+    "country_code": "LK",
+    "frequency": "50 Hz",
+    "name": "Sri Lanka",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 428,
+    "country_code": "LK",
+    "frequency": "50 Hz",
+    "name": "Sri Lanka",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 429,
+    "country_code": "LK",
+    "frequency": "50 Hz",
+    "name": "Sri Lanka",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 430,
+    "country_code": "SD",
+    "frequency": "50 Hz",
+    "name": "Sudan",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 431,
+    "country_code": "SD",
+    "frequency": "50 Hz",
+    "name": "Sudan",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 432,
+    "country_code": "SR",
+    "frequency": "60 Hz",
+    "name": "Suriname",
+    "plug_type": "Type C",
+    "voltage": "127 V"
+  },
+  {
+    "": 433,
+    "country_code": "SR",
+    "frequency": "60 Hz",
+    "name": "Suriname",
+    "plug_type": "Type F",
+    "voltage": "127 V"
+  },
+  {
+    "": 434,
+    "country_code": "SZ",
+    "frequency": "50 Hz",
+    "name": "Swaziland",
+    "plug_type": "Type M",
+    "voltage": "230 V"
+  },
+  {
+    "": 435,
+    "country_code": "SE",
+    "frequency": "50 Hz",
+    "name": "Sweden",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 436,
+    "country_code": "SE",
+    "frequency": "50 Hz",
+    "name": "Sweden",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 437,
+    "country_code": "CH",
+    "frequency": "50 Hz",
+    "name": "Switzerland",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 438,
+    "country_code": "CH",
+    "frequency": "50 Hz",
+    "name": "Switzerland",
+    "plug_type": "Type J",
+    "voltage": "230 V"
+  },
+  {
+    "": 439,
+    "country_code": "SY",
+    "frequency": "50 Hz",
+    "name": "Syrian Arab Republic",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 440,
+    "country_code": "SY",
+    "frequency": "50 Hz",
+    "name": "Syrian Arab Republic",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 441,
+    "country_code": "SY",
+    "frequency": "50 Hz",
+    "name": "Syrian Arab Republic",
+    "plug_type": "Type L",
+    "voltage": "220 V"
+  },
+  {
+    "": 442,
+    "country_code": "TW",
+    "frequency": "60 Hz",
+    "name": "Taiwan",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 443,
+    "country_code": "TW",
+    "frequency": "60 Hz",
+    "name": "Taiwan",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 444,
+    "country_code": "TZ",
+    "frequency": "50 Hz",
+    "name": "Tanzania",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 445,
+    "country_code": "TZ",
+    "frequency": "50 Hz",
+    "name": "Tanzania",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 446,
+    "country_code": "TJ",
+    "frequency": "50 Hz",
+    "name": "Tajikistan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 447,
+    "country_code": "TJ",
+    "frequency": "50 Hz",
+    "name": "Tajikistan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 448,
+    "country_code": "TJ",
+    "frequency": "50 Hz",
+    "name": "Tajikistan",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 449,
+    "country_code": "TH",
+    "frequency": "50 Hz",
+    "name": "Thailand",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 450,
+    "country_code": "TH",
+    "frequency": "50 Hz",
+    "name": "Thailand",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 451,
+    "country_code": "TH",
+    "frequency": "50 Hz",
+    "name": "Thailand",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 452,
+    "country_code": "TH",
+    "frequency": "50 Hz",
+    "name": "Thailand",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 453,
+    "country_code": "TL",
+    "frequency": "50 Hz",
+    "name": "Timor-Leste",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 454,
+    "country_code": "TL",
+    "frequency": "50 Hz",
+    "name": "Timor-Leste",
+    "plug_type": "Type E",
+    "voltage": "220 V"
+  },
+  {
+    "": 455,
+    "country_code": "TL",
+    "frequency": "50 Hz",
+    "name": "Timor-Leste",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 456,
+    "country_code": "TL",
+    "frequency": "50 Hz",
+    "name": "Timor-Leste",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 457,
+    "country_code": "TG",
+    "frequency": "50 Hz",
+    "name": "Togo",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 458,
+    "country_code": "TO",
+    "frequency": "50 Hz",
+    "name": "Tonga",
+    "plug_type": "Type I",
+    "voltage": "240 V"
+  },
+  {
+    "": 459,
+    "country_code": "TT",
+    "frequency": "60 Hz",
+    "name": "Trinidad and Tobago",
+    "plug_type": "Type A",
+    "voltage": "115 V"
+  },
+  {
+    "": 460,
+    "country_code": "TT",
+    "frequency": "60 Hz",
+    "name": "Trinidad and Tobago",
+    "plug_type": "Type B",
+    "voltage": "115 V"
+  },
+  {
+    "": 461,
+    "country_code": "TN",
+    "frequency": "50 Hz",
+    "name": "Tunisia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 462,
+    "country_code": "TN",
+    "frequency": "50 Hz",
+    "name": "Tunisia",
+    "plug_type": "Type E",
+    "voltage": "230 V"
+  },
+  {
+    "": 463,
+    "country_code": "TR",
+    "frequency": "50 Hz",
+    "name": "Turkey",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 464,
+    "country_code": "TR",
+    "frequency": "50 Hz",
+    "name": "Turkey",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 465,
+    "country_code": "TM",
+    "frequency": "50 Hz",
+    "name": "Turkmenistan",
+    "plug_type": "Type B",
+    "voltage": "220 V"
+  },
+  {
+    "": 466,
+    "country_code": "TM",
+    "frequency": "50 Hz",
+    "name": "Turkmenistan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 467,
+    "country_code": "TM",
+    "frequency": "50 Hz",
+    "name": "Turkmenistan",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 468,
+    "country_code": "TC",
+    "frequency": "60 Hz",
+    "name": "Turks and Caicos Islands",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 469,
+    "country_code": "TC",
+    "frequency": "60 Hz",
+    "name": "Turks and Caicos Islands",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 470,
+    "country_code": "TV",
+    "frequency": "50 Hz",
+    "name": "Tuvalu",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 471,
+    "country_code": "UG",
+    "frequency": "50 Hz",
+    "name": "Uganda",
+    "plug_type": "Type G",
+    "voltage": "240 V"
+  },
+  {
+    "": 472,
+    "country_code": "UA",
+    "frequency": "50 Hz",
+    "name": "Ukraine",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 473,
+    "country_code": "UA",
+    "frequency": "50 Hz",
+    "name": "Ukraine",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 474,
+    "country_code": "AE",
+    "frequency": "50 Hz",
+    "name": "United Arab Emirates",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 475,
+    "country_code": "AE",
+    "frequency": "50 Hz",
+    "name": "United Arab Emirates",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 476,
+    "country_code": "AE",
+    "frequency": "50 Hz",
+    "name": "United Arab Emirates",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 477,
+    "country_code": "GB",
+    "frequency": "50 Hz",
+    "name": "United Kingdom",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 478,
+    "country_code": "US",
+    "frequency": "60 Hz",
+    "name": "United States of America",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 479,
+    "country_code": "US",
+    "frequency": "60 Hz",
+    "name": "United States of America",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 480,
+    "country_code": "VI",
+    "frequency": "60 Hz",
+    "name": "United States  Virgin Islands",
+    "plug_type": "Type A",
+    "voltage": "110 V"
+  },
+  {
+    "": 481,
+    "country_code": "VI",
+    "frequency": "60 Hz",
+    "name": "United States  Virgin Islands",
+    "plug_type": "Type B",
+    "voltage": "110 V"
+  },
+  {
+    "": 482,
+    "country_code": "UY",
+    "frequency": "50 Hz",
+    "name": "Uruguay",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 483,
+    "country_code": "UY",
+    "frequency": "50 Hz",
+    "name": "Uruguay",
+    "plug_type": "Type F",
+    "voltage": "230 V"
+  },
+  {
+    "": 484,
+    "country_code": "UY",
+    "frequency": "50 Hz",
+    "name": "Uruguay",
+    "plug_type": "Type I",
+    "voltage": "230 V"
+  },
+  {
+    "": 485,
+    "country_code": "UY",
+    "frequency": "50 Hz",
+    "name": "Uruguay",
+    "plug_type": "Type L",
+    "voltage": "230 V"
+  },
+  {
+    "": 486,
+    "country_code": "UZ",
+    "frequency": "50 Hz",
+    "name": "Uzbekistan",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 487,
+    "country_code": "UZ",
+    "frequency": "50 Hz",
+    "name": "Uzbekistan",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 488,
+    "country_code": "VU",
+    "frequency": "50 Hz",
+    "name": "Vanuatu",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 489,
+    "country_code": "VU",
+    "frequency": "50 Hz",
+    "name": "Vanuatu",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  },
+  {
+    "": 490,
+    "country_code": "VU",
+    "frequency": "50 Hz",
+    "name": "Vanuatu",
+    "plug_type": "Type I",
+    "voltage": "220 V"
+  },
+  {
+    "": 491,
+    "country_code": "VE",
+    "frequency": "60 Hz",
+    "name": "Venezuela",
+    "plug_type": "Type A",
+    "voltage": "120 V"
+  },
+  {
+    "": 492,
+    "country_code": "VE",
+    "frequency": "60 Hz",
+    "name": "Venezuela",
+    "plug_type": "Type B",
+    "voltage": "120 V"
+  },
+  {
+    "": 493,
+    "country_code": "VN",
+    "frequency": "50 Hz",
+    "name": "Vietnam",
+    "plug_type": "Type A",
+    "voltage": "220 V"
+  },
+  {
+    "": 494,
+    "country_code": "VN",
+    "frequency": "50 Hz",
+    "name": "Vietnam",
+    "plug_type": "Type C",
+    "voltage": "220 V"
+  },
+  {
+    "": 495,
+    "country_code": "VN",
+    "frequency": "50 Hz",
+    "name": "Vietnam",
+    "plug_type": "Type F",
+    "voltage": "220 V"
+  },
+  {
+    "": 496,
+    "country_code": "YE",
+    "frequency": "50 Hz",
+    "name": "Yemen",
+    "plug_type": "Type A",
+    "voltage": "230 V"
+  },
+  {
+    "": 497,
+    "country_code": "YE",
+    "frequency": "50 Hz",
+    "name": "Yemen",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 498,
+    "country_code": "YE",
+    "frequency": "50 Hz",
+    "name": "Yemen",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 499,
+    "country_code": "ZM",
+    "frequency": "50 Hz",
+    "name": "Zambia",
+    "plug_type": "Type C",
+    "voltage": "230 V"
+  },
+  {
+    "": 500,
+    "country_code": "ZM",
+    "frequency": "50 Hz",
+    "name": "Zambia",
+    "plug_type": "Type D",
+    "voltage": "230 V"
+  },
+  {
+    "": 501,
+    "country_code": "ZM",
+    "frequency": "50 Hz",
+    "name": "Zambia",
+    "plug_type": "Type G",
+    "voltage": "230 V"
+  },
+  {
+    "": 502,
+    "country_code": "ZW",
+    "frequency": "50 Hz",
+    "name": "Zimbabwe",
+    "plug_type": "Type D",
+    "voltage": "220 V"
+  },
+  {
+    "": 503,
+    "country_code": "ZW",
+    "frequency": "50 Hz",
+    "name": "Zimbabwe",
+    "plug_type": "Type G",
+    "voltage": "220 V"
+  }
+]
