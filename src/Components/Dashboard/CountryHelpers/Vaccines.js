@@ -19,9 +19,9 @@ const CollapsableMessage = ({ header, body }) => {
         </Button>
       </Message.Header>
       {visible && (
-      <Message.Body>
-        {body}
-      </Message.Body>
+        <Message.Body>
+          {body}
+        </Message.Body>
       )}
     </Message>
   );

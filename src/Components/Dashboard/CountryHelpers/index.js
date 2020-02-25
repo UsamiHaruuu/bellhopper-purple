@@ -5,7 +5,7 @@ import ExchangeRate from './ExchangeRate';
 import PlugType from './PlugType';
 import Vaccines from './Vaccines';
 import Weather from './Weather';
-// import TravelAdvisory from './TravelAdvisory';
+import TravelAdvisory from './TravelAdvisory';
 
 const cc = require('currency-codes');
 
@@ -14,13 +14,14 @@ const getCountryData = async (country, city, setCountryData) => {
     countryCurrency,
     countryPlugData,
     vaccinationAdvice,
-    // travelAdvice,
+    travelAdvice,
   ] = await Promise.all([
     ExchangeRate(country),
     PlugType(country),
     Vaccines(country),
-    // TravelAdvisory(country),
+    TravelAdvisory(country),
   ]);
+  // console.log(travelAdvice);
   const countryCurrencyName = cc.country(country);
   const weatherAdvice = await Weather(country, city);
   setCountryData([
@@ -29,15 +30,7 @@ const getCountryData = async (country, city, setCountryData) => {
       title: 'Travel Warnings',
       contents: (
         <div>
-          <p>
-            Exercise increased caution in Costa Rica due to crime. (Jan 7, 2020)
-          </p>
-          <br />
-          <p>
-            Outbreak alert: There is a dengue outbreak in Costa Rica. Dengue is
-            spread by mosquitoes. Travelers going to Costa Rica should take
-            steps to avoid mosquito bites. (Aug 27, 2019)
-          </p>
+          {travelAdvice}
         </div>
       ),
     },
@@ -64,19 +57,19 @@ const getCountryData = async (country, city, setCountryData) => {
           ? (
             <div>
               <p>
-                  Avaliable types:
+                Avaliable types:
                 {' '}
                 {countryPlugData.type.join(', ')}
               </p>
               <p>
-                  Avaliable volts:
+                Avaliable volts:
                 {' '}
                 {countryPlugData.volt.join(', ')}
               </p>
             </div>
           ) : (
             <p>
-                No information found.
+              No information found.
             </p>
           )
       ),
