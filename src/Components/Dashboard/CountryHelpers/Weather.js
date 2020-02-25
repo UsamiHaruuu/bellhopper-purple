@@ -14,7 +14,6 @@ const Weather = async (country, city) => {
         mode: 'cors',
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
-          'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
         },
       }, 1500);
       const res = await response.json();
@@ -30,7 +29,6 @@ const Weather = async (country, city) => {
       mode: 'cors',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
       },
     }, 1500);
     const weatherRes = await weatherResponse.json();
