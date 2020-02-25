@@ -1,4 +1,4 @@
-import { getCountryCode } from './CountryCodes';
+import { getCountryCode } from './CountryDataHelpers';
 
 const TravelAdvisory = async (country) => {
   const countryID = getCountryCode(country);

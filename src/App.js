@@ -7,12 +7,13 @@ import Search from './Components/Search';
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
   const country = urlParams.get('country');
+  const city = urlParams.get('city');
   return (
     <div style={{ padding: 20 }}>
       <HashRouter className="padded">
         <Switch>
           <Route exact path="/dashboard">
-            <Dashboard country={country} />
+            <Dashboard country={country} city={city} />
           </Route>
           <Route exact path="/search">
             <Search />

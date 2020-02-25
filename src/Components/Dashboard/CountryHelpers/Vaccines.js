@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Message, Button, Icon } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPlus, faMinus } from '@fortawesome/free-solid-svg-icons';
-import { getCountryCode } from './CountryCodes';
+import { getCountryCode } from './CountryDataHelpers';
 import fetchWithTimeout from './fetchWithTimeout';
 
 const CollapsableMessage = ({ header, body }) => {

@@ -4,15 +4,27 @@ import {
 } from 'rbx';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
-import { countryCodes } from '../Dashboard/CountryHelpers/CountryCodes';
+import countryData from '../Dashboard/CountryHelpers/CountryData';
 
 const Search = () => {
-  const [text, setText] = useState('');
+  const [input, setInput] = useState({});
 
   const redirect = (url) => {
     window.location.href = url;
     window.location.reload();
   };
+
+  const formatOption = (option) => (
+    option.city
+      ? `${option.city}, ${option.country}`
+      : `${option.country}`
+  );
+
+  const getUrl = () => (
+    input.city
+      ? `/#/dashboard?city=${input.city}&country=${input.country}`
+      : `/#/dashboard?country=${input.country}`
+  );
 
   return (
     <Column.Group>
@@ -30,20 +42,20 @@ const Search = () => {
         <Title size={5}>where to?</Title>
         <Autocomplete
           id="country-search"
-          options={countryCodes}
-          getOptionLabel={(option) => option.name}
+          options={[...countryData.countryCodes, ...countryData.cityData]}
+          getOptionLabel={(option) => formatOption(option)}
           renderInput={(params) => (
             // eslint-disable-next-line react/jsx-props-no-spreading
-            <TextField {...params} label="Country" variant="outlined" fullWidth />
+            <TextField {...params} label="City / Country" variant="outlined" fullWidth />
           )}
-          onChange={(event, value) => setText(value.name)}
+          onChange={(event, value) => setInput(value)}
         />
         <Block />
         <Button
-          onClick={() => redirect(`/#/dashboard?country=${text}`)}
+          onClick={() => redirect(getUrl())}
           color="link"
           size="large"
-          disabled={text === ''}
+          disabled={Object.entries(input).length === 0}
         >
         Search
         </Button>

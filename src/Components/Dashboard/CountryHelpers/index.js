@@ -8,12 +8,12 @@ import Weather from './Weather';
 
 const cc = require('currency-codes');
 
-const getCountryData = async (country, setCountryData) => {
+const getCountryData = async (country, city, setCountryData) => {
   const [countryCurrency, countryPlugData, vaccinationAdvice] = await Promise.all([
     ExchangeRate(country), PlugType(country), Vaccines(country)]);
   const countryCurrencyName = cc.country(country);
   //   const travelAdvice = await TravelAdvisory(country);
-  const weatherAdvice = await Weather(country);
+  const weatherAdvice = await Weather(country, city);
   setCountryData([
     weatherAdvice,
     {

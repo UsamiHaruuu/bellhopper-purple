@@ -1,21 +1,28 @@
 import React from 'react';
 import { Column } from 'rbx';
 import fetchWithTimeout from './fetchWithTimeout';
+import { getCityLat, getCityLng } from './CountryDataHelpers';
 
-const Weather = async (country) => {
+const Weather = async (country, city) => {
+  let latitude;
+  let longitude;
   try {
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=pk.eyJ1IjoiY2xlbWVuc3RpZ2F0b3IiLCJhIjoiY2p6dm8xeWowMHM0djNnbG02ZWM5ZHo4dSJ9.GNbHIUUjyUdJfazjBuExmw&limit=1`;
-    const response = await fetchWithTimeout(url, {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
-      },
-    }, 1500);
-    const res = await response.json();
-    const latitude = res.features[0].center[1];
-    const longitude = res.features[0].center[0];
+    if (!city) {
+      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=pk.eyJ1IjoiY2xlbWVuc3RpZ2F0b3IiLCJhIjoiY2p6dm8xeWowMHM0djNnbG02ZWM5ZHo4dSJ9.GNbHIUUjyUdJfazjBuExmw&limit=1`;
+      const response = await fetchWithTimeout(url, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
+        },
+      }, 1500);
+      const res = await response.json();
+      [longitude, latitude] = res.features[0].center;
+    } else {
+      [longitude, latitude] = [getCityLng(city, country), getCityLat(city, country)];
+    }
+
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     const weatherUrl = `https://api.darksky.net/forecast/17cfa033a34b546f631477e5e90a1abe/${latitude},${longitude}`;
     const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {

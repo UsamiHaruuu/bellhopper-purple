@@ -4,12 +4,12 @@ import InfoBox from './InfoBox';
 import Header from './Header';
 import getCountryData from './CountryHelpers';
 
-const Dashboard = ({ country }) => {
+const Dashboard = ({ city, country }) => {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
-    const getDataAsync = async () => getCountryData(country, setCountryData);
+    const getDataAsync = async () => getCountryData(country, city, setCountryData);
     getDataAsync();
-  }, [country]);
+  }, [city, country]);
 
   const InfoBoxes = countryData === []
     ? 'Loading...'
@@ -23,7 +23,7 @@ const Dashboard = ({ country }) => {
 
   return (
     <div>
-      <Header country={country} />
+      <Header country={country} city={city} />
       {InfoBoxes}
       <Container style={{ textAlign: 'center' }}>
         <Button as="a" color="link" size="large" href="/#/search/">
