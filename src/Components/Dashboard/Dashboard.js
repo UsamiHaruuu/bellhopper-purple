@@ -11,8 +11,8 @@ const Dashboard = ({ city, country }) => {
     getDataAsync();
   }, [city, country]);
 
-  const InfoBoxes = countryData === []
-    ? 'Loading...'
+  const InfoBoxes = countryData.length === 0
+    ? <div className="loading-text">Loading...</div>
     : countryData.map((data) => (
       <InfoBox
         key={data.title}

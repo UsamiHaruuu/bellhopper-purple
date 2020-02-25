@@ -5,14 +5,23 @@ import ExchangeRate from './ExchangeRate';
 import PlugType from './PlugType';
 import Vaccines from './Vaccines';
 import Weather from './Weather';
+// import TravelAdvisory from './TravelAdvisory';
 
 const cc = require('currency-codes');
 
 const getCountryData = async (country, city, setCountryData) => {
-  const [countryCurrency, countryPlugData, vaccinationAdvice] = await Promise.all([
-    ExchangeRate(country), PlugType(country), Vaccines(country)]);
+  const [
+    countryCurrency,
+    countryPlugData,
+    vaccinationAdvice,
+    // travelAdvice,
+  ] = await Promise.all([
+    ExchangeRate(country),
+    PlugType(country),
+    Vaccines(country),
+    // TravelAdvisory(country),
+  ]);
   const countryCurrencyName = cc.country(country);
-  //   const travelAdvice = await TravelAdvisory(country);
   const weatherAdvice = await Weather(country, city);
   setCountryData([
     weatherAdvice,
