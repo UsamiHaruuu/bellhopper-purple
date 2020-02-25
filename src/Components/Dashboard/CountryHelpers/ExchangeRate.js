@@ -16,6 +16,7 @@ const ExchangeRate = async (country) => {
       return [];
     }
   }
+  return [];
 };
 
 export default ExchangeRate;
