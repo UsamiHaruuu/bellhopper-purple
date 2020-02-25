@@ -1,5 +1,4 @@
 import React from 'react';
-import { Column } from 'rbx';
 // import moment from 'moment';
 import ExchangeRate from './ExchangeRate';
 // import TravelAdvisory from './TravelAdvisory';
@@ -52,41 +51,51 @@ const getCountryData = async (country, setCountryData) => {
     {
       title: 'Plug Type',
       contents: (
-        <div>
-          {countryPlugData !== null
-            ? (
-              <div>
-                <p>
+        countryPlugData !== null
+          ? (
+            <div>
+              <p>
                   Avaliable types:
-                  {' '}
-                  {countryPlugData.type.join(' , ')}
-                </p>
-                <p>
+                {' '}
+                {countryPlugData.type.join(', ')}
+              </p>
+              <p>
                   Avaliable volts:
-                  {' '}
-                  {countryPlugData.volt.join(' , ')}
-                </p>
-              </div>
-            ) : <p>No information found</p>}
-        </div>
+                {' '}
+                {countryPlugData.volt.join(', ')}
+              </p>
+            </div>
+          ) : (
+            <p>
+                No information found.
+            </p>
+          )
       ),
     },
     {
       title: 'Exchange Rate',
       contents: countryCurrencyName.length !== 0 ? (
-        <p>
-          {' '}
-          1 USD =
-          {' '}
-          {countryCurrency[0].toFixed(2)}
-          {' '}
-          {countryCurrencyName[0].code}
-        </p>
-
+        <div>
+          <p>
+            {country}
+            {' '}
+            uses
+            {' '}
+            {countryCurrencyName[0].code}
+          </p>
+          <p>
+            {' '}
+            1 USD =
+            {' '}
+            {countryCurrency[0].toFixed(2)}
+            {' '}
+            {countryCurrencyName[0].code}
+          </p>
+        </div>
       )
         : (
           <p>
-            curency name not found
+            No information found.
           </p>
         ),
     },

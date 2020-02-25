@@ -8,13 +8,12 @@ const ExchangeRate = async (country) => {
     try {
       const apiURL = `http://api.currencylayer.com/live?access_key=dc96088f8fb3d56119137a8b10268a62&currencies=${
         countryCurrencyName[0].code
-        }&format=1`;
+      }&format=1`;
       const res = await fetch(proxyurl + apiURL);
       const response = await res.json();
       return Object.values(response.quotes);
-    }
-    catch{
-      return undefined
+    } catch {
+      return [];
     }
   }
 };

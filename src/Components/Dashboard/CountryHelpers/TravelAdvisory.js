@@ -10,7 +10,7 @@ const TravelAdvisory = async (country) => {
     const response = await res.json();
     return response.data.lang.en.advice;
   }
-  return undefined;
+  return 'No information found.';
 };
 
 export default TravelAdvisory;

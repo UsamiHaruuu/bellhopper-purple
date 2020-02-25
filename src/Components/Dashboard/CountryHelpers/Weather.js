@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Column, Message, Button, Icon } from 'rbx';
+import React from 'react';
+import { Column } from 'rbx';
 import fetchWithTimeout from './fetchWithTimeout';
 
 const Weather = async (country) => {
@@ -31,7 +31,7 @@ const Weather = async (country) => {
       high: Math.round(weatherRes.daily.data[0].temperatureHigh),
       low: Math.round(weatherRes.daily.data[0].temperatureLow),
       summary: weatherRes.daily.summary,
-      currently: Math.round(weatherRes.currently.temperature)
+      currently: Math.round(weatherRes.currently.temperature),
     };
     const returnObject = {
       title: 'Weather',
@@ -39,11 +39,28 @@ const Weather = async (country) => {
         <div>
           <Column.Group breakpoint="mobile">
             <Column size={8}>
-              <p>Daytime Hi: {weatherObj.high} &deg;F</p>
-              <p>Daytime Low: {weatherObj.low} &deg;F</p>
+              <p>
+                Daytime Hi:
+                {' '}
+                {weatherObj.high}
+                {' '}
+                &deg;F
+              </p>
+              <p>
+                Daytime Low:
+                {' '}
+                {weatherObj.low}
+                {' '}
+                &deg;F
+              </p>
             </Column>
             <Column size={4}>
-              <p className="degrees-text"> {weatherObj.currently} &deg;F</p>
+              <p className="degrees-text">
+                {' '}
+                {weatherObj.currently}
+                {' '}
+                &deg;F
+              </p>
               <p>{weatherObj.summary}</p>
             </Column>
           </Column.Group>
@@ -51,9 +68,8 @@ const Weather = async (country) => {
       ),
     };
     return (returnObject);
-  }
-  catch {
-    console.log('No information found');
+  } catch {
+    return 'No information found.';
   }
 };
 
