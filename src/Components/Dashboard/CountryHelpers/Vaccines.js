@@ -38,7 +38,7 @@ const Vaccines = async (country) => {
         'Content-Type': 'application/x-www-form-urlencoded',
         'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
       },
-    }, 1500);
+    });
     const ret = await response.json();
     const vaccinesArray = ret.health.diseasesAndVaccinesInfo.Vaccines;
     return vaccinesArray.slice(2, vaccinesArray.length)

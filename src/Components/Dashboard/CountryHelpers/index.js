@@ -6,6 +6,7 @@ import PlugType from './PlugType';
 import Vaccines from './Vaccines';
 import Weather from './Weather';
 import TravelAdvisory from './TravelAdvisory';
+import VisaRequirements from './VisaRequirements';
 
 const cc = require('currency-codes');
 
@@ -15,11 +16,13 @@ const getCountryData = async (country, city, setCountryData) => {
     countryPlugData,
     vaccinationAdvice,
     travelAdvice,
+    visaAdvice,
   ] = await Promise.all([
     ExchangeRate(country),
     PlugType(country),
     Vaccines(country),
     TravelAdvisory(country),
+    VisaRequirements(country),
   ]);
   // console.log(travelAdvice);
   const countryCurrencyName = cc.country(country);
@@ -38,7 +41,7 @@ const getCountryData = async (country, city, setCountryData) => {
       title: 'Visa Requirements',
       contents: (
         <p>
-          Not required for stays less than 90 days, but return ticket required.
+          {visaAdvice}
         </p>
       ),
     },

@@ -15,7 +15,7 @@ const Weather = async (country, city) => {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-      }, 1500);
+      });
       const res = await response.json();
       [longitude, latitude] = res.features[0].center;
     } else {
@@ -30,7 +30,7 @@ const Weather = async (country, city) => {
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
       },
-    }, 1500);
+    });
     const weatherRes = await weatherResponse.json();
     const weatherObj = {
       high: Math.round(weatherRes.daily.data[0].temperatureHigh),
