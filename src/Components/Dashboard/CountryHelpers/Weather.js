@@ -15,7 +15,7 @@ const Weather = async (country, city, startDate, dateRange) => {
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
         },
-      }, 1500);
+      });
       const res = await response.json();
       [longitude, latitude] = res.features[0].center;
     } else {
@@ -23,6 +23,7 @@ const Weather = async (country, city, startDate, dateRange) => {
     }
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
     const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${dateRange}`;
+
     const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
       method: 'GET',
       mode: 'cors',
@@ -43,7 +44,8 @@ const Weather = async (country, city, startDate, dateRange) => {
         Date: 'Fri, 28 Feb 2020 04:31:24 GMT',
         Server: 'BunnyCDN-DE1-601',
       },
-    }, 1500);
+    });
+
     const weatherRes = await weatherResponse.json();
     const weatherObj = {};
     let i;
@@ -57,43 +59,42 @@ const Weather = async (country, city, startDate, dateRange) => {
       weatherObj[i] = dailyWeather;
     }
     const arr = Object.values(weatherObj);
-    const returnObject = {
-      title: 'Weather',
-      contents: (
+    console.log(weatherObj);
+    return (
+      <div>
+        {
         arr.map((_, index) => (
-          <Column.Group>
+          <Column.Group key={index}>
             <Column size={3}>
               <Message.Header>
                 {weatherObj[index][3]}
               </Message.Header>
               <p>
                 Daytime Hi:
-                  {' '}
+                {' '}
                 {weatherObj[index][0]}
                 {' '}
                 &deg;F
-                </p>
+              </p>
               <p>
                 Daytime Low:
-                  {' '}
+                {' '}
                 {weatherObj[index][1]}
                 {' '}
                 &deg;F
-                </p>
+              </p>
               <p className="degrees-text">
                 {' '}
                 {weatherObj[index][2]}
                 {' '}
                 &deg;F
-                </p>
+              </p>
             </Column>
           </Column.Group>
         ))
-
-
-      ),
-    };
-    return (returnObject);
+      }
+      </div>
+    );
   } catch {
     return 'No information found.';
   }

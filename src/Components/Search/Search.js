@@ -24,7 +24,7 @@ const Search = () => {
     dateRange = Math.floor((Date.parse(JSON.stringify(state[0].endDate).split('T')) - Date.parse(JSON.stringify(state[0].startDate).split('T'))) / 86400000) + 1;
   }
   const startDate = JSON.stringify(state[0].endDate).split('T')[0].replace('"', '');
-  console.log(startDate)
+  console.log(startDate);
   dateRange = Math.min(15, dateRange);
   const redirect = (url) => {
     window.location.href = url;

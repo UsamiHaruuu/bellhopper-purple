@@ -37,7 +37,7 @@ const TravelAdvisory = async (country) => {
         'Content-Type': 'application/x-www-form-urlencoded',
         'X-Auth-API-Key': '947pqkb4x7e4g5xq9mxbhp8w',
       },
-    }, 1500);
+    });
     const ret = await response.json();
     // console.log(ret);
     const advice = ret.advisories.description;

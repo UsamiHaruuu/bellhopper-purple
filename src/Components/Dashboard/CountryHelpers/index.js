@@ -15,17 +15,26 @@ const getCountryData = async (country, city, setCountryData, startDate, dateRang
     countryPlugData,
     vaccinationAdvice,
     travelAdvice,
+    weatherAdvice,
   ] = await Promise.all([
     ExchangeRate(country),
     PlugType(country),
     Vaccines(country),
     TravelAdvisory(country),
+    Weather(country, city, startDate, dateRange),
   ]);
-  // console.log(travelAdvice);
+
   const countryCurrencyName = cc.country(country);
-  const weatherAdvice = await Weather(country, city, startDate, dateRange);
+
   setCountryData([
-    weatherAdvice,
+    {
+      title: 'Weather',
+      contents: (
+        <div>
+          {weatherAdvice}
+        </div>
+      ),
+    },
     {
       title: 'Travel Warnings',
       contents: (
