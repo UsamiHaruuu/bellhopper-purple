@@ -1,0 +1,2948 @@
+{
+   "Afghanistan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Albania": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Algeria": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "American Samoa": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Andorra": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Angola": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Anguilla": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Antigua and Barbuda": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Argentina": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Armenia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Aruba": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Australia": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Austria": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Azerbaijan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bahamas": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Bahrain": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bangladesh": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Barbados": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "115 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "115 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Belarus": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Belgium": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Belize": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V, 220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V, 220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "110 V, 220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Benin": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bermuda": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Bhutan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bolivia": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "115 V, 230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "115 V, 230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bosnia and Herzegovina": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Botswana": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Brazil": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type N",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "British Virgin Islands": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Brunei Darussalam": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Bulgaria": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Burkina Faso": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Burundi": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Cambodia": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Cameroon": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Canada": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Cape Verde": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Cayman Islands": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Central African Republic": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Chad": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Chile": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "China": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Colombia": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Comoros": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Congo": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Congo (Democratic Rep. of)": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Cook Islands": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Costa Rica": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Cote d'Ivoire": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Croatia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Cuba": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Cyprus": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Czech Republic": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Denmark": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Djibouti": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Dominica": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Dominican Republic": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Ecuador": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Egypt": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "El Salvador": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "115 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "115 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Equatorial Guinea": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Eritrea": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Estonia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Ethiopia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Falkland Islands (Malvinas)": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Faroe Islands": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Fiji": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Finland": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "France": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "French Guiana": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Gabon": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Gambia": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Georgia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Germany": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Ghana": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Gibraltar": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Greece": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Greenland": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Grenada": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Guadeloupe": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Guam": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Guatemala": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Guinea": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Guinea Bissau": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Guyana": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "240 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "240 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "240 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Haiti": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Honduras": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Hong Kong": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Hungary": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Iceland": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "India": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Indonesia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V 110 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V 110 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Iran": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Iraq": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Ireland": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Isle of Man": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Israel": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type H",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Italy": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Jamaica": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Japan": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "100 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "100 V",
+         "Frequency": "50 Hz, 60 Hz"
+      }
+   ],
+   "Jordan": [
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Kazakhstan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Kenya": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Kiribati": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Korea, Democratic People's Republic of": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V, 110 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V, 110 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V, 110 V",
+         "Frequency": "50 Hz, 60 Hz"
+      }
+   ],
+   "Korea, Republic of": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Kuwait": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Kyrgyzstan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Lao People's Democratic Republic": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Latvia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Lebanon": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Lesotho": [
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Liberia": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "50 Hz, 60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "50 Hz, 60 Hz"
+      }
+   ],
+   "Libya": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V, 230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "127 V, 230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "127 V, 230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "127 V, 230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Liechtenstein": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Lithuania": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Luxembourg": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Macau": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Macedonia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Madagascar": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Malawi": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Malaysia": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Maldives": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mali": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Malta": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Martinique": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mauritania": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mauritius": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mexico": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Micronesia, Federated States of": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Monaco": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mongolia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Montenegro": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Montserrat": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Morocco": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Mozambique": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Myanmar": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Namibia": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Nauru": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Nepal": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Netherlands": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Netherlands Antilles": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "127 V, 220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "New Caledonia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "New Zealand": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Nicaragua": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Niger": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Nigeria": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Norway": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Oman": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Pakistan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Palau": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Panama": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Papua New Guinea": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Paraguay": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Peru": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Philippines, Rep. of the": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Poland": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Portugal": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Puerto Rico": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Qatar": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Moldova": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Reunion": [
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Romania": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Russia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Rwanda": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Saint Kitts and Nevis": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Saint Lucia": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Saint Martin": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "120 V, 220 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Saint Vincent and the Grenadines": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Samoa": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "San Marino": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Sao Tome and Principe": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Saudi Arabia": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V, 230 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Senegal": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type K",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Serbia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Seychelles": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Sierra Leone": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Singapore": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Slovakia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Slovenia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Solomon Islands": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Somalia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "South Africa": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type N",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Spain": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Sri Lanka": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Sudan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Suriname": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "127 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Swaziland": [
+      {
+         "Plug Type": "Type M",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Sweden": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Switzerland": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type J",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Syrian Arab Republic": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Taiwan": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Tanzania": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Tajikistan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Thailand": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Timor-Leste": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Togo": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Tonga": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Trinidad and Tobago": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "115 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "115 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Tunisia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type E",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Turkey": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Turkmenistan": [
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Turks and Caicos Islands": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Tuvalu": [
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Uganda": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "240 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Ukraine": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "United Arab Emirates": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "United Kingdom": [
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "United States of America": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "United States  Virgin Islands": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "110 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Uruguay": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type L",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Uzbekistan": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Vanuatu": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type I",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Venezuela": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      },
+      {
+         "Plug Type": "Type B",
+         "Electric Potential": "120 V",
+         "Frequency": "60 Hz"
+      }
+   ],
+   "Vietnam": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type F",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Yemen": [
+      {
+         "Plug Type": "Type A",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Zambia": [
+      {
+         "Plug Type": "Type C",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "230 V",
+         "Frequency": "50 Hz"
+      }
+   ],
+   "Zimbabwe": [
+      {
+         "Plug Type": "Type D",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      },
+      {
+         "Plug Type": "Type G",
+         "Electric Potential": "220 V",
+         "Frequency": "50 Hz"
+      }
+   ]
+}

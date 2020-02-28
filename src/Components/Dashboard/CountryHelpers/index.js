@@ -9,7 +9,7 @@ import TravelAdvisory from './TravelAdvisory';
 
 const cc = require('currency-codes');
 
-const getCountryData = async (country, city, setCountryData) => {
+const getCountryData = async (country, city, setCountryData, startDate, dateRange) => {
   const [
     countryCurrency,
     countryPlugData,
@@ -23,7 +23,7 @@ const getCountryData = async (country, city, setCountryData) => {
   ]);
   // console.log(travelAdvice);
   const countryCurrencyName = cc.country(country);
-  const weatherAdvice = await Weather(country, city);
+  const weatherAdvice = await Weather(country, city, startDate, dateRange);
   setCountryData([
     weatherAdvice,
     {

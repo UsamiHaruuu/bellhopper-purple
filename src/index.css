@@ -47,3 +47,6 @@ code {
   text-align: center;
   margin: auto auto 20px auto;
 }
+.is-small {
+  width: 110px;
+}

@@ -3827,7 +3827,7 @@
     "": 478,
     "country_code": "US",
     "frequency": "60 Hz",
-    "name": "United States of America",
+    "name": "United States",
     "plug_type": "Type A",
     "voltage": "120 V"
   },
@@ -3835,7 +3835,7 @@
     "": 479,
     "country_code": "US",
     "frequency": "60 Hz",
-    "name": "United States of America",
+    "name": "United States",
     "plug_type": "Type B",
     "voltage": "120 V"
   },

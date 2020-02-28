@@ -4,12 +4,12 @@ import InfoBox from './InfoBox';
 import Header from './Header';
 import getCountryData from './CountryHelpers';
 
-const Dashboard = ({ city, country }) => {
+const Dashboard = ({ city, country, startDate, dateRange }) => {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
-    const getDataAsync = async () => getCountryData(country, city, setCountryData);
+    const getDataAsync = async () => getCountryData(country, city, setCountryData, startDate, dateRange);
     getDataAsync();
-  }, [city, country]);
+  }, [city, country, startDate]);
 
   const InfoBoxes = countryData.length === 0
     ? <div className="loading-text">Loading...</div>

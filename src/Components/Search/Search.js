@@ -4,11 +4,28 @@ import {
 } from 'rbx';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import { DateRange } from 'react-date-range';
 import countryData from '../Dashboard/CountryHelpers/CountryData';
+import 'react-date-range/dist/styles.css'; // main css file
+import 'react-date-range/dist/theme/default.css'; // theme css file
 
 const Search = () => {
   const [input, setInput] = useState({});
-
+  let dateRange = 0;
+  const [state, setState] = useState([
+    {
+      startDate: new Date(),
+      endDate: null,
+      key: 'selection',
+    },
+  ]);
+  console.log(state[0].startDate);
+  if (state[0].endDate && state[0].endDate !== null) {
+    dateRange = Math.floor((Date.parse(JSON.stringify(state[0].endDate).split('T')) - Date.parse(JSON.stringify(state[0].startDate).split('T'))) / 86400000) + 1;
+  }
+  const startDate = JSON.stringify(state[0].endDate).split('T')[0].replace('"', '');
+  console.log(startDate)
+  dateRange = Math.min(15, dateRange);
   const redirect = (url) => {
     window.location.href = url;
     window.location.reload();
@@ -22,8 +39,8 @@ const Search = () => {
 
   const getUrl = () => (
     input.city
-      ? `/#/dashboard?city=${input.city}&country=${input.country}`
-      : `/#/dashboard?country=${input.country}`
+      ? `/#/dashboard?city=${input.city}&country=${input.country}&startDate=${startDate}&dateRange=${dateRange}`
+      : `/#/dashboard?country=${input.country}&startDate=${startDate}&dateRange=${dateRange}`
   );
 
   return (
@@ -51,13 +68,21 @@ const Search = () => {
           onChange={(event, value) => setInput(value)}
         />
         <Block />
+        <div>
+          <DateRange
+            editableDateInputs
+            onChange={(item) => setState([item.selection])}
+            moveRangeOnFirstSelection={false}
+            ranges={state}
+          />
+        </div>
         <Button
           onClick={() => redirect(getUrl())}
           color="link"
           size="large"
           disabled={Object.entries(input).length === 0}
         >
-        Search
+          Search
         </Button>
       </Column>
     </Column.Group>
