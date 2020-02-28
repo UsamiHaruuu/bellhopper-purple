@@ -10,7 +10,7 @@ import VisaRequirements from './VisaRequirements';
 
 const cc = require('currency-codes');
 
-const getCountryData = async (country, city, setCountryData, startDate, dateRange) => {
+const getCountryData = async (country, city, setCountryData, startDate) => {
   const [
     countryCurrency,
     countryPlugData,
@@ -23,7 +23,7 @@ const getCountryData = async (country, city, setCountryData, startDate, dateRang
     PlugType(country),
     Vaccines(country),
     TravelAdvisory(country),
-    Weather(country, city, startDate, dateRange),
+    Weather(country, city, startDate),
     VisaRequirements(country),
   ]);
 
@@ -31,10 +31,10 @@ const getCountryData = async (country, city, setCountryData, startDate, dateRang
 
   setCountryData([
     {
-      title: 'Weather',
+      title: weatherAdvice.title,
       contents: (
         <div>
-          {weatherAdvice}
+          {weatherAdvice.contents}
         </div>
       ),
     },

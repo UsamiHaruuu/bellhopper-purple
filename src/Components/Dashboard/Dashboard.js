@@ -5,15 +5,15 @@ import Header from './Header';
 import getCountryData from './CountryHelpers';
 
 const Dashboard = ({
-  city, country, startDate, dateRange,
+  city, country, startDate,
 }) => {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {
     const getDataAsync = async () => getCountryData(
-      country, city, setCountryData, startDate, dateRange,
+      country, city, setCountryData, startDate,
     );
     getDataAsync();
-  }, [city, country, startDate, dateRange]);
+  }, [city, country, startDate]);
 
   const InfoBoxes = countryData.length === 0
     ? <div className="loading-text">Loading...</div>
