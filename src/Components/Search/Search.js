@@ -4,11 +4,11 @@ import {
 } from 'rbx';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
+import { addDays } from 'date-fns';
 import { DateRange } from 'react-date-range';
 import countryData from '../Dashboard/CountryHelpers/CountryData';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
-import { addDays } from 'date-fns';
 
 const getDate = () => {
   let today = new Date();
@@ -18,6 +18,7 @@ const getDate = () => {
   today = `${yyyy}-${mm}-${dd}`;
   return today;
 };
+
 const Search = () => {
   const [input, setInput] = useState({});
   let dateRange = 0;

@@ -1,7 +1,8 @@
-import fetchWithTimeout from './fetchWithTimeout';
-import { getCountryCode } from './CountryDataHelpers';
 
-const TravelAdvisory = async (country) => {
+import { getCountryCode } from './CountryDataHelpers';
+import fetchWithTimeout from './fetchWithTimeout';
+
+const VisaRequirements = async (country) => {
   try {
     const code = getCountryCode(country);
     const url = `https://api.tugo.com/v1/travelsafe/countries/${code}`;
@@ -10,16 +11,16 @@ const TravelAdvisory = async (country) => {
       mode: 'cors',
       headers: {
         'Content-Type': 'application/x-www-form-urlencoded',
-        'X-Auth-API-Key': '947pqkb4x7e4g5xq9mxbhp8w',
+        'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
       },
     });
     const ret = await response.json();
-    // console.log(ret);
-    const advice = ret.advisories.description;
-    return advice;
+    const visaReq = ret.entryExitRequirement.requirementInfo
+      .filter((item) => item.category === 'Visas');
+    return visaReq[0].description;
   } catch {
     return 'No information found.';
   }
 };
 
-export default TravelAdvisory;
+export default VisaRequirements;
