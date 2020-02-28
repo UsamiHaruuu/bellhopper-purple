@@ -1,23 +1,12 @@
 
-import { getCountryCode } from './CountryDataHelpers';
 import fetchWithTimeout from './fetchWithTimeout';
 
 const VisaRequirements = async (country) => {
   try {
-    const code = getCountryCode(country);
-    const url = `https://api.tugo.com/v1/travelsafe/countries/${code}`;
-    const response = await fetchWithTimeout(url, {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'X-Auth-API-Key': '7bq7gsk46t2dw37j4dcaaccu',
-      },
-    });
+    const url = 'countrytravelinfo.json';
+    const response = await fetchWithTimeout(url);
     const ret = await response.json();
-    const visaReq = ret.entryExitRequirement.requirementInfo
-      .filter((item) => item.category === 'Visas');
-    return visaReq[0].description;
+    return ret.filter((data) => data.geopoliticalarea === country)[0].entry_exit_requirements;
   } catch {
     return 'No information found.';
   }
