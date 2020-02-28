@@ -8,7 +8,16 @@ import { DateRange } from 'react-date-range';
 import countryData from '../Dashboard/CountryHelpers/CountryData';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { addDays } from 'date-fns';
 
+const getDate = () => {
+  let today = new Date();
+  const dd = String(today.getDate()).padStart(2, '0');
+  const mm = String(today.getMonth() + 1).padStart(2, '0'); // January is 0!
+  const yyyy = today.getFullYear();
+  today = `${yyyy}-${mm}-${dd}`;
+  return today;
+};
 const Search = () => {
   const [input, setInput] = useState({});
   let dateRange = 0;
@@ -19,11 +28,10 @@ const Search = () => {
       key: 'selection',
     },
   ]);
-  console.log(state[0].startDate);
   if (state[0].endDate && state[0].endDate !== null) {
     dateRange = Math.floor((Date.parse(JSON.stringify(state[0].endDate).split('T')) - Date.parse(JSON.stringify(state[0].startDate).split('T'))) / 86400000) + 1;
   }
-  const startDate = JSON.stringify(state[0].endDate).split('T')[0].replace('"', '');
+  const startDate = JSON.stringify(state[0].startDate).split('T')[0].replace('"', '');
   console.log(startDate);
   dateRange = Math.min(15, dateRange);
   const redirect = (url) => {
@@ -71,6 +79,8 @@ const Search = () => {
         <div>
           <DateRange
             editableDateInputs
+            minDate={addDays(new Date(), 0)}
+            maxDate={addDays(new Date(), 14)}
             onChange={(item) => setState([item.selection])}
             moveRangeOnFirstSelection={false}
             ranges={state}
