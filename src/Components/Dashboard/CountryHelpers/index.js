@@ -10,25 +10,34 @@ import VisaRequirements from './VisaRequirements';
 
 const cc = require('currency-codes');
 
-const getCountryData = async (country, city, setCountryData) => {
+const getCountryData = async (country, city, setCountryData, startDate) => {
   const [
     countryCurrency,
     countryPlugData,
     vaccinationAdvice,
     travelAdvice,
+    weatherAdvice,
     visaAdvice,
   ] = await Promise.all([
     ExchangeRate(country),
     PlugType(country),
     Vaccines(country),
     TravelAdvisory(country),
+    Weather(country, city, startDate),
     VisaRequirements(country),
   ]);
-  // console.log(travelAdvice);
+
   const countryCurrencyName = cc.country(country);
-  const weatherAdvice = await Weather(country, city);
+
   setCountryData([
-    weatherAdvice,
+    {
+      title: weatherAdvice.title,
+      contents: (
+        <div>
+          {weatherAdvice.contents}
+        </div>
+      ),
+    },
     {
       title: 'Travel Warnings',
       contents: (
