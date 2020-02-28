@@ -21,8 +21,9 @@ const Weather = async (country, city, startDate, dateRange) => {
     } else {
       [longitude, latitude] = [getCityLng(city, country), getCityLat(city, country)];
     }
+    console.log(startDate)
     const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-    const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${dateRange}`;
+    const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${dateRange}&date=${startDate}`;
     const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
       method: 'GET',
       mode: 'cors',
@@ -45,6 +46,7 @@ const Weather = async (country, city, startDate, dateRange) => {
       },
     }, 1500);
     const weatherRes = await weatherResponse.json();
+    console.log(weatherRes)
     const weatherObj = {};
     let i;
     let dailyWeather;
