@@ -197,7 +197,10 @@ const Weather = async (country, city, startDate) => {
       contents: await getHistoricalData(longitude, latitude, startDate),
     };
   } catch {
-    return 'No information found.';
+    return {
+      title: 'Weather',
+      contents: 'No information found.',
+    };
   }
 };
 
