@@ -87,8 +87,7 @@ const getHistoricalData = async (longitude, latitude, startDate) => {
   let endDate = new Date(lastYearDate);
   endDate.setDate(endDate.getDate() + 7);
   [endDate] = endDate.toISOString().split('T');
-  console.log(lastYearDate);
-  console.log(endDate);
+
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
   const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearDate}&enddate=${endDate}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
@@ -117,8 +116,6 @@ const getHistoricalData = async (longitude, latitude, startDate) => {
   const weatherObj = {};
   let i;
   let dailyWeather;
-
-  console.log(weatherRes);
 
   for (i = 0; i < 7; i += 1) {
     dailyWeather = [];
