@@ -1,5 +1,5 @@
 import React from 'react';
-import { Column, Message } from 'rbx';
+import { Message } from 'rbx';
 import fetchWithTimeout from './fetchWithTimeout';
 import { getCityLat, getCityLng } from './CountryDataHelpers';
 
@@ -88,72 +88,75 @@ const getHistoricalData = async (longitude, latitude, startDate) => {
 const Weather = async (country, city, startDate) => {
   let latitude;
   let longitude;
-  // try {
-  if (!city) {
-    const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=pk.eyJ1IjoiY2xlbWVuc3RpZ2F0b3IiLCJhIjoiY2p6dm8xeWowMHM0djNnbG02ZWM5ZHo4dSJ9.GNbHIUUjyUdJfazjBuExmw&limit=1`;
-    const response = await fetchWithTimeout(url, {
-      method: 'GET',
-      mode: 'cors',
-      headers: {
-        'Content-Type': 'application/x-www-form-urlencoded',
-      },
-    });
-    const res = await response.json();
-    [longitude, latitude] = res.features[0].center;
-  } else {
-    [longitude, latitude] = [getCityLng(city, country), getCityLat(city, country)];
-  }
-  latitude = parseFloat(latitude);
-  longitude = parseFloat(longitude);
+  try {
+    if (!city) {
+      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=pk.eyJ1IjoiY2xlbWVuc3RpZ2F0b3IiLCJhIjoiY2p6dm8xeWowMHM0djNnbG02ZWM5ZHo4dSJ9.GNbHIUUjyUdJfazjBuExmw&limit=1`;
+      const response = await fetchWithTimeout(url, {
+        method: 'GET',
+        mode: 'cors',
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+        },
+      });
+      const res = await response.json();
+      [longitude, latitude] = res.features[0].center;
+    } else {
+      [longitude, latitude] = [getCityLng(city, country), getCityLat(city, country)];
+    }
+    latitude = parseFloat(latitude);
+    longitude = parseFloat(longitude);
 
-  const retObj = {};
-  let weather;
-  if (new Date(startDate).getTime() < Date.now() + 86400000 * 7) {
-    retObj.title = 'Weather';
-    weather = await getForecasts(longitude, latitude);
-  } else {
-    retObj.title = 'Weather (from last year)';
-    weather = await getHistoricalData(longitude, latitude, startDate);
-  }
+    const retObj = {};
+    let weather;
+    if (new Date(startDate).getTime() < Date.now() + 86400000 * 7) {
+      retObj.title = 'Weather';
+      weather = await getForecasts(longitude, latitude);
+    } else {
+      retObj.title = 'Weather (from last year)';
+      weather = await getHistoricalData(longitude, latitude, startDate);
+    }
 
-  retObj.contents = (
-    <Column.Group>
-      {Object.keys(weather).map((date) => (
-        <Column size={3} key={date}>
-          <Message.Header>
-            {date}
-          </Message.Header>
-          <p>
-            Daytime Hi:
-            {' '}
-            {weather[date].maxtempF}
-            {' '}
-            &deg;F
-          </p>
-          <p>
-            Daytime Low:
-            {' '}
-            {weather[date].mintempF}
-            {' '}
-            &deg;F
-          </p>
-          <p className="degrees-text">
-            {' '}
-            {weather[date].avgtempF}
-            {' '}
-            &deg;F
-          </p>
-        </Column>
-      ))}
-    </Column.Group>
-  );
-  return retObj;
-  // } catch {
-  //   return {
-  //     title: 'Weather',
-  //     contents: 'No information found.',
-  //   };
-  // }
+    retObj.contents = (
+      <div className="weather-boxes">
+        {Object.keys(weather).map((date) => (
+          <Message size={3} key={date}>
+            <Message.Header>
+              {new Date(date).toString().split(' ').slice(1, 4)
+                .join(' ')}
+            </Message.Header>
+            <Message.Body>
+              <p>
+              Daytime Hi:
+                {' '}
+                {weather[date].maxtempF}
+                {' '}
+              &deg;F
+              </p>
+              <p>
+              Daytime Low:
+                {' '}
+                {weather[date].mintempF}
+                {' '}
+              &deg;F
+              </p>
+              <p className="degrees-text">
+                {' '}
+                {weather[date].avgtempF}
+                {' '}
+              &deg;F
+              </p>
+            </Message.Body>
+          </Message>
+        ))}
+      </div>
+    );
+    return retObj;
+  } catch {
+    return {
+      title: 'Weather',
+      contents: 'No information found.',
+    };
+  }
 };
 
 export default Weather;
