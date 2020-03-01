@@ -5,7 +5,7 @@ import Header from './Header';
 import getCountryData from './CountryHelpers';
 
 const Dashboard = ({
-  city, country, startDate,
+  city, country, startDate, uuid,
 }) => {
   const [countryData, setCountryData] = useState([]);
   useEffect(() => {

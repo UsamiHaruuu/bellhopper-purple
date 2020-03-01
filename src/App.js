@@ -1,6 +1,7 @@
 import React from 'react';
 import 'rbx/index.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
+import { useCookies } from 'react-cookie';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
 
@@ -10,18 +11,25 @@ function App() {
   const city = urlParams.get('city');
   const startDate = urlParams.get('startDate');
 
+  const [cookies, setCookie] = useCookies(['uuid']);
+  if (!cookies.uuid) {
+    const uuid = Math.random().toString(36).substring(2, 15)
+                 + Math.random().toString(36).substring(2, 15);
+    setCookie('uuid', uuid);
+  }
+
   return (
     <div style={{ padding: 20 }}>
       <HashRouter className="padded">
         <Switch>
           <Route exact path="/dashboard">
-            <Dashboard country={country} city={city} startDate={startDate} />
+            <Dashboard country={country} city={city} startDate={startDate} uuid={cookies.uuid} />
           </Route>
           <Route exact path="/search">
-            <Search />
+            <Search uuid={cookies.uuid} />
           </Route>
           <Route path="/">
-            <Search />
+            <Search uuid={cookies.uuid} />
           </Route>
         </Switch>
       </HashRouter>

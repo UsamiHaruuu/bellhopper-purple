@@ -10,7 +10,7 @@ import countryData from '../Dashboard/CountryHelpers/CountryData';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 
-const Search = () => {
+const Search = ({ uuid }) => {
   const [input, setInput] = useState({});
   const [state, setState] = useState([
     {
