@@ -22,7 +22,7 @@ const Trips = ({ uuid }) => {
     return () => {
       db.off('value', handleData);
     };
-  }, []);
+  }, [uuid]);
 
   if (tripData.length === 0) return <div />;
 
