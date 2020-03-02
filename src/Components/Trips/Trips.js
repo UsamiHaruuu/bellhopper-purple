@@ -2,12 +2,13 @@ import React, { useEffect, useState } from 'react';
 import {
   Notification, Block, Column,
 } from 'rbx';
-import { db } from '../../Firebase/helpers';
+import { db, currentTrip } from '../../Firebase/helpers';
 
 const Trips = ({ uuid }) => {
   const [tripData, setTripData] = useState([]);
 
   const redirect = (tripId) => {
+    currentTrip(uuid, tripId);
     document.location.href = `/#/dashboard?tripId=${tripId}`;
     document.location.reload();
   };

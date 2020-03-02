@@ -10,7 +10,7 @@ import countryData from '../Dashboard/CountryHelpers/CountryData';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
 import { saveTrip } from './helpers';
-import { generateRandomId } from '../../Firebase/helpers';
+import { generateRandomId, currentTrip } from '../../Firebase/helpers';
 
 const Search = ({ uuid }) => {
   const [input, setInput] = useState({});
@@ -28,6 +28,7 @@ const Search = ({ uuid }) => {
   const saveAndRedirect = () => {
     const tripId = generateRandomId();
     saveTrip(uuid, tripId, input.city, input.country, state.startDate, state.endDate);
+    currentTrip(uuid, tripId);
     redirect(`/#/dashboard?tripId=${tripId}`);
   };
 
