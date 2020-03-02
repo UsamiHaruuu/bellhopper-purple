@@ -54,7 +54,7 @@ const List = () => {
       <Title size={5}>Here is your todo List for Costa Rica</Title>
       <Column size="three-fifths" offset="one-fifth">
         {list.map((element) => (
-          <Notification align="left" color={element.complete ? 'info' : 'dark'}>
+          <Notification key={element.description} align="left" color={element.complete ? 'info' : 'dark'}>
             <Column.Group>
               <Column>
                 <Button size="large" align="left" onClick={() => completeTask(element)}>

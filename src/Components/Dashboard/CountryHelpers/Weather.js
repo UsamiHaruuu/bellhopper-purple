@@ -3,9 +3,10 @@ import { Message } from 'rbx';
 import fetchWithTimeout from './fetchWithTimeout';
 import { getCityLat, getCityLng } from './CountryDataHelpers';
 
-const getForecasts = async (longitude, latitude) => {
+const getForecasts = async (longitude, latitude, startDate, endDate) => {
+  const numDays = (new Date(endDate).getTime() - new Date(startDate).getTime()) / (86400 * 1000);
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=7`;
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${numDays}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -41,15 +42,16 @@ const getForecasts = async (longitude, latitude) => {
   return weatherObj;
 };
 
-const getHistoricalData = async (longitude, latitude, startDate) => {
+const getHistoricalData = async (longitude, latitude, startDate, endDate) => {
   const lastYear = parseFloat(startDate.split('-')[0]) - 1;
-  const lastYearDate = [lastYear, startDate.split('-')[1], startDate.split('-')[2]].join('-');
-  let endDate = new Date(lastYearDate);
-  endDate.setDate(endDate.getDate() + 7);
-  [endDate] = endDate.toISOString().split('T');
+  const endDateLastYear = parseFloat(endDate.split('-')[0]) - 1 === lastYear
+    ? lastYear
+    : lastYear + 1;
+  const lastYearStartDate = [lastYear, startDate.split('-')[1], startDate.split('-')[2]].join('-');
+  const lastYearEndDate = [endDateLastYear, endDate.split('-')[1], endDate.split('-')[2]].join('-');
 
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearDate}&enddate=${endDate}`;
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearStartDate}&enddate=${lastYearEndDate}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -85,7 +87,7 @@ const getHistoricalData = async (longitude, latitude, startDate) => {
   return weatherObj;
 };
 
-const Weather = async (country, city, startDate) => {
+const Weather = async (country, city, startDate, endDate) => {
   let latitude;
   let longitude;
   try {
@@ -110,10 +112,10 @@ const Weather = async (country, city, startDate) => {
     let weather;
     if (new Date(startDate).getTime() < Date.now() + 86400000 * 7) {
       retObj.title = 'Weather';
-      weather = await getForecasts(longitude, latitude);
+      weather = await getForecasts(longitude, latitude, startDate, endDate);
     } else {
       retObj.title = 'Weather (from last year)';
-      weather = await getHistoricalData(longitude, latitude, startDate);
+      weather = await getHistoricalData(longitude, latitude, startDate, endDate);
     }
 
     retObj.contents = (

@@ -1,19 +1,37 @@
 import React, { useState, useEffect } from 'react';
-import { Button, Container } from 'rbx';
 import InfoBox from './InfoBox';
 import Header from './Header';
 import getCountryData from './CountryHelpers';
+import { db } from '../../Firebase/helpers';
 
 const Dashboard = ({
-  city, country, startDate, uuid,
+  tripId, uuid,
 }) => {
   const [countryData, setCountryData] = useState([]);
+  const [trip, setTrip] = useState({});
+  useEffect(() => {
+    const handleData = (snap) => {
+      if (snap.val()) {
+        const data = snap.val();
+        if (data[uuid] !== undefined && data[uuid].trips[tripId] !== undefined) {
+          setTrip(data[uuid].trips[tripId]);
+        }
+      }
+    };
+    db.on('value', handleData, (error) => alert(error));
+    return () => {
+      db.off('value', handleData);
+    };
+  }, [tripId, uuid]);
+
   useEffect(() => {
     const getDataAsync = async () => getCountryData(
-      country, city, setCountryData, startDate,
+      trip.country, trip.city, trip.start_date, trip.end_date, setCountryData,
     );
-    getDataAsync();
-  }, [city, country, startDate]);
+    if (Object.values(trip).length > 0) {
+      getDataAsync();
+    }
+  }, [trip]);
 
   const InfoBoxes = countryData.length === 0
     ? <div className="loading-text">Loading...</div>
@@ -25,15 +43,14 @@ const Dashboard = ({
       />
     ));
 
+  const header = Object.values(trip).length > 0
+    ? <Header country={trip.country} city={trip.city} />
+    : '';
+
   return (
     <div>
-      <Header country={country} city={city} />
+      {header}
       {InfoBoxes}
-      <Container style={{ textAlign: 'center' }}>
-        <Button as="a" color="link" size="large" href="/#/search/">
-          Return To Search
-        </Button>
-      </Container>
     </div>
   );
 };

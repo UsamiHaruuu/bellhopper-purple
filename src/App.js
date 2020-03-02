@@ -8,18 +8,15 @@ import List from './Components/List';
 import Trips from './Components/Trips';
 import Brand from './Components/Brand';
 import Footer from './Components/Footer';
-import { db, saveUuid } from './Firebase/helpers';
+import { db, saveUuid, generateRandomId } from './Firebase/helpers';
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
-  const country = urlParams.get('country');
-  const city = urlParams.get('city');
-  const startDate = urlParams.get('startDate');
+  const tripId = urlParams.get('tripId');
 
   const [cookies, setCookie] = useCookies(['uuid']);
   if (!cookies.uuid) {
-    const uuid = Math.random().toString(36).substring(2, 15)
-                 + Math.random().toString(36).substring(2, 15);
+    const uuid = generateRandomId();
     setCookie('uuid', uuid);
     saveUuid(uuid);
   }
@@ -43,7 +40,7 @@ function App() {
       <HashRouter className="padded">
         <Switch>
           <Route exact path="/dashboard">
-            <Dashboard country={country} city={city} startDate={startDate} uuid={cookies.uuid} />
+            <Dashboard tripId={tripId} uuid={cookies.uuid} />
             <Footer page="dashboard" />
           </Route>
           <Route exact path="/list">

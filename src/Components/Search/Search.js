@@ -9,33 +9,32 @@ import { DateRange } from 'react-date-range';
 import countryData from '../Dashboard/CountryHelpers/CountryData';
 import 'react-date-range/dist/styles.css'; // main css file
 import 'react-date-range/dist/theme/default.css'; // theme css file
+import { saveTrip } from './helpers';
+import { generateRandomId } from '../../Firebase/helpers';
 
 const Search = ({ uuid }) => {
   const [input, setInput] = useState({});
-  const [state, setState] = useState([
-    {
-      startDate: new Date(),
-      endDate: null,
-      key: 'selection',
-    },
-  ]);
-  const startDate = JSON.stringify(state[0].startDate).split('T')[0].replace('"', '');
+  const [state, setState] = useState({
+    startDate: new Date(),
+    endDate: new Date(new Date().setTime(new Date().getTime() + (7 * 86400 * 1000))),
+    key: 'selection',
+  });
 
   const redirect = (url) => {
     window.location.href = url;
     window.location.reload();
   };
 
+  const saveAndRedirect = () => {
+    const tripId = generateRandomId();
+    saveTrip(uuid, tripId, input.city, input.country, state.startDate, state.endDate);
+    redirect(`/#/dashboard?tripId=${tripId}`);
+  };
+
   const formatOption = (option) => (
     option.city
       ? `${option.city}, ${option.country}`
       : `${option.country}`
-  );
-
-  const getUrl = () => (
-    input.city
-      ? `/#/dashboard?city=${input.city}&country=${input.country}&startDate=${startDate}`
-      : `/#/dashboard?country=${input.country}&startDate=${startDate}`
   );
 
   return (
@@ -60,13 +59,13 @@ const Search = ({ uuid }) => {
           <DateRange
             editableDateInputs
             minDate={addDays(new Date(), 0)}
-            onChange={(item) => setState([item.selection])}
+            onChange={(item) => setState(item.selection)}
             moveRangeOnFirstSelection={false}
-            ranges={state}
+            ranges={[state]}
           />
         </div>
         <Button
-          onClick={() => redirect(getUrl())}
+          onClick={() => saveAndRedirect()}
           color="link"
           size="large"
           disabled={Object.entries(input).length === 0}
