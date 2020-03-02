@@ -6,10 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { db } from '../../Firebase/helpers';
 
-const List = ({uuid}) => {
+const List = ({ uuid }) => {
   const [list, setList] = useState([]);
   const [unit, setUnit] = useState('');
-  const [tripId, setTripId] = useState(null);
   const [trip, setTrip] = useState({});
 
   const handleUnitChange = (event) => {
@@ -29,7 +28,7 @@ const List = ({uuid}) => {
     return () => {
       db.off('value', handleData);
     };
-  }, []);
+  }, [uuid]);
 
   const handleSubmit = () => {
     const item = {
@@ -42,8 +41,6 @@ const List = ({uuid}) => {
     setList(newList);
     setUnit('');
   };
-
-  console.log(trip)
 
   const completeTask = (item) => {
     const newList = list.slice(0);
@@ -67,7 +64,7 @@ const List = ({uuid}) => {
       <Block />
       <Title size={1} as="b">BellHopper</Title>
       <Title size={5}>
-Here is your To-Do list for your upcoming trip to
+        Here is your To-Do list for your upcoming trip to
         {' '}
         {trip.city ? trip.city : trip.country}
       </Title>
