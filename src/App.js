@@ -4,7 +4,8 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
-import List from './Components/List/List'
+import List from './Components/List/List';
+import Footer from './Components/Footer';
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
@@ -25,15 +26,19 @@ function App() {
         <Switch>
           <Route exact path="/dashboard">
             <Dashboard country={country} city={city} startDate={startDate} uuid={cookies.uuid} />
+            <Footer page="dashboard" />
           </Route>
           <Route exact path="/search">
             <Search uuid={cookies.uuid} />
+            <Footer page="search" />
           </Route>
           <Route exact path="/list">
             <List uuid={cookies.uuid} />
+            <Footer page="list" />
           </Route>
           <Route path="/">
             <Search uuid={cookies.uuid} />
+            <Footer page="search" />
           </Route>
         </Switch>
       </HashRouter>

@@ -62,3 +62,26 @@ code {
   margin: 0 10px 0 0 !important;
   border: 1px solid #4a4a4a;
 }
+
+.navbar {
+  height: 70px;
+}
+
+.navbar div {
+  padding: 0 10%;
+}
+
+.navbar-item {
+  display: inline-block !important;
+  width: 33%;
+  margin: auto;
+  text-align: center;
+  color: white !important;
+  font-size: 20px !important;
+  line-height: 70px !important;
+}
+
+.navbar-item.active {
+  background-color: white;
+  color: #209cee !important;
+}

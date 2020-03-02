@@ -1,31 +1,29 @@
 import React from 'react';
 import {
-  Navbar, Icon, Level,
+  Navbar, Icon,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faHome, faColumns, faList } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faInfoCircle, faList } from '@fortawesome/free-solid-svg-icons';
 
-const Footer = () => (
-  <Navbar fixed="bottom" color="warning" transparent>
-    <Level>
-      <Level.Item textAlign="centered">
-        <Navbar.Item href="#">
-          <Icon>
-            <FontAwesomeIcon icon={faHome} size="lg" />
-          </Icon>
-        </Navbar.Item>
-        <Navbar.Item href="#">
-          <Icon>
-            <FontAwesomeIcon icon={faColumns} size="lg" />
-          </Icon>
-        </Navbar.Item>
-        <Navbar.Item href="/#/list">
-          <Icon>
-            <FontAwesomeIcon icon={faList} size="lg" />
-          </Icon>
-        </Navbar.Item>
-      </Level.Item>
-    </Level>
+const Footer = ({ page }) => (
+  <Navbar fixed="bottom" color="info" className="navbar">
+    <div>
+      <Navbar.Item href="/#" className={page === 'search' ? 'active' : ''}>
+        <Icon>
+          <FontAwesomeIcon icon={faHome} size="lg" />
+        </Icon>
+      </Navbar.Item>
+      <Navbar.Item href="/#/dashboard" className={page === 'dashboard' ? 'active' : ''}>
+        <Icon>
+          <FontAwesomeIcon icon={faInfoCircle} size="lg" />
+        </Icon>
+      </Navbar.Item>
+      <Navbar.Item href="/#/list" className={page === 'list' ? 'active' : ''}>
+        <Icon>
+          <FontAwesomeIcon icon={faList} size="lg" />
+        </Icon>
+      </Navbar.Item>
+    </div>
   </Navbar>
 );
 
