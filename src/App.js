@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import 'rbx/index.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
@@ -6,6 +6,7 @@ import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
 import List from './Components/List/List';
 import Footer from './Components/Footer';
+import { db, saveUuid } from './Firebase/helpers';
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
@@ -18,7 +19,22 @@ function App() {
     const uuid = Math.random().toString(36).substring(2, 15)
                  + Math.random().toString(36).substring(2, 15);
     setCookie('uuid', uuid);
+    saveUuid(uuid);
   }
+
+  useEffect(() => {
+    const handleData = (snap) => {
+      if (snap.val()) {
+        if (snap.val()[cookies.uuid] === undefined) {
+          saveUuid(cookies.uuid);
+        }
+      }
+    };
+    db.on('value', handleData, (error) => alert(error));
+    return () => {
+      db.off('value', handleData);
+    };
+  }, [cookies.uuid]);
 
   return (
     <div style={{ padding: 20 }}>
