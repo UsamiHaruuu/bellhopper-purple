@@ -4,6 +4,7 @@ import { HashRouter, Route, Switch } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
+import List from './Components/List/List'
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route exact path="/search">
             <Search uuid={cookies.uuid} />
+          </Route>
+          <Route exact path="/list">
+            <List uuid={cookies.uuid} />
           </Route>
           <Route path="/">
             <Search uuid={cookies.uuid} />
