@@ -1,22 +1,36 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
   Button, Content, Notification, Block, Title, Column, Delete, Field, Control, Input, Icon,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import { db } from '../../Firebase/helpers';
 
-const List = () => {
+const List = ({uuid}) => {
   const [list, setList] = useState([]);
   const [unit, setUnit] = useState('');
-
-  // const listObj = {
-  //   checked: false,
-  //   description: '',
-  // };
+  const [tripId, setTripId] = useState(null);
+  const [trip, setTrip] = useState({});
 
   const handleUnitChange = (event) => {
     setUnit(event.target.value);
   };
+
+  useEffect(() => {
+    const handleData = (snap) => {
+      if (snap.val()) {
+        const data = snap.val();
+        if (data[uuid] !== undefined) {
+          setTripId(data[uuid].currentTrip.tripID);
+          setTrip(data[uuid].trips[data[uuid].currentTrip.tripID]);
+        }
+      }
+    };
+    db.on('value', handleData, (error) => alert(error));
+    return () => {
+      db.off('value', handleData);
+    };
+  }, [tripId]);
 
   const handleSubmit = () => {
     const item = {
