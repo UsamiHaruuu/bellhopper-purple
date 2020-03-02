@@ -1,10 +1,12 @@
 import React from 'react';
 import 'rbx/index.css';
+import { Block } from 'rbx';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
-import List from './Components/List/List'
+import List from './Components/List/List';
+import Brand from './Components/Brand';
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
@@ -33,6 +35,8 @@ function App() {
             <List uuid={cookies.uuid} />
           </Route>
           <Route path="/">
+            <Brand />
+            <Block />
             <Search uuid={cookies.uuid} />
           </Route>
         </Switch>

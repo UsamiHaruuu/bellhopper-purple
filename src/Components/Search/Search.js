@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Image, Block, Title, Column, Button,
+  Block, Column, Button,
 } from 'rbx';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -45,13 +45,6 @@ const Search = ({ uuid }) => {
         offset={3}
         style={{ textAlign: 'center' }}
       >
-        <Block />
-        <Image.Container size={128} className="img-center">
-          <Image alt="BellHopper Logo" src="/images/bell-solid.svg" />
-        </Image.Container>
-        <Block />
-        <Title size={1} as="b">BellHopper</Title>
-        <Title size={5}>where to?</Title>
         <Autocomplete
           id="country-search"
           options={[...countryData.countryCodes, ...countryData.cityData]}
