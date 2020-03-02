@@ -21,7 +21,6 @@ const List = ({uuid}) => {
       if (snap.val()) {
         const data = snap.val();
         if (data[uuid] !== undefined) {
-          setTripId(data[uuid].currentTrip.tripID);
           setTrip(data[uuid].trips[data[uuid].currentTrip.tripID]);
         }
       }
@@ -30,7 +29,7 @@ const List = ({uuid}) => {
     return () => {
       db.off('value', handleData);
     };
-  }, [tripId]);
+  }, []);
 
   const handleSubmit = () => {
     const item = {
@@ -43,6 +42,8 @@ const List = ({uuid}) => {
     setList(newList);
     setUnit('');
   };
+
+  console.log(trip)
 
   const completeTask = (item) => {
     const newList = list.slice(0);
@@ -65,7 +66,11 @@ const List = ({uuid}) => {
       <Block />
       <Block />
       <Title size={1} as="b">BellHopper</Title>
-      <Title size={5}>Here is your todo List for Costa Rica</Title>
+      <Title size={5}>
+Here is your To-Do list for your upcoming trip to
+        {' '}
+        {trip.city ? trip.city : trip.country}
+      </Title>
       <Column size="three-fifths" offset="one-fifth">
         {list.map((element) => (
           <Notification key={element.description} align="left" color={element.complete ? 'info' : 'dark'}>
