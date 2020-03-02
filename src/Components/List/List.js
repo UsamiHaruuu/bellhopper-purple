@@ -68,7 +68,11 @@ const List = () => {
                   </Button>
                 </Column>
                 <Column align="center">
-                  {element.description}
+                  <Content>
+                  <Title subtitle size={4}>
+                   {element.description}
+                  </Title>
+                  </Content>
                 </Column>
                 <Column align="right">
                   <Delete size="large" onClick={() => removeItem(element)} />
