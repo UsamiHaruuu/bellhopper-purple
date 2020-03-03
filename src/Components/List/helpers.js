@@ -30,7 +30,19 @@ const removeTask = (uuid, tripId, trip, element) => {
   return newList;
 };
 
+const completeTask = (uuid, tripId, trip, element) => {
+  const newTrip = trip;
+  let newList = trip.list.slice(0);
+  const helperArray = newList.map((thing) => thing.description);
+  const itemIndex = helperArray.indexOf(element.description);
+  newList[itemIndex].complete = !newList[itemIndex].complete;
+  newTrip.list = newList;
+  db.child(uuid).child('trips').child(tripId).update(newTrip);
+  return newList;
+}
+
 export {
   addToList,
   removeTask,
+  completeTask,
 };

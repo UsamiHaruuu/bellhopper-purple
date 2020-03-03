@@ -5,7 +5,7 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { db } from '../../Firebase/helpers';
-import { addToList, removeTask } from './helpers';
+import { addToList, removeTask, completeTask } from './helpers';
 
 const List = ({ uuid }) => {
   const [list, setList] = useState([]);
@@ -53,12 +53,8 @@ const List = ({ uuid }) => {
     addToList(uuid, tripId, trip, unit);
   };
 
-  const completeTask = (item) => {
-    const newList = list.slice(0);
-    const helperArray = newList.map((thing) => thing.description);
-    const itemIndex = helperArray.indexOf(item.description);
-    newList[itemIndex].complete = !newList[itemIndex].complete;
-    setList(newList);
+  const complete = (element) => {
+    setList(completeTask(uuid, tripId, trip, element));
   };
 
   const removeItem = (element) => {
@@ -79,7 +75,7 @@ const List = ({ uuid }) => {
           <Notification key={element.description} align="left" color={element.complete ? 'info' : 'dark'}>
             <Column.Group breakpoint="mobile">
               <Column size={3}>
-                <Button size="large" align="left" onClick={() => completeTask(element)}>
+                <Button size="large" align="left" onClick={() => complete(element)}>
                   {element.complete ? (
                     <Icon>
                       <FontAwesomeIcon icon={faCheckSquare} size="2x" />
