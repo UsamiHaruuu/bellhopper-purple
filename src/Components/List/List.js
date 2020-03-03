@@ -77,8 +77,8 @@ const List = ({ uuid }) => {
       <Column size="three-fifths" offset="one-fifth">
         {list.map((element) => (
           <Notification key={element.description} align="left" color={element.complete ? 'info' : 'dark'}>
-            <Column.Group>
-              <Column>
+            <Column.Group breakpoint="mobile">
+              <Column size={3}>
                 <Button size="large" align="left" onClick={() => completeTask(element)}>
                   {element.complete ? (
                     <Icon>
@@ -89,13 +89,11 @@ const List = ({ uuid }) => {
                       <Icon backgroundColor="white" size="large" />)}
                 </Button>
               </Column>
-              <Column align="center">
-                <Content>
-                    {element.description}
-                </Content>
+              <Column align="left" size={8}>
+                  {element.description}
               </Column>
-              <Column align="right">
-                <Delete size="large" onClick={() => removeItem(element)} />
+              <Column align="right" size={1}>
+                <Delete size="medium" onClick={() => removeItem(element)} />
               </Column>
             </Column.Group>
           </Notification>
