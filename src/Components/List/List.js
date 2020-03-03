@@ -1,19 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Button, Content, Notification, Block, Title, Column, Delete, Field, Control, Input, Icon,
+  Panel, Button, Content, Notification, Block, Title, Column, Delete, Field, Control, Input, Icon,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
+import { faSquare } from '@fortawesome/free-regular-svg-icons';
 import { db } from '../../Firebase/helpers';
 import { addToList, removeTask, completeTask } from './helpers';
 
 const List = ({ uuid, tripId }) => {
   const [list, setList] = useState([]);
-  const [unit, setUnit] = useState('');
+  const [input, setInput] = useState('');
   const [trip, setTrip] = useState({});
 
-  const handleUnitChange = (event) => {
-    setUnit(event.target.value);
+  const handleInputChange = (event) => {
+    setInput(event.target.value);
   };
 
   useEffect(() => {
@@ -36,26 +37,27 @@ const List = ({ uuid, tripId }) => {
 
 
   const handleSubmit = () => {
-    if (!unit) {
+    if (!input) {
       return;
     }
     const item = {
       complete: false,
       description: '',
     };
-    item.description = unit;
+    item.description = input;
     const newList = list.slice(0);
     newList.push(item);
     setList(newList);
-    setUnit('');
-    addToList(uuid, tripId, trip, unit);
+    setInput('');
+    addToList(uuid, tripId, trip, input);
   };
 
   const complete = (element) => {
     setList(completeTask(uuid, tripId, trip, element));
   };
 
-  const removeItem = (element) => {
+  const removeItem = (element, event) => {
+    event.stopPropagation();
     setList(removeTask(uuid, tripId, trip, element));
   };
   return (
@@ -69,36 +71,32 @@ const List = ({ uuid, tripId }) => {
         {trip.city ? trip.city : trip.country}
       </Title>
       <Column size="three-fifths" offset="one-fifth">
-        {list.map((element) => (
-          <Notification key={element.description} align="left" color={element.complete ? 'info' : 'dark'}>
-            <Column.Group breakpoint="mobile">
-              <Column size={3}>
-                <Button size="large" align="left" onClick={() => complete(element)}>
-                  {element.complete ? (
-                    <Icon>
-                      <FontAwesomeIcon icon={faCheckSquare} size="2x" />
-                    </Icon>
-                  )
-                    : (
-                      <Icon backgroundColor="white" size="large" />)}
-                </Button>
+        <Panel>
+          <Panel.Heading>
+            <Notification color="dark">
+          ToDo
+            </Notification>
+          </Panel.Heading>
+          {list.map((element) => (
+            <Panel.Block active={!!element.complete} onClick={() => complete(element)} key={element.description}>
+              <Panel.Icon>
+                <FontAwesomeIcon icon={element.complete ? faCheckSquare : faSquare} size="lg" />
+              </Panel.Icon>
+              {element.description}
+              <Column vcentered={1} align="right" offset={11}>
+                <Delete size="medium" onClick={(event) => removeItem(element, event)} />
               </Column>
-              <Column align="left" size={8}>
-                {element.description}
-              </Column>
-              <Column align="right" size={1}>
-                <Delete size="medium" onClick={() => removeItem(element)} />
-              </Column>
-            </Column.Group>
-          </Notification>
-        ))}
+            </Panel.Block>
+          ))}
+        </Panel>
         <Field align="centered" kind="addons">
           <Control expanded>
             <Input
               size="medium"
               placeholder="Add an Item"
-              value={unit}
-              onChange={handleUnitChange}
+              value={input}
+              onChange={handleInputChange}
+              maxLength="50"
             />
           </Control>
           <Control>
