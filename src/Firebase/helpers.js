@@ -14,9 +14,14 @@ const saveUuid = (uuid) => {
 const currentTrip = (uuid, tripID) => {
   db.child(uuid)
     .child('currentTrip')
-    .set({tripID})
+    .set({ tripID })
     .catch((error) => alert(error));
 }
+const deleteTrip = (uuid, tripId, event) => {
+  event.stopPropagation();
+  db.child(uuid).child('trips').child(tripId).update({ status: false })
+    .catch((error) => alert(error));
+};
 
 const generateRandomId = () => Math.random().toString(36).substring(2, 15)
   + Math.random().toString(36).substring(2, 15);
@@ -26,4 +31,5 @@ export {
   generateRandomId,
   currentTrip,
   db,
+  deleteTrip
 };

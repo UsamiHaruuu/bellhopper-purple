@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Notification, Block, Column,
+  Notification, Block, Column, Button, Icon, Level,
 } from 'rbx';
-import { db, currentTrip } from '../../Firebase/helpers';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faTimes } from '@fortawesome/free-solid-svg-icons';
+import { db, currentTrip, deleteTrip } from '../../Firebase/helpers';
 
 const Trips = ({ uuid }) => {
   const [tripData, setTripData] = useState([]);
@@ -12,11 +14,14 @@ const Trips = ({ uuid }) => {
     document.location.href = `/#/dashboard?tripId=${tripId}`;
     document.location.reload();
   };
+  const filter = (data) => Object.keys(data).map((key) => { if (data[key].status === false) delete data[key]; });
 
   useEffect(() => {
     const handleData = (snap) => {
       if (snap.val()[uuid]) {
-        setTripData(snap.val()[uuid].trips);
+        const data = snap.val()[uuid].trips;
+        filter(data);
+        setTripData(data);
       }
     };
     db.on('value', handleData);
@@ -25,27 +30,46 @@ const Trips = ({ uuid }) => {
     };
   }, [uuid]);
 
-  if (tripData.length === 0) return <div />;
+  if (!tripData) return <div />;
 
   return (
     <div style={{ paddingBottom: '20px' }}>
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <Notification
-              color="link"
-              key={tripId}
-              onClick={() => redirect(tripId)}
-            >
-              <p style={{ float: 'left' }}>{tripData[tripId].country}</p>
-              <p style={{ float: 'right' }}>{tripData[tripId].start_date}</p>
-              <div style={{ clear: 'both' }} />
-            </Notification>
+            <Level>
+              <Level.Item align="left">
+                <Notification
+                  color="link"
+                  key={tripId}
+                  onClick={() => redirect(tripId)}
+                >
+                  <p>
+                    {tripData[tripId].country}
+                    {', '}
+                    {tripData[tripId].start_date}
+                  </p>
+                  <div style={{ clear: 'both' }} />
+                  <Button
+                    style={{ float: 'right' }}
+                    outlined
+                    onClick={(event) => deleteTrip(uuid, tripId, event)}
+                  >
+                    <Icon size="small">
+                      <FontAwesomeIcon icon={faTimes} />
+                    </Icon>
+                  </Button>
+                </Notification>
+              </Level.Item>
+            </Level>
+
           ))}
+
         </Column>
       </Column.Group>
       <Block />
     </div>
+
   );
 };
 
