@@ -5,11 +5,13 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { db } from '../../Firebase/helpers';
+import { addToList, removeTask } from './helpers';
 
 const List = ({ uuid }) => {
   const [list, setList] = useState([]);
   const [unit, setUnit] = useState('');
   const [trip, setTrip] = useState({});
+  const [tripId, setTripId] = useState(null);
 
   const handleUnitChange = (event) => {
     setUnit(event.target.value);
@@ -20,7 +22,11 @@ const List = ({ uuid }) => {
       if (snap.val()) {
         const data = snap.val();
         if (data[uuid] !== undefined) {
+          setTripId(data[uuid].currentTrip.tripID);
           setTrip(data[uuid].trips[data[uuid].currentTrip.tripID]);
+          if (data[uuid].trips[data[uuid].currentTrip.tripID].list) {
+            setList(data[uuid].trips[data[uuid].currentTrip.tripID].list);
+          }
         }
       }
     };
@@ -30,7 +36,11 @@ const List = ({ uuid }) => {
     };
   }, [uuid]);
 
+
   const handleSubmit = () => {
+    if (!unit) {
+      return;
+    }
     const item = {
       checked: false,
       description: '',
@@ -40,6 +50,7 @@ const List = ({ uuid }) => {
     newList.push(item);
     setList(newList);
     setUnit('');
+    addToList(uuid, tripId, trip, unit);
   };
 
   const completeTask = (item) => {
@@ -51,13 +62,8 @@ const List = ({ uuid }) => {
   };
 
   const removeItem = (element) => {
-    const newList = list.slice(0);
-    const helperArray = newList.map((thing) => thing.description);
-    const itemIndex = helperArray.indexOf(element.description);
-    newList.splice(itemIndex, 1);
-    setList(newList);
+    setList(removeTask(uuid, tripId, trip, element));
   };
-
   return (
     <Content style={{ textAlign: 'center' }}>
       <Block />
@@ -85,9 +91,7 @@ const List = ({ uuid }) => {
               </Column>
               <Column align="center">
                 <Content>
-                  <Title subtitle size={4}>
                     {element.description}
-                  </Title>
                 </Content>
               </Column>
               <Column align="right">
