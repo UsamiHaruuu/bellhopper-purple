@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'rbx/index.css';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import { useCookies } from 'react-cookie';
@@ -12,7 +12,7 @@ import { db, saveUuid, generateRandomId } from './Firebase/helpers';
 
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
-  const tripId = urlParams.get('tripId');
+  const [tripId, setTripId] = useState(urlParams.get('tripId'));
 
   const [cookies, setCookie] = useCookies(['uuid']);
   if (!cookies.uuid) {
@@ -26,6 +26,8 @@ function App() {
       if (snap.val()) {
         if (snap.val()[cookies.uuid] === undefined) {
           saveUuid(cookies.uuid);
+        } else if (tripId === null && snap.val()[cookies.uuid].currentTrip) {
+          setTripId(snap.val()[cookies.uuid].currentTrip.tripID);
         }
       }
     };
@@ -33,7 +35,7 @@ function App() {
     return () => {
       db.off('value', handleData);
     };
-  }, [cookies.uuid]);
+  }, [cookies.uuid, tripId]);
 
   return (
     <div style={{ padding: 20 }}>
@@ -41,17 +43,17 @@ function App() {
         <Switch>
           <Route exact path="/dashboard">
             <Dashboard tripId={tripId} uuid={cookies.uuid} />
-            <Footer page="dashboard" />
+            <Footer page="dashboard" tripId={tripId} />
           </Route>
           <Route exact path="/list">
-            <List uuid={cookies.uuid} />
-            <Footer page="list" />
+            <List uuid={cookies.uuid} tripId={tripId} />
+            <Footer page="list" tripId={tripId} />
           </Route>
           <Route path="/">
             <Brand />
             <Trips uuid={cookies.uuid} />
             <Search uuid={cookies.uuid} />
-            <Footer page="search" />
+            <Footer page="search" tripId={tripId} />
           </Route>
         </Switch>
       </HashRouter>

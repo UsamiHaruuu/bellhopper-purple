@@ -4,9 +4,7 @@ import Header from './Header';
 import getCountryData from './CountryHelpers';
 import { db } from '../../Firebase/helpers';
 
-const Dashboard = ({
-  tripId, uuid,
-}) => {
+const Dashboard = ({ tripId, uuid }) => {
   const [countryData, setCountryData] = useState([]);
   const [trip, setTrip] = useState({});
   useEffect(() => {

@@ -7,11 +7,10 @@ import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
 import { db } from '../../Firebase/helpers';
 import { addToList, removeTask, completeTask } from './helpers';
 
-const List = ({ uuid }) => {
+const List = ({ uuid, tripId }) => {
   const [list, setList] = useState([]);
   const [unit, setUnit] = useState('');
   const [trip, setTrip] = useState({});
-  const [tripId, setTripId] = useState(null);
 
   const handleUnitChange = (event) => {
     setUnit(event.target.value);
@@ -22,7 +21,6 @@ const List = ({ uuid }) => {
       if (snap.val()) {
         const data = snap.val();
         if (data[uuid] !== undefined) {
-          setTripId(data[uuid].currentTrip.tripID);
           setTrip(data[uuid].trips[data[uuid].currentTrip.tripID]);
           if (data[uuid].trips[data[uuid].currentTrip.tripID].list) {
             setList(data[uuid].trips[data[uuid].currentTrip.tripID].list);
