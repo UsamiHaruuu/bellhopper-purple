@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Notification, Block, Column, Button, Icon, Level,
+  Notification, Block, Column, Button, Icon, Box,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
@@ -37,31 +37,32 @@ const Trips = ({ uuid }) => {
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <Level>
-              <Level.Item align="left">
-                <Notification
-                  color="link"
-                  key={tripId}
-                  onClick={() => redirect(tripId)}
+            <div>
+              <Notification
+                color="link"
+                key={tripId}
+                onClick={() => redirect(tripId)}
+                style={{ display: 'flex' }}
+              >
+                <p>
+                  {tripData[tripId].country}
+                  {', '}
+                  {tripData[tripId].start_date}
+                </p>
+                <div style={{ clear: 'both' }} />
+                <Button
+                  style={{ float: 'right', marginLeft: '80px' }}
+                  outlined
+                  onClick={(event) => deleteTrip(uuid, tripId, event)}
                 >
-                  <p>
-                    {tripData[tripId].country}
-                    {', '}
-                    {tripData[tripId].start_date}
-                  </p>
-                  <div style={{ clear: 'both' }} />
-                  <Button
-                    style={{ float: 'right' }}
-                    outlined
-                    onClick={(event) => deleteTrip(uuid, tripId, event)}
-                  >
-                    <Icon size="small">
-                      <FontAwesomeIcon icon={faTimes} />
-                    </Icon>
-                  </Button>
-                </Notification>
-              </Level.Item>
-            </Level>
+                  <Icon size="small">
+                    <FontAwesomeIcon icon={faTimes} />
+                  </Icon>
+                </Button>
+              </Notification>
+            </div>
+
+
 
           ))}
 
