@@ -42,7 +42,7 @@ const List = ({ uuid }) => {
       return;
     }
     const item = {
-      checked: false,
+      complete: false,
       description: '',
     };
     item.description = unit;
@@ -86,7 +86,7 @@ const List = ({ uuid }) => {
                 </Button>
               </Column>
               <Column align="left" size={8}>
-                  {element.description}
+                {element.description}
               </Column>
               <Column align="right" size={1}>
                 <Delete size="medium" onClick={() => removeItem(element)} />

@@ -8,7 +8,7 @@ const addToList = (uuid, tripId, trip, unit) => {
     newTrip.list = array;
   }
   const item = {
-    checked: false,
+    complete: false,
     description: '',
   };
   item.description = unit;
@@ -32,14 +32,14 @@ const removeTask = (uuid, tripId, trip, element) => {
 
 const completeTask = (uuid, tripId, trip, element) => {
   const newTrip = trip;
-  let newList = trip.list.slice(0);
+  const newList = trip.list.slice(0);
   const helperArray = newList.map((thing) => thing.description);
   const itemIndex = helperArray.indexOf(element.description);
   newList[itemIndex].complete = !newList[itemIndex].complete;
   newTrip.list = newList;
   db.child(uuid).child('trips').child(tripId).update(newTrip);
   return newList;
-}
+};
 
 export {
   addToList,
