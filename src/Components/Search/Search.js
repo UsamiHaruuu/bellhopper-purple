@@ -38,6 +38,14 @@ const Search = ({ uuid }) => {
       : `${option.country}`
   );
 
+  const handleInputChange = (value) => {
+    if (value) {
+      setInput(value);
+    } else {
+      setInput({});
+    }
+  };
+
   return (
     <Column.Group>
       <Column
@@ -53,7 +61,7 @@ const Search = ({ uuid }) => {
             // eslint-disable-next-line react/jsx-props-no-spreading
             <TextField {...params} label="City / Country" variant="outlined" fullWidth />
           )}
-          onChange={(event, value) => setInput(value)}
+          onChange={(event, value) => handleInputChange(value)}
         />
         <Block />
         <div>
