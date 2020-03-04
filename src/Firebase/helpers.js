@@ -16,10 +16,10 @@ const currentTrip = (uuid, tripID) => {
     .child('currentTrip')
     .set({ tripID })
     .catch((error) => alert(error));
-}
+};
 const deleteTrip = (uuid, tripId, event) => {
   event.stopPropagation();
-  db.child(uuid).child('trips').child(tripId).update({ status: false })
+  db.child(uuid).child('trips').child(tripId).set(null)
     .catch((error) => alert(error));
 };
 
@@ -31,5 +31,5 @@ export {
   generateRandomId,
   currentTrip,
   db,
-  deleteTrip
+  deleteTrip,
 };
