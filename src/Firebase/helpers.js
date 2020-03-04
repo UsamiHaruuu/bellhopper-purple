@@ -19,7 +19,7 @@ const currentTrip = (uuid, tripID) => {
 };
 const deleteTrip = (uuid, tripId, event) => {
   event.stopPropagation();
-  db.child(uuid).child('trips').child(tripId).set(null)
+  db.child(uuid).child('trips').child(tripId).set({ status: false })
     .catch((error) => alert(error));
 };
 
