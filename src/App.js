@@ -13,6 +13,7 @@ import { db, saveUuid, generateRandomId } from './Firebase/helpers';
 function App() {
   const urlParams = new URLSearchParams(window.location.href.split('?')[1]);
   const [tripId, setTripId] = useState(urlParams.get('tripId'));
+  const [currentTripDb, setCurrentTripDb] = useState(undefined);
 
   const [cookies, setCookie] = useCookies(['uuid']);
   if (!cookies.uuid) {
@@ -26,8 +27,11 @@ function App() {
       if (snap.val()) {
         if (snap.val()[cookies.uuid] === undefined) {
           saveUuid(cookies.uuid);
-        } else if (tripId === null && snap.val()[cookies.uuid].currentTrip) {
-          setTripId(snap.val()[cookies.uuid].currentTrip.tripID);
+        } else if (snap.val()[cookies.uuid].currentTrip) {
+          if (tripId === null) {
+            setTripId(snap.val()[cookies.uuid].currentTrip.tripID);
+          }
+          setCurrentTripDb(snap.val()[cookies.uuid].currentTrip.tripID);
         }
       }
     };
@@ -36,6 +40,8 @@ function App() {
       db.off('value', handleData);
     };
   }, [cookies.uuid, tripId]);
+
+  console.log(tripId);
 
   return (
     <div style={{ padding: 20 }}>
@@ -51,7 +57,7 @@ function App() {
           </Route>
           <Route path="/">
             <Brand />
-            <Trips uuid={cookies.uuid} />
+            <Trips uuid={cookies.uuid} currentTrip={currentTripDb} setTrip={setTripId} />
             <Search uuid={cookies.uuid} />
             <Footer page="search" tripId={tripId} />
           </Route>

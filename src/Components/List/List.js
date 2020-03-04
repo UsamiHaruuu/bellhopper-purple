@@ -22,9 +22,9 @@ const List = ({ uuid, tripId }) => {
       if (snap.val()) {
         const data = snap.val();
         if (data[uuid] !== undefined) {
-          setTrip(data[uuid].trips[data[uuid].currentTrip.tripID]);
-          if (data[uuid].trips[data[uuid].currentTrip.tripID].list) {
-            setList(data[uuid].trips[data[uuid].currentTrip.tripID].list);
+          setTrip(data[uuid].trips[tripId]);
+          if (data[uuid].trips[tripId].list) {
+            setList(data[uuid].trips[tripId].list);
           }
         }
       }
@@ -33,7 +33,7 @@ const List = ({ uuid, tripId }) => {
     return () => {
       db.off('value', handleData);
     };
-  }, [uuid]);
+  }, [uuid, tripId]);
 
 
   const handleSubmit = () => {

@@ -1,26 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Notification, Block, Column, Button, Icon, Box,
+  Notification, Block, Column, Button, Icon,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
-import { db, currentTrip, deleteTrip } from '../../Firebase/helpers';
+import { db, setCurrentTrip, deleteTrip } from '../../Firebase/helpers';
 
-const Trips = ({ uuid }) => {
+const Trips = ({ uuid, currentTrip, setTrip }) => {
   const [tripData, setTripData] = useState([]);
 
   const redirect = (tripId) => {
-    currentTrip(uuid, tripId);
+    setCurrentTrip(uuid, tripId);
     document.location.href = `/#/dashboard?tripId=${tripId}`;
     document.location.reload();
   };
-  const filter = (data) => Object.keys(data).map((key) => { if (data[key].status === false) delete data[key]; });
 
   useEffect(() => {
     const handleData = (snap) => {
       if (snap.val()[uuid]) {
         const data = snap.val()[uuid].trips;
-        filter(data);
         setTripData(data);
       }
     };
@@ -37,10 +35,9 @@ const Trips = ({ uuid }) => {
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <div>
+            <div key={tripId}>
               <Notification
                 color="link"
-                key={tripId}
                 onClick={() => redirect(tripId)}
                 style={{ display: 'flex' }}
               >
@@ -53,7 +50,7 @@ const Trips = ({ uuid }) => {
                 <Button
                   style={{ float: 'right', marginLeft: '80px' }}
                   outlined
-                  onClick={(event) => deleteTrip(uuid, tripId, event)}
+                  onClick={(event) => deleteTrip(uuid, tripId, currentTrip, setTrip, event)}
                 >
                   <Icon size="small">
                     <FontAwesomeIcon icon={faTimes} />
@@ -61,7 +58,6 @@ const Trips = ({ uuid }) => {
                 </Button>
               </Notification>
             </div>
-
 
 
           ))}
