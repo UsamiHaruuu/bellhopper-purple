@@ -41,8 +41,6 @@ function App() {
     };
   }, [cookies.uuid, tripId]);
 
-  console.log(tripId);
-
   return (
     <div style={{ padding: 20 }}>
       <HashRouter className="padded">
