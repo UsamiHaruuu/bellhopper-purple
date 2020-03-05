@@ -42,7 +42,13 @@ function App() {
   }, [cookies.uuid, tripId]);
 
   return (
-    <div style={{ padding: 20 }}>
+    <div style={{
+      paddingTop: 10,
+      paddingBottom: 10,
+      paddingLeft: 5,
+      paddingRight: 5,
+    }}
+    >
       <HashRouter className="padded">
         <Brand />
         <Switch>

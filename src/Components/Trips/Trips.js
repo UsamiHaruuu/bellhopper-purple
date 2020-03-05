@@ -33,7 +33,7 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <div key={tripId}>
+            <div key={tripId} style={{ paddingBottom: 10 }}>
               <Notification
                 color="link"
                 onClick={() => redirect(tripId)}
@@ -47,8 +47,6 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
                 <div style={{ clear: 'both' }} />
               </Notification>
             </div>
-
-
           ))}
 
         </Column>

@@ -62,9 +62,6 @@ const List = ({ uuid, tripId }) => {
   };
   return (
     <Content style={{ textAlign: 'center' }}>
-      {/* <Block />
-      <Block /> */}
-      {/* <Title size={1} as="b">BellHopper</Title> */}
       <p className="dashboard-header-content">
         Here is your To-Do list for your upcoming trip to
         {' '}
