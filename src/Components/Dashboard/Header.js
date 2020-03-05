@@ -7,7 +7,7 @@ const Header = ({ city, country }) => {
     : country;
   return (
     <Content>
-      <p className="dashboard-title">BellHopper</p>
+      {/* <p className="dashboard-title">BellHopper</p> */}
       <p className="dashboard-header-content">
       Here&apos;s what you need to know for your upcoming trip to
         {' '}

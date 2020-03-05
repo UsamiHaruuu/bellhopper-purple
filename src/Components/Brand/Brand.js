@@ -4,7 +4,7 @@ import {
 } from 'rbx';
 
 const Brand = () => (
-  <div style={{ paddingBottom: '20px' }}>
+  <div style={{ paddingBottom: '5px' }}>
     <Column.Group>
       <Column size={4} offset={4}>
         <Level>

@@ -62,14 +62,14 @@ const List = ({ uuid, tripId }) => {
   };
   return (
     <Content style={{ textAlign: 'center' }}>
-      <Block />
-      <Block />
-      <Title size={1} as="b">BellHopper</Title>
-      <Title size={5}>
+      {/* <Block />
+      <Block /> */}
+      {/* <Title size={1} as="b">BellHopper</Title> */}
+      <p className="dashboard-header-content">
         Here is your To-Do list for your upcoming trip to
         {' '}
-        {trip.city ? trip.city : trip.country}
-      </Title>
+        <b>{trip.city ? trip.city : trip.country}</b>
+      </p>
       <Column size="three-fifths" offset="one-fifth">
         <Panel>
           <Panel.Heading>
