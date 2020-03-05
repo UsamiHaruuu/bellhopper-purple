@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-  Panel, Button, Content, Notification, Column, Delete, Field, Control, Input,
+  Panel, Button, Content, Column, Delete, Field, Control, Input,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCheckSquare } from '@fortawesome/free-solid-svg-icons';
