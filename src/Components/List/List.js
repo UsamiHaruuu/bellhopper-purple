@@ -73,9 +73,7 @@ const List = ({ uuid, tripId }) => {
       <Column size="three-fifths" offset="one-fifth">
         <Panel>
           <Panel.Heading>
-            <Notification color="dark">
           ToDo
-            </Notification>
           </Panel.Heading>
           {list.map((element) => (
             <Panel.Block active={!!element.complete} onClick={() => complete(element)} key={element.description}>
