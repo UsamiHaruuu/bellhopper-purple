@@ -1,9 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import {
-  Notification, Block, Column, Button, Icon,
+  Notification, Block, Column, Delete,
 } from 'rbx';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import { db, setCurrentTrip, deleteTrip } from '../../Firebase/helpers';
 
 const Trips = ({ uuid, currentTrip, setTrip }) => {
@@ -39,23 +37,14 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
               <Notification
                 color="link"
                 onClick={() => redirect(tripId)}
-                style={{ display: 'flex' }}
               >
-                <p>
-                  {tripData[tripId].country}
-                  {', '}
-                  {tripData[tripId].start_date}
-                </p>
-                <div style={{ clear: 'both' }} />
-                <Button
-                  style={{ float: 'right', marginLeft: '80px' }}
-                  outlined
+                <Delete
+                  as="button"
                   onClick={(event) => deleteTrip(uuid, tripId, currentTrip, setTrip, event)}
-                >
-                  <Icon size="small">
-                    <FontAwesomeIcon icon={faTimes} />
-                  </Icon>
-                </Button>
+                />
+                <p style={{ float: 'left' }}>{tripData[tripId].country}</p>
+                <p style={{ float: 'right' }}>{tripData[tripId].start_date}</p>
+                <div style={{ clear: 'both' }} />
               </Notification>
             </div>
 
