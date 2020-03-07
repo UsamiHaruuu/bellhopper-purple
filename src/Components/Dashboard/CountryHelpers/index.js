@@ -1,7 +1,6 @@
+/* eslint-disable react/no-danger */
 import React from 'react';
-// import moment from 'moment';
 import ExchangeRate from './ExchangeRate';
-// import TravelAdvisory from './TravelAdvisory';
 import PlugType from './PlugType';
 import Vaccines from './Vaccines';
 import Weather from './Weather';
@@ -42,27 +41,21 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     {
       title: 'Travel Warnings',
       contents: (
-        <div>
-          {travelAdvice}
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />
       ),
       todo: 'Check travel warnings',
     },
     {
       title: 'Visa Requirements',
       contents: (
-        <p>
-          {visaAdvice}
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: visaAdvice }} />
       ),
       todo: 'Handle visa requirements',
     },
     {
-      title: 'Vaccinations',
+      title: 'Health',
       contents: (
-        <div>
-          {vaccinationAdvice}
-        </div>
+        <div dangerouslySetInnerHTML={{ __html: vaccinationAdvice }} />
       ),
       todo: 'Get appropriate vaccinations',
     },
