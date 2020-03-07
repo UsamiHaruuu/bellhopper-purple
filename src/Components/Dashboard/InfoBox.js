@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Message, Button, Icon } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCaretDown, faCaretUp } from '@fortawesome/free-solid-svg-icons';
+import { faCaretDown, faCaretUp, faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 import { addToList } from '../List/helpers';
 
 const InfoBox = ({
@@ -13,14 +13,21 @@ const InfoBox = ({
     <Message className="info-box">
       <Message.Header>
         {title}
-        <Button onClick={() => addToList(uuid, tripId, trip, todo)}>
-          Add To Todo List
-        </Button>
-        <Button onClick={() => setCollapsed(!collapsed)}>
-          <Icon>
-            <FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} />
-          </Icon>
-        </Button>
+        <div>
+          <Button onClick={() => addToList(uuid, tripId, trip, todo)}>
+            <Icon>
+              <FontAwesomeIcon icon={faPlusSquare} />
+            </Icon>
+          </Button>
+          <Button
+            style={{ marginLeft: '10px' }}
+            onClick={() => setCollapsed(!collapsed)}
+          >
+            <Icon>
+              <FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} />
+            </Icon>
+          </Button>
+        </div>
       </Message.Header>
       {!collapsed && (
       <Message.Body>
