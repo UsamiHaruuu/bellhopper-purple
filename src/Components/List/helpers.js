@@ -1,7 +1,7 @@
 import { db } from '../../Firebase/helpers';
 
 
-const addToList = (uuid, tripId, trip, unit) => {
+const addToList = (uuid, tripId, trip, description) => {
   const newTrip = trip;
   const array = [];
   if (newTrip.list === undefined) {
@@ -11,7 +11,7 @@ const addToList = (uuid, tripId, trip, unit) => {
     complete: false,
     description: '',
   };
-  item.description = unit;
+  item.description = description;
   newTrip.list.push(item);
   db.child(uuid).child('trips').child(tripId).update(newTrip);
 };

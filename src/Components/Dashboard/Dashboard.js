@@ -38,6 +38,10 @@ const Dashboard = ({ tripId, uuid }) => {
         key={data.title}
         title={data.title}
         contents={data.contents}
+        uuid={uuid}
+        tripId={tripId}
+        trip={trip}
+        todo={data.todo}
       />
     ));
 

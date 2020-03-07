@@ -37,6 +37,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           {weatherAdvice.contents}
         </div>
       ),
+      todo: 'Pack appropriately for the weather',
     },
     {
       title: 'Travel Warnings',
@@ -45,6 +46,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           {travelAdvice}
         </div>
       ),
+      todo: 'Check travel warnings',
     },
     {
       title: 'Visa Requirements',
@@ -53,6 +55,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           {visaAdvice}
         </p>
       ),
+      todo: 'Handle visa requirements',
     },
     {
       title: 'Vaccinations',
@@ -61,6 +64,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           {vaccinationAdvice}
         </div>
       ),
+      todo: 'Get appropriate vaccinations',
     },
     {
       title: 'Plug Type',
@@ -85,33 +89,36 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
             </p>
           )
       ),
+      todo: 'Pack the right plug type',
     },
     {
       title: 'Exchange Rate',
-      contents: countryCurrencyName.length !== 0 ? (
-        <div>
-          <p>
-            {country}
-            {' '}
+      contents: countryCurrencyName.length !== 0
+        ? (
+          <div>
+            <p>
+              {country}
+              {' '}
             uses
-            {' '}
-            {countryCurrencyName[0].code}
-          </p>
-          <p>
-            {' '}
+              {' '}
+              {countryCurrencyName[0].code}
+            </p>
+            <p>
+              {' '}
             1 USD =
-            {' '}
-            {countryCurrency[0].toFixed(2)}
-            {' '}
-            {countryCurrencyName[0].code}
-          </p>
-        </div>
-      )
+              {' '}
+              {countryCurrency[0].toFixed(2)}
+              {' '}
+              {countryCurrencyName[0].code}
+            </p>
+          </div>
+        )
         : (
           <p>
-            No information found.
+          No information found.
           </p>
         ),
+      todo: `Exchange money into ${countryCurrencyName[0].code}`,
     },
   ]);
 };
