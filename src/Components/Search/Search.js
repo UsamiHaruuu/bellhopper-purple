@@ -64,6 +64,7 @@ const Search = ({ uuid }) => {
           onChange={(event, value) => handleInputChange(value)}
         />
         <Block />
+        {Object.entries(input).length > 0 && (
         <div>
           <DateRange
             editableDateInputs
@@ -73,6 +74,7 @@ const Search = ({ uuid }) => {
             ranges={[state]}
           />
         </div>
+        )}
         <Button
           onClick={() => saveAndRedirect()}
           color="link"
