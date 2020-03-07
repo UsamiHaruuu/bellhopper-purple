@@ -3,17 +3,20 @@ import { db } from '../../Firebase/helpers';
 
 const addToList = (uuid, tripId, trip, description) => {
   const newTrip = trip;
-  const array = [];
   if (newTrip.list === undefined) {
-    newTrip.list = array;
+    newTrip.list = [];
   }
-  const item = {
-    complete: false,
-    description: '',
-  };
-  item.description = description;
-  newTrip.list.push(item);
-  db.child(uuid).child('trips').child(tripId).update(newTrip);
+  if (newTrip.list.filter((todo) => todo.description === description).length === 0) {
+    const item = {
+      complete: false,
+      description: '',
+    };
+    item.description = description;
+    newTrip.list.push(item);
+    db.child(uuid).child('trips').child(tripId).update(newTrip);
+    return true;
+  }
+  return false;
 };
 
 const removeTask = (uuid, tripId, trip, element) => {

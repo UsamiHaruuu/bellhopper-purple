@@ -47,9 +47,11 @@ const List = ({ uuid, tripId }) => {
     item.description = input;
     const newList = list.slice(0);
     newList.push(item);
-    setList(newList);
     setInput('');
-    addToList(uuid, tripId, trip, input);
+    // Only add to list on success
+    if (addToList(uuid, tripId, trip, input)) {
+      setList(newList);
+    }
   };
 
   const complete = (element) => {
