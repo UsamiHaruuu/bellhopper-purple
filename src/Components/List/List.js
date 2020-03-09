@@ -65,14 +65,14 @@ const List = ({ uuid, tripId }) => {
   return (
     <Content style={{ textAlign: 'center' }}>
       <p className="dashboard-header-content">
-        Here is your To-Do list for your upcoming trip to
+        Here is your to do list for your upcoming trip to
         {' '}
-        <b>{trip.city ? trip.city : trip.country}</b>
+        <b>{trip.city ? `${trip.city}, ${trip.country}` : trip.country}</b>
       </p>
       <Column size="three-fifths" offset="one-fifth">
         <Panel>
           <Panel.Heading>
-          Todo List
+          To Do List
           </Panel.Heading>
           {list.map((element) => (
             <Panel.Block active={!!element.complete} onClick={() => complete(element)} key={element.description}>
