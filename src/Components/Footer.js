@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { } from 'react';
+import {
+  useLocation,
+} from 'react-router-dom';
 import {
   Navbar, Icon,
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faList } from '@fortawesome/free-solid-svg-icons';
 
-const Footer = ({ page, tripId }) => (
-  tripId
+// const urlParams = new URLSearchParams(window.location.href);
+
+
+const Footer = ({ tripId }) => {
+  const location = useLocation();
+  const page = location.pathname === '/' ? 'search' : location.pathname.substring(1);
+
+  return (tripId
     ? (
       <Navbar fixed="bottom" color="info" className="navbar">
         <div>
@@ -28,7 +37,7 @@ const Footer = ({ page, tripId }) => (
         </div>
       </Navbar>
     )
-    : <div />
-);
+    : <div />);
+};
 
 export default Footer;

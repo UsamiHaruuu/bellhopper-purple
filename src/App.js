@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from 'react';
+import { Block } from 'rbx';
 import 'rbx/index.css';
-import { HashRouter, Route, Switch } from 'react-router-dom';
+import {
+  HashRouter, Route, Switch,
+} from 'react-router-dom';
 import { useCookies } from 'react-cookie';
 import Dashboard from './Components/Dashboard';
 import Search from './Components/Search';
@@ -54,18 +57,17 @@ function App() {
         <Switch>
           <Route exact path="/dashboard">
             <Dashboard tripId={tripId} uuid={cookies.uuid} />
-            <Footer page="dashboard" tripId={tripId} />
           </Route>
           <Route exact path="/list">
             <List uuid={cookies.uuid} tripId={tripId} />
-            <Footer page="list" tripId={tripId} />
           </Route>
           <Route path="/">
             <Trips uuid={cookies.uuid} currentTrip={currentTripDb} setTrip={setTripId} />
             <Search uuid={cookies.uuid} />
-            <Footer page="search" tripId={tripId} />
           </Route>
         </Switch>
+        <Block />
+        <Footer tripId={tripId} />
       </HashRouter>
     </div>
   );
