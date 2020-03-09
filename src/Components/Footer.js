@@ -8,9 +8,6 @@ import {
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faInfoCircle, faList } from '@fortawesome/free-solid-svg-icons';
 
-// const urlParams = new URLSearchParams(window.location.href);
-
-
 const Footer = ({ tripId }) => {
   const location = useLocation();
   const page = location.pathname === '/' ? 'search' : location.pathname.substring(1);
