@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import {
-  Block, Column, Button,
+  Block, Button,
 } from 'rbx';
 import TextField from '@material-ui/core/TextField';
 import Autocomplete from '@material-ui/lab/Autocomplete';
@@ -47,25 +47,19 @@ const Search = ({ uuid }) => {
   };
 
   return (
-    <Column.Group>
-      <Column
-        size={6}
-        offset={3}
-        style={{ textAlign: 'center' }}
-      >
-        <Autocomplete
-          id="country-search"
-          options={[...countryData.countries, ...countryData.cities]}
-          getOptionLabel={(option) => formatOption(option)}
-          renderInput={(params) => (
-            // eslint-disable-next-line react/jsx-props-no-spreading
-            <TextField {...params} label="City / Country" variant="outlined" fullWidth />
-          )}
-          onChange={(event, value) => handleInputChange(value)}
-        />
-        <Block />
-        {Object.entries(input).length > 0 && (
-        <div>
+    <div className="search-box">
+      <Autocomplete
+        id="country-search"
+        options={[...countryData.countries, ...countryData.cities]}
+        getOptionLabel={(option) => formatOption(option)}
+        renderInput={(params) => (
+          // eslint-disable-next-line react/jsx-props-no-spreading
+          <TextField {...params} label="City / Country" variant="outlined" fullWidth />
+        )}
+        onChange={(event, value) => handleInputChange(value)}
+      />
+      {Object.entries(input).length > 0 && (
+        <div style={{ backgroundColor: 'white', position: 'relative' }}>
           <DateRange
             editableDateInputs
             minDate={addDays(new Date(), 0)}
@@ -74,17 +68,17 @@ const Search = ({ uuid }) => {
             ranges={[state]}
           />
         </div>
-        )}
-        <Button
-          onClick={() => saveAndRedirect()}
-          color="link"
-          size="large"
-          disabled={Object.entries(input).length === 0}
-        >
-          Search
-        </Button>
-      </Column>
-    </Column.Group>
+      )}
+      <Block />
+      <Button
+        onClick={() => saveAndRedirect()}
+        color="link"
+        size="large"
+        disabled={Object.entries(input).length === 0}
+      >
+        Search
+      </Button>
+    </div>
   );
 };
 

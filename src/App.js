@@ -45,13 +45,7 @@ function App() {
   }, [cookies.uuid, tripId]);
 
   return (
-    <div style={{
-      paddingTop: 10,
-      paddingBottom: 10,
-      paddingLeft: 5,
-      paddingRight: 5,
-    }}
-    >
+    <div>
       <HashRouter className="padded">
         <Brand />
         <Switch>
@@ -62,6 +56,7 @@ function App() {
             <List uuid={cookies.uuid} tripId={tripId} />
           </Route>
           <Route path="/">
+            <img src="/images/home-bg.svg" id="bg" alt="" />
             <Trips uuid={cookies.uuid} currentTrip={currentTripDb} setTrip={setTripId} />
             <Search uuid={cookies.uuid} />
           </Route>

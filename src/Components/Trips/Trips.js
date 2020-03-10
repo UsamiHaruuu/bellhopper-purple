@@ -41,9 +41,11 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <div key={tripId} style={{ paddingBottom: 10 }}>
+            <div
+              key={tripId}
+            >
               <Notification
-                color="link"
+                className="trip"
                 onClick={() => redirect(tripId)}
               >
                 <Delete
