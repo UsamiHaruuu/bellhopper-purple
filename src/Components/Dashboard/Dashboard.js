@@ -24,6 +24,7 @@ const DataLevel = ({ countryData, selected, setSelected }) => (
     fullwidth
     kind="toggle"
     align="centered"
+    style={{ padding: 18, paddingBottom: 0 }}
   >
     {countryData.slice(2).map((item) => (
       <Tab
