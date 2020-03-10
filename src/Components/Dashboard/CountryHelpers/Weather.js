@@ -3,9 +3,12 @@ import fetchWithTimeout from './fetchWithTimeout';
 import { getCityLat, getCityLng } from './CountryDataHelpers';
 
 const getForecasts = async (longitude, latitude, startDate, endDate) => {
-  const numDays = (new Date(endDate).getTime() - new Date(startDate).getTime()) / (86400 * 1000);
+  const numDays = (new Date(endDate).getTime() - new Date(startDate).getTime())
+    / (86400 * 1000);
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${numDays}`;
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(
+    3,
+  )},${longitude.toFixed(3)}&format=json&num_of_days=${numDays}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -46,11 +49,23 @@ const getHistoricalData = async (longitude, latitude, startDate, endDate) => {
   const endDateLastYear = parseFloat(endDate.split('-')[0]) - 1 === lastYear
     ? lastYear
     : lastYear + 1;
-  const lastYearStartDate = [lastYear, startDate.split('-')[1], startDate.split('-')[2]].join('-');
-  const lastYearEndDate = [endDateLastYear, endDate.split('-')[1], endDate.split('-')[2]].join('-');
-
+  const lastYearStartDate = [
+    lastYear,
+    startDate.split('-')[1],
+    startDate.split('-')[2],
+  ].join('-');
+  const lastYearEndDate = [
+    endDateLastYear,
+    endDate.split('-')[1],
+    endDate.split('-')[2],
+  ].join('-');
+  const date = new Date(lastYearStartDate);
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearStartDate}&enddate=${lastYearEndDate}`;
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(
+    3,
+  )},${longitude.toFixed(
+    3,
+  )}&format=json&date=${lastYearStartDate}&enddate=${lastYearEndDate}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -85,7 +100,6 @@ const getHistoricalData = async (longitude, latitude, startDate, endDate) => {
   });
   return weatherObj;
 };
-
 const Weather = async (country, city, startDate, endDate) => {
   let latitude;
   let longitude;
@@ -102,7 +116,10 @@ const Weather = async (country, city, startDate, endDate) => {
       const res = await response.json();
       [longitude, latitude] = res.features[0].center;
     } else {
-      [longitude, latitude] = [getCityLng(city, country), getCityLat(city, country)];
+      [longitude, latitude] = [
+        getCityLng(city, country),
+        getCityLat(city, country),
+      ];
     }
     latitude = parseFloat(latitude);
     longitude = parseFloat(longitude);
@@ -114,9 +131,13 @@ const Weather = async (country, city, startDate, endDate) => {
       weather = await getForecasts(longitude, latitude, startDate, endDate);
     } else {
       retObj.title = 'Weather (from last year)';
-      weather = await getHistoricalData(longitude, latitude, startDate, endDate);
+      weather = await getHistoricalData(
+        longitude,
+        latitude,
+        startDate,
+        endDate,
+      );
     }
-
     const dayMap = {
       0: 'Sun',
       1: 'Mon',
@@ -126,32 +147,30 @@ const Weather = async (country, city, startDate, endDate) => {
       5: 'Fri',
       6: 'Sat',
     };
-
     retObj.contents = (
       <div className="weather-boxes">
         {Object.keys(weather).map((date) => (
           <div key={date} className="weather-box">
+            <p>{dayMap[new Date(date).getDay()]}</p>
             <p>
-              {dayMap[new Date(date).getDay()]}
-            </p>
-            <p>
-              {new Date(date).toString().split(' ').slice(1, 3)
+              {new Date(`${date} `)
+                .toString()
+                .split(' ')
+                .slice(1, 3)
                 .join(' ')}
             </p>
             <img alt="" src={weather[date].img} />
             <p>
-            Hi:
-              {' '}
+              Hi:
               {weather[date].maxtempF}
               {' '}
-              &deg;F
+&deg;F
             </p>
             <p>
-            Lo:
-              {' '}
+              Lo:
               {weather[date].mintempF}
               {' '}
-              &deg;F
+&deg;F
             </p>
           </div>
         ))}

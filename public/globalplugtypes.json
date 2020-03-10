@@ -1245,17 +1245,7 @@
    ],
    "Italy": [
       {
-         "Plug Type": "Type C",
-         "Electric Potential": "230 V",
-         "Frequency": "50 Hz"
-      },
-      {
-         "Plug Type": "Type F",
-         "Electric Potential": "230 V",
-         "Frequency": "50 Hz"
-      },
-      {
-         "Plug Type": "Type L",
+         "Plug Type": "Type G",
          "Electric Potential": "230 V",
          "Frequency": "50 Hz"
       }
