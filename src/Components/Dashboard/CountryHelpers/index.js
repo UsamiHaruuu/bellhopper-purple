@@ -104,7 +104,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           No information found.
           </p>
         ),
-      todo: `Exchange money into ${countryCurrency.countryCode}`,
+      todo: `Exchange money into ${countryCurrency.currencyName}`,
     },
   ]);
 };
