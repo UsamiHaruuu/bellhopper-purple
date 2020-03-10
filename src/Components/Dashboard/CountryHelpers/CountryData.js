@@ -151,7 +151,7 @@ export default {
       country: 'Costa Rica', code: 'CR', currencyName: 'Costa Rican Colon', currencyCode: 'CRC',
     },
     {
-      country: 'Croatia', code: 'HR', currencyName: 'Croatian Dinar', currencyCode: 'HRK',
+      country: 'Croatia', code: 'HR', currencyName: 'Croatian Kuna', currencyCode: 'HRK',
     },
     {
       country: 'Cuba', code: 'CU', currencyName: 'Cuban Peso', currencyCode: 'CUP',
@@ -3721,6 +3721,9 @@ export default {
     },
     {
       city: 'Göteborg', country: 'Sweden', lat: '57.7500', lng: '12.0000',
+    },
+    {
+      city: 'Dubrovnik', country: 'Croatia', lat: '42.654195', lng: '18.098680',
     },
   ],
 };
