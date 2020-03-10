@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Message, Button, Icon } from 'rbx';
+import { Card, Button, Icon } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faCaretDown, faCaretUp, faPlusSquare, faCheck,
@@ -18,10 +18,10 @@ const InfoBox = ({
   };
 
   return (
-    <Message className="info-box">
-      <Message.Header>
-        {title}
-        <div>
+    <Card className="info-box">
+      <Card.Header>
+        <Card.Header.Title>{title}</Card.Header.Title>
+        <Card.Header.Icon>
           <Button
             onClick={() => addClick()}
             color={!added ? 'light' : 'success'}
@@ -38,14 +38,14 @@ const InfoBox = ({
               <FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} />
             </Icon>
           </Button>
-        </div>
-      </Message.Header>
+        </Card.Header.Icon>
+      </Card.Header>
       {!collapsed && (
-      <Message.Body>
+      <Card.Content>
         {contents}
-      </Message.Body>
+      </Card.Content>
       )}
-    </Message>
+    </Card>
   );
 };
 

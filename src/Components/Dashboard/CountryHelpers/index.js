@@ -7,8 +7,6 @@ import Weather from './Weather';
 import TravelAdvisory from './TravelAdvisory';
 import VisaRequirements from './VisaRequirements';
 
-const cc = require('currency-codes');
-
 const getCountryData = async (country, city, startDate, endDate, setCountryData) => {
   const [
     countryCurrency,
@@ -26,16 +24,10 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     VisaRequirements(country),
   ]);
 
-  const countryCurrencyName = cc.country(country);
-
   setCountryData([
     {
       title: weatherAdvice.title,
-      contents: (
-        <div>
-          {weatherAdvice.contents}
-        </div>
-      ),
+      contents: weatherAdvice.contents,
       todo: 'Pack appropriately for the weather',
     },
     {
@@ -86,7 +78,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     },
     {
       title: 'Exchange Rate',
-      contents: countryCurrencyName.length !== 0
+      contents: Object.values(countryCurrency).length !== 0 && countryCurrency.rate
         ? (
           <div>
             <p>
@@ -94,15 +86,15 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
               {' '}
             uses
               {' '}
-              {countryCurrencyName[0].code}
+              {countryCurrency.countryCode}
             </p>
             <p>
               {' '}
             1 USD =
               {' '}
-              {countryCurrency[0].toFixed(2)}
+              {countryCurrency.rate.toFixed(2)}
               {' '}
-              {countryCurrencyName[0].code}
+              {countryCurrency.countryCode}
             </p>
           </div>
         )
@@ -111,7 +103,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
           No information found.
           </p>
         ),
-      todo: `Exchange money into ${countryCurrencyName[0].code}`,
+      todo: `Exchange money into ${countryCurrency.countryCode}`,
     },
   ]);
 };

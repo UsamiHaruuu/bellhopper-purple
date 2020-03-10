@@ -1,5 +1,4 @@
 import React from 'react';
-import { Message } from 'rbx';
 import fetchWithTimeout from './fetchWithTimeout';
 import { getCityLat, getCityLng } from './CountryDataHelpers';
 
@@ -36,7 +35,7 @@ const getForecasts = async (longitude, latitude, startDate, endDate) => {
     weatherObj[weather.date] = {
       maxtempF: weather.maxtempF,
       mintempF: weather.mintempF,
-      avgtempF: weather.avgtempF,
+      img: weather.hourly[4].weatherIconUrl[0].value,
     };
   });
   return weatherObj;
@@ -81,7 +80,7 @@ const getHistoricalData = async (longitude, latitude, startDate, endDate) => {
     weatherObj[weather.date] = {
       maxtempF: weather.maxtempF,
       mintempF: weather.mintempF,
-      avgtempF: weather.avgtempF,
+      img: weather.hourly[4].weatherIconUrl[0].value,
     };
   });
   return weatherObj;
@@ -118,37 +117,43 @@ const Weather = async (country, city, startDate, endDate) => {
       weather = await getHistoricalData(longitude, latitude, startDate, endDate);
     }
 
+    const dayMap = {
+      0: 'Sun',
+      1: 'Mon',
+      2: 'Tue',
+      3: 'Wed',
+      4: 'Thu',
+      5: 'Fri',
+      6: 'Sat',
+    };
+
     retObj.contents = (
       <div className="weather-boxes">
         {Object.keys(weather).map((date) => (
-          <Message size={3} key={date}>
-            <Message.Header>
-              {new Date(date).toString().split(' ').slice(1, 4)
+          <div key={date} className="weather-box">
+            <p>
+              {dayMap[new Date(date).getDay()]}
+            </p>
+            <p>
+              {new Date(date).toString().split(' ').slice(1, 3)
                 .join(' ')}
-            </Message.Header>
-            <Message.Body>
-              <p>
-              Daytime Hi:
-                {' '}
-                {weather[date].maxtempF}
-                {' '}
+            </p>
+            <img alt="" src={weather[date].img} />
+            <p>
+            Hi:
+              {' '}
+              {weather[date].maxtempF}
+              {' '}
               &deg;F
-              </p>
-              <p>
-              Daytime Low:
-                {' '}
-                {weather[date].mintempF}
-                {' '}
+            </p>
+            <p>
+            Lo:
+              {' '}
+              {weather[date].mintempF}
+              {' '}
               &deg;F
-              </p>
-              <p className="degrees-text">
-                {' '}
-                {weather[date].avgtempF}
-                {' '}
-              &deg;F
-              </p>
-            </Message.Body>
-          </Message>
+            </p>
+          </div>
         ))}
       </div>
     );
