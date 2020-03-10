@@ -81,3 +81,8 @@ code {
   background-color: white;
   color: #209cee !important;
 }
+
+.tab-btn {
+  border-width: 0px !important;
+  background-color: transparent !important;
+}
