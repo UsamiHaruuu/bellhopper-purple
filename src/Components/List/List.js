@@ -63,7 +63,7 @@ const List = ({ uuid, tripId }) => {
     setList(removeTask(uuid, tripId, trip, element));
   };
   return (
-    <Content style={{ textAlign: 'center' }}>
+    <Content style={{ textAlign: 'left' }}>
       <p className="dashboard-header-content">
         Here is your to do list for your upcoming trip to
         {' '}
@@ -79,7 +79,7 @@ const List = ({ uuid, tripId }) => {
               <Panel.Icon>
                 <FontAwesomeIcon icon={element.complete ? faCheckSquare : faSquare} size="lg" />
               </Panel.Icon>
-              {element.description}
+              {element.description.trim()}
               <Column vcentered={1} align="right" offset={11}>
                 <Delete size="medium" onClick={(event) => removeItem(element, event)} />
               </Column>
