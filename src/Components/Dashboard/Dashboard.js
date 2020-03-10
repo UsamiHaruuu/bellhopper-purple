@@ -1,12 +1,55 @@
 import React, { useState, useEffect } from 'react';
+import {
+  Block, Icon, Tab, Button,
+} from 'rbx';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {
+  faPassport, faNotesMedical, faPlug, faDollarSign,
+} from '@fortawesome/free-solid-svg-icons';
 import InfoBox from './InfoBox';
 import Header from './Header';
 import getCountryData from './CountryHelpers';
 import { db } from '../../Firebase/helpers';
 
+const DataToIcon = {
+  'Visa Requirements': faPassport,
+  // eslint-disable-next-line quote-props
+  'Health': faNotesMedical,
+  'Plug Type': faPlug,
+  'Exchange Rate': faDollarSign,
+};
+
+const DataLevel = ({ countryData, selected, setSelected }) => (
+  <Tab.Group
+    fullwidth
+    kind="toggle"
+    align="centered"
+  >
+    {countryData.slice(2).map((item) => (
+      <Tab
+        key={item.title}
+        value={item.title}
+        active={item.title === selected}
+      >
+        <Button
+          className="tab-btn"
+          onClick={() => setSelected(item.title)}
+        >
+          <Icon size="large" color={item.title === selected ? 'white' : 'black'}>
+            <FontAwesomeIcon size="2x" icon={DataToIcon[item.title]} />
+          </Icon>
+        </Button>
+      </Tab>
+    ))}
+  </Tab.Group>
+);
+
 const Dashboard = ({ tripId, uuid }) => {
   const [countryData, setCountryData] = useState([]);
   const [trip, setTrip] = useState({});
+  const [selected, setSelected] = useState('Visa Requirements');
+  const [selectedData, setSelectedData] = useState(undefined);
+
   useEffect(() => {
     const handleData = (snap) => {
       if (snap.val()) {
@@ -31,9 +74,13 @@ const Dashboard = ({ tripId, uuid }) => {
     }
   }, [trip]);
 
-  const InfoBoxes = countryData.length === 0
+  useEffect(() => {
+    setSelectedData(countryData.find((elem) => elem.title === selected));
+  }, [countryData, selected]);
+
+  const PriorityBoxes = countryData.length === 0
     ? <div className="loading-text">Loading...</div>
-    : countryData.map((data) => (
+    : countryData.slice(0, 2).map((data) => (
       <InfoBox
         key={data.title}
         title={data.title}
@@ -42,6 +89,7 @@ const Dashboard = ({ tripId, uuid }) => {
         tripId={tripId}
         trip={trip}
         todo={data.todo}
+        collapsable
       />
     ));
 
@@ -52,7 +100,21 @@ const Dashboard = ({ tripId, uuid }) => {
   return (
     <div>
       {header}
-      {InfoBoxes}
+      {PriorityBoxes}
+      <Block />
+      <DataLevel countryData={countryData} selected={selected} setSelected={setSelected} />
+      {selectedData && (
+      <InfoBox
+        key={selectedData.title}
+        title={selectedData.title}
+        contents={selectedData.contents}
+        uuid={uuid}
+        tripId={tripId}
+        trip={trip}
+        todo={selectedData.todo}
+        collapsable={false}
+      />
+      )}
     </div>
   );
 };
