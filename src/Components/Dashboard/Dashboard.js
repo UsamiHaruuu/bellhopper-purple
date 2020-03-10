@@ -89,6 +89,7 @@ const Dashboard = ({ tripId, uuid }) => {
         tripId={tripId}
         trip={trip}
         todo={data.todo}
+        collapsable
       />
     ));
 
@@ -111,6 +112,7 @@ const Dashboard = ({ tripId, uuid }) => {
         tripId={tripId}
         trip={trip}
         todo={selectedData.todo}
+        collapsable={false}
       />
       )}
     </div>

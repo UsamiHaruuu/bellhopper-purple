@@ -7,7 +7,7 @@ import {
 import { addToList } from '../List/helpers';
 
 const InfoBox = ({
-  title, contents, uuid, tripId, trip, todo,
+  title, contents, uuid, tripId, trip, todo, collapsable,
 }) => {
   const [collapsed, setCollapsed] = useState(false);
   const [added, setAdded] = useState(false);
@@ -30,6 +30,7 @@ const InfoBox = ({
               <FontAwesomeIcon icon={!added ? faPlusSquare : faCheck} />
             </Icon>
           </Button>
+          {collapsable && (
           <Button
             style={{ marginLeft: '10px' }}
             onClick={() => setCollapsed(!collapsed)}
@@ -38,6 +39,7 @@ const InfoBox = ({
               <FontAwesomeIcon icon={collapsed ? faCaretDown : faCaretUp} />
             </Icon>
           </Button>
+          )}
         </Card.Header.Icon>
       </Card.Header>
       {!collapsed && (
