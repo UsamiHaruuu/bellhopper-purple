@@ -78,7 +78,7 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     },
     {
       title: 'Exchange Rate',
-      contents: Object.values(countryCurrency).length !== 0 && countryCurrency.rate
+      contents: Object.values(countryCurrency).length !== 0
         ? (
           <div>
             <p>
@@ -86,15 +86,16 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
               {' '}
             uses
               {' '}
-              {countryCurrency.countryCode}
+              {`${countryCurrency.currencyName} (${countryCurrency.currencyCode})`}
             </p>
             <p>
-              {' '}
-            1 USD =
-              {' '}
-              {countryCurrency.rate.toFixed(2)}
-              {' '}
-              {countryCurrency.countryCode}
+              {
+              countryCurrency.rate
+                ? (
+                  `1 USD = ${countryCurrency.rate.toFixed(2)} ${countryCurrency.currencyCode}`
+                )
+                : `No conversion found for ${countryCurrency.currencyName}`
+            }
             </p>
           </div>
         )
