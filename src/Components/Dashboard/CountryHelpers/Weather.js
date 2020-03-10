@@ -131,27 +131,28 @@ const Weather = async (country, city, startDate, endDate) => {
       <div className="weather-boxes">
         {Object.keys(weather).map((date) => (
           <div key={date} className="weather-box">
+            <p>{dayMap[new Date(date).getDay()]}</p>
             <p>
-              {dayMap[new Date(date).getDay()]}
-            </p>
-            <p>
-              {new Date(date).toString().split(' ').slice(1, 3)
+              {new Date(`${date} `)
+                .toString()
+                .split(' ')
+                .slice(1, 3)
                 .join(' ')}
             </p>
             <img alt="" src={weather[date].img} />
             <p>
-            Hi:
+Hi:
               {' '}
               {weather[date].maxtempF}
               {' '}
-              &deg;F
+&deg;F
             </p>
             <p>
-            Lo:
+Lo:
               {' '}
               {weather[date].mintempF}
               {' '}
-              &deg;F
+&deg;F
             </p>
           </div>
         ))}

@@ -1,3 +1,5 @@
+/* eslint-disable no-constant-condition */
+/* eslint-disable no-nested-ternary */
 /* eslint-disable react/no-danger */
 import {
   Column,
@@ -31,89 +33,84 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     {
       title: weatherAdvice.title,
       contents: weatherAdvice.contents,
-      todo: 'Pack appropriately for the weather',
+      todo:
+        (city === 'Milan' || city === 'Dubrovnik')
+          ? 'Pack for sun'
+          : city === 'Dublin'
+            ? 'Pack rain gear'
+            : 'Pack appropriately for the weather',
     },
     {
       title: 'Travel Warnings',
-      contents: (
-        <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />
-      ),
-      todo: 'Check travel warnings',
+      contents: <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />,
+      todo: 'Check back on travel alerts',
     },
     {
       title: 'Visa Requirements',
-      contents: (
-        <div dangerouslySetInnerHTML={{ __html: visaAdvice }} />
-      ),
-      todo: 'Handle visa requirements',
+      contents: <div dangerouslySetInnerHTML={{ __html: visaAdvice }} />,
+      todo: 'Get passport/visa',
     },
     {
       title: 'Health',
-      contents: (
-        <div dangerouslySetInnerHTML={{ __html: vaccinationAdvice }} />
-      ),
-      todo: 'Get appropriate vaccinations',
+      contents: <div dangerouslySetInnerHTML={{ __html: vaccinationAdvice }} />,
+      todo: 'Schedule Vaccine Appointment',
     },
     {
       title: 'Plug Type',
-      contents: (
-        countryPlugData !== null
-          ? (
-            <div>
-              <p>
-                Avaliable types:
-                {' '}
-                {countryPlugData.type.join(', ')}
-              </p>
-              <p>
-                Avaliable volts:
-                {' '}
-                {countryPlugData.volt.join(', ')}
-              </p>
-              <br />
-              <Column.Group breakpoint="mobile" gapless>
-                {countryPlugData.type.map((plug) => (
-                  <Column key={plug}>
-                    <img alt="" src={`/images/plugtype/plug_type-${plug[5].toLowerCase()}.png`} width="70" height="70" />
-                  </Column>
-                ))}
-              </Column.Group>
-            </div>
-          ) : (
+      contents:
+        countryPlugData !== null ? (
+          <div>
             <p>
-              No information found.
+Avaliable types:
+              {' '}
+              {countryPlugData.type.join(', ')}
             </p>
-          )
-      ),
-      todo: 'Pack the right plug type',
+            <p>
+Avaliable volts:
+              {' '}
+              {countryPlugData.volt.join(', ')}
+            </p>
+            <br />
+            <Column.Group breakpoint="mobile" gapless>
+              {countryPlugData.type.map((plug) => (
+                <Column key={plug}>
+                  <img
+                    alt=""
+                    src={`/images/plugtype/plug_type-${plug[5].toLowerCase()}.png`}
+                    width="70"
+                    height="70"
+                  />
+                </Column>
+              ))}
+            </Column.Group>
+          </div>
+        ) : (
+          <p>No information found.</p>
+        ),
+      todo: 'Get Plug Adapter',
     },
     {
       title: 'Exchange Rate',
-      contents: Object.values(countryCurrency).length !== 0
-        ? (
+      contents:
+        Object.values(countryCurrency).length !== 0 ? (
           <div>
             <p>
               {country}
               {' '}
-              uses
+uses
               {' '}
               {`${countryCurrency.currencyName} (${countryCurrency.currencyCode})`}
             </p>
             <p>
-              {
-                countryCurrency.rate
-                  ? (
-                    `1 USD = ${countryCurrency.rate.toFixed(2)} ${countryCurrency.currencyCode}`
-                  )
-                  : `No conversion found for ${countryCurrency.currencyName}`
-              }
+              {countryCurrency.rate
+                ? `1 USD = ${countryCurrency.rate.toFixed(2)} ${
+                  countryCurrency.currencyCode
+                }`
+                : `No conversion found for ${countryCurrency.currencyName}`}
             </p>
           </div>
-        )
-        : (
-          <p>
-            No information found.
-          </p>
+        ) : (
+          <p>No information found.</p>
         ),
       todo: `Exchange money into ${countryCurrency.currencyName}`,
     },
