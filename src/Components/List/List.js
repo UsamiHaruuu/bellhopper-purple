@@ -71,7 +71,7 @@ const List = ({ uuid, tripId }) => {
       </p>
       <Column size="three-fifths" offset="one-fifth">
         <Panel>
-          <Panel.Heading>
+          <Panel.Heading textAlign="centered">
           To Do List
           </Panel.Heading>
           {list.map((element) => (
