@@ -55,7 +55,7 @@ const Search = ({ uuid }) => {
       >
         <Autocomplete
           id="country-search"
-          options={[...countryData.countryCodes, ...countryData.cityData]}
+          options={[...countryData.countries, ...countryData.cities]}
           getOptionLabel={(option) => formatOption(option)}
           renderInput={(params) => (
             // eslint-disable-next-line react/jsx-props-no-spreading
