@@ -1,4 +1,7 @@
 /* eslint-disable react/no-danger */
+import {
+  Column,
+} from 'rbx';
 import React from 'react';
 import ExchangeRate from './ExchangeRate';
 import PlugType from './PlugType';
@@ -67,6 +70,14 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
                 {' '}
                 {countryPlugData.volt.join(', ')}
               </p>
+              <br />
+              <Column.Group breakpoint="mobile" gapless>
+                {countryPlugData.type.map((plug) => (
+                  <Column key={plug}>
+                    <img alt="" src={`/images/plugtype/plug_type-${plug[5].toLowerCase()}.png`} width="70" height="70" />
+                  </Column>
+                ))}
+              </Column.Group>
             </div>
           ) : (
             <p>
@@ -84,24 +95,24 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
             <p>
               {country}
               {' '}
-            uses
+              uses
               {' '}
               {`${countryCurrency.currencyName} (${countryCurrency.currencyCode})`}
             </p>
             <p>
               {
-              countryCurrency.rate
-                ? (
-                  `1 USD = ${countryCurrency.rate.toFixed(2)} ${countryCurrency.currencyCode}`
-                )
-                : `No conversion found for ${countryCurrency.currencyName}`
-            }
+                countryCurrency.rate
+                  ? (
+                    `1 USD = ${countryCurrency.rate.toFixed(2)} ${countryCurrency.currencyCode}`
+                  )
+                  : `No conversion found for ${countryCurrency.currencyName}`
+              }
             </p>
           </div>
         )
         : (
           <p>
-          No information found.
+            No information found.
           </p>
         ),
       todo: `Exchange money into ${countryCurrency.currencyName}`,
