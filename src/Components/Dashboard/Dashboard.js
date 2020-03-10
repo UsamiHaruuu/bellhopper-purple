@@ -4,7 +4,7 @@ import {
 } from 'rbx';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
-  faPassport, faNotesMedical, faPlug, faMoneyBillWave,
+  faPassport, faNotesMedical, faPlug, faDollarSign,
 } from '@fortawesome/free-solid-svg-icons';
 import InfoBox from './InfoBox';
 import Header from './Header';
@@ -16,7 +16,7 @@ const DataToIcon = {
   // eslint-disable-next-line quote-props
   'Health': faNotesMedical,
   'Plug Type': faPlug,
-  'Exchange Rate': faMoneyBillWave,
+  'Exchange Rate': faDollarSign,
 };
 
 const DataLevel = ({ countryData, selected, setSelected }) => (
