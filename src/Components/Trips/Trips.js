@@ -13,6 +13,14 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
     document.location.reload();
   };
 
+  const formatDates = (tripId) => {
+    const startDate = new Date(tripData[tripId].start_date).toString().split(' ').slice(1, 3)
+      .join(' ');
+    const endDate = new Date(tripData[tripId].end_date).toString().split(' ').slice(1, 3)
+      .join(' ');
+    return `${startDate} - ${endDate}`;
+  };
+
   useEffect(() => {
     const handleData = (snap) => {
       if (snap.val()[uuid]) {
@@ -33,17 +41,23 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
       <Column.Group>
         <Column size={6} offset={3}>
           {Object.keys(tripData).map((tripId) => (
-            <div key={tripId} style={{ paddingBottom: 10 }}>
+            <div
+              key={tripId}
+            >
               <Notification
-                color="link"
+                className="trip"
                 onClick={() => redirect(tripId)}
               >
                 <Delete
                   as="button"
                   onClick={(event) => deleteTrip(uuid, tripId, currentTrip, setTrip, event)}
                 />
-                <p style={{ float: 'left' }}>{tripData[tripId].country}</p>
-                <p style={{ float: 'right' }}>{tripData[tripId].start_date}</p>
+                {
+                  tripData[tripId].city
+                    ? (<p style={{ float: 'left' }}>{`${tripData[tripId].city}, ${tripData[tripId].country}`}</p>)
+                    : (<p style={{ float: 'left' }}>{tripData[tripId].country}</p>)
+                }
+                <p style={{ float: 'right' }}>{formatDates(tripId)}</p>
                 <div style={{ clear: 'both' }} />
               </Notification>
             </div>

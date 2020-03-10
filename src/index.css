@@ -82,6 +82,42 @@ code {
   color: #209cee !important;
 }
 
+.home-header {
+  width: 90% !important;
+  margin: 20px auto 20px auto;
+  display: block;
+  z-index: 1;
+  position: relative;
+}
+
+.header-img {
+  width: 100%;
+}
+
+.trip {
+  margin: 0 15px 10px 15px;
+}
+
+#bg {
+  position: fixed; 
+  top: 0; 
+  left: 0; 
+	
+  /* Preserve aspet ratio */
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.search-box {
+  text-align: center;
+  margin: 0 15px;
+  display: block;
+}
+
+.search-box .MuiInputBase-root {
+  background-color: white !important;
+}
+
 .tab-btn {
   border-width: 0px !important;
   background-color: transparent !important;
