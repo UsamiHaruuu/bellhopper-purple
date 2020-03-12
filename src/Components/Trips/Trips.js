@@ -14,9 +14,9 @@ const Trips = ({ uuid, currentTrip, setTrip }) => {
   };
 
   const formatDates = (tripId) => {
-    const startDate = new Date(`${tripData[tripId].start_date} `).toString().split(' ').slice(1, 3)
+    const startDate = new Date(`${tripData[tripId].start_date}T00:00`).toString().split(' ').slice(1, 3)
       .join(' ');
-    const endDate = new Date(`${tripData[tripId].end_date} `).toString().split(' ').slice(1, 3)
+    const endDate = new Date(`${tripData[tripId].end_date}T00:00`).toString().split(' ').slice(1, 3)
       .join(' ');
     return `${startDate} - ${endDate}`;
   };

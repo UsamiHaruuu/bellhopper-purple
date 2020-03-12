@@ -133,7 +133,7 @@ const Weather = async (country, city, startDate, endDate) => {
           <div key={date} className="weather-box">
             <p>{dayMap[new Date(date).getDay()]}</p>
             <p>
-              {new Date(`${date} `)
+              {new Date(`${date}T00:00`)
                 .toString()
                 .split(' ')
                 .slice(1, 3)
