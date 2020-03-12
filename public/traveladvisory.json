@@ -1111,7 +1111,7 @@
           "advisory":{
              "score":1.5,
              "sources_active":4,
-             "message":"Croatia has a current risk level of 1.5 (out of 5). We advise: Travelling Croatia is (relatively) safe.",
+             "message":"<p>Croatia - Level 1: Exercise Normal Precautions.</p><br> <p>Exercise normal precautions in Croatia.</p><br><a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Croatia.html\">More from the U.S. Department of State</a>",
              "updated":"2020-02-27 07:22:56",
              "source":"https:\/\/www.travel-advisory.info\/croatia"
           }
@@ -1159,7 +1159,7 @@
           "advisory":{
              "score":1.5,
              "sources_active":2,
-             "message":"Ireland has a current risk level of 1.5 (out of 5). We advise: Travelling Ireland is (relatively) safe.",
+             "message":"<p>Ireland - Level 1: Exercise Normal Precautions.</p><br> <p>Exercise normal precautions in Ireland.</p><br><a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Ireland.html\">More from the U.S. Department of State</a>",
              "updated":"2020-02-27 07:22:56",
              "source":"https:\/\/www.travel-advisory.info\/ireland"
           }
@@ -1243,7 +1243,7 @@
           "advisory":{
              "score":2.399999999999999911182158029987476766109466552734375,
              "sources_active":7,
-             "message":"Travel Warning: Level 3 Avoid Nonessential travel: COVID-19",
+             "message":"<p>Italy - Level 3: Reconsider Travel.</p><br> <p>Reconsider travel to Italy due to a recent outbreak of COVID-19.</p><br><a href=\"https://travel.state.gov/content/travel/en/international-travel/International-Travel-Country-Information-Pages/Italy.html\">More from the U.S. Department of State</a>",
              "updated":"2020-02-27 07:22:56",
              "source":"https:\/\/www.travel-advisory.info\/italy"
           }
