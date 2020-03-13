@@ -113,7 +113,7 @@ const Weather = async (country, city, startDate, endDate) => {
       retObj.title = 'Weather';
       weather = await getForecasts(longitude, latitude, startDate, endDate);
     } else {
-      retObj.title = 'Weather (from last year)';
+      retObj.title = 'Weather (typical)';
       weather = await getHistoricalData(longitude, latitude, startDate, endDate);
     }
 
