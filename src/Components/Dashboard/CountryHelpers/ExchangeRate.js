@@ -3,24 +3,6 @@ import { getCountryCurrency } from './CountryDataHelpers';
 
 const ExchangeRate = async (country) => {
   try {
-    /*
-      const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-      const countryCode = cc.country(country)[0].code;
-      // this is the real key but we are saving our api requests for demo
-      // const apiKey = 'XXX-XXX-XXX-XXX-XXX';
-      const apiURL = `http://api.currencylayer.com/live?access_key=${apiKey}&currencies=${
-        countryCode
-      }&format=1`;
-
-      const res = await fetch(proxyurl + apiURL);
-      const response = await res.json();
-
-      return {
-        rate: Object.values(response.quotes)[0],
-        countryCode,
-      };
-    */
-
     const countryCurrency = getCountryCurrency(country);
     const url = 'exchangerates.json';
     const response = await fetchWithTimeout(url);

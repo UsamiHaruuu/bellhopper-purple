@@ -5,7 +5,8 @@ import { getCityLat, getCityLng } from './CountryDataHelpers';
 const getForecasts = async (longitude, latitude, startDate, endDate) => {
   const numDays = (new Date(endDate).getTime() - new Date(startDate).getTime()) / (86400 * 1000);
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${numDays}`;
+  const apiKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=${apiKey}&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&num_of_days=${numDays}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -50,7 +51,8 @@ const getHistoricalData = async (longitude, latitude, startDate, endDate) => {
   const lastYearEndDate = [endDateLastYear, endDate.split('-')[1], endDate.split('-')[2]].join('-');
 
   const proxyurl = 'https://cors-anywhere.herokuapp.com/';
-  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/past-weather.ashx?key=0d7b6c6176f04e12a1523034202802&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearStartDate}&enddate=${lastYearEndDate}`;
+  const apiKey = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';
+  const weatherUrl = `http://api.worldweatheronline.com/premium/v1/weather.ashx?key=${apiKey}&q=${latitude.toFixed(3)},${longitude.toFixed(3)}&format=json&date=${lastYearStartDate}&enddate=${lastYearEndDate}`;
   const weatherResponse = await fetchWithTimeout(proxyurl + weatherUrl, {
     method: 'GET',
     mode: 'cors',
@@ -91,7 +93,8 @@ const Weather = async (country, city, startDate, endDate) => {
   let longitude;
   try {
     if (!city) {
-      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=pk.eyJ1IjoiY2xlbWVuc3RpZ2F0b3IiLCJhIjoiY2p6dm8xeWowMHM0djNnbG02ZWM5ZHo4dSJ9.GNbHIUUjyUdJfazjBuExmw&limit=1`;
+      const token = 'ab.abcdefghhijklmnopqrstuv0123456789asdsdfadfsdfsadfasdfasdfasfasdfdssafdsdfasdfasdfasdfadfsdfasdf';
+      const url = `https://api.mapbox.com/geocoding/v5/mapbox.places/${country}.json?access_token=${token}&limit=1`;
       const response = await fetchWithTimeout(url, {
         method: 'GET',
         mode: 'cors',
