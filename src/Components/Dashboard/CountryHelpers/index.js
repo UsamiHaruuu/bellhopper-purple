@@ -5,6 +5,8 @@ import {
   Column,
 } from 'rbx';
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExclamationTriangle } from '@fortawesome/free-solid-svg-icons';
 import ExchangeRate from './ExchangeRate';
 import PlugType from './PlugType';
 import Vaccines from './Vaccines';
@@ -42,7 +44,17 @@ const getCountryData = async (country, city, startDate, endDate, setCountryData)
     },
     {
       title: 'Travel Warnings',
-      contents: <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />,
+      contents: (country === 'Italy')
+        ? (
+          <div>
+            <FontAwesomeIcon
+              icon={faExclamationTriangle}
+              style={{ color: '#eed202', fontSize: '36px' }}
+            />
+            <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />
+          </div>
+        )
+        : <div dangerouslySetInnerHTML={{ __html: travelAdvice }} />,
       todo: 'Check back on travel alerts',
     },
     {
