@@ -24,7 +24,7 @@ Additionally, some information was hardcoded specific to certain countries for t
  - `git clone https://github.com/cs394-w20/bellhopper-purple.git`
  - `cd bellhopper-purple`
  - `npm install`
- - Create an account and new project with firebase
+ - Create an account and new project with [Firebase](https://console.firebase.google.com/u/0/)
  - `firebase login`
  - Go to `/src/Firebase/config.js` and replace the config object with the one given by your new project
  - Ideally, use Visual Studio Code and install the eslint extension
