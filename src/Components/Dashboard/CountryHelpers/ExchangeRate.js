@@ -7,9 +7,7 @@ const ExchangeRate = async (country) => {
       const proxyurl = 'https://cors-anywhere.herokuapp.com/';
       const countryCode = cc.country(country)[0].code;
       // this is the real key but we are saving our api requests for demo
-      // const apiKey = 'e5c05625064153f4e2cf1ec9df36fbb8';
-      // fake key
-      const apiKey = 'hi';
+      // const apiKey = 'XXX-XXX-XXX-XXX-XXX';
       const apiURL = `http://api.currencylayer.com/live?access_key=${apiKey}&currencies=${
         countryCode
       }&format=1`;
@@ -21,7 +19,7 @@ const ExchangeRate = async (country) => {
         rate: Object.values(response.quotes)[0],
         countryCode,
       };
-      */
+    */
 
     const countryCurrency = getCountryCurrency(country);
     const url = 'exchangerates.json';
